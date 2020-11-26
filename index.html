@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myFormApp" ng-controller="myController">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <title>GLOSARIOS 2020-2021</title>
+    <link rel="shortcut icon" type="image/png" href="glosario.png" />
+    <link rel="stylesheet" data-ng-if="data.css.css" type="text/css" ng-href="{{data.css.css}}.css">
+</head>
+
+<body>
+
+    <div class="container mt-5" ng-cloak>
+
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1>GLOSARIO</h1>
+                <h3>Curso 2020-2021</h3>
+                <h2>DAW</h2>
+                <h2>CIPFP Ausiàs March</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div>
+                    <form name="myForm">
+                        <label for="mySelect">GLOSARIOS:</label>
+                        <select name="glosarioSelection" id="glosarioSelection"
+                            ng-options="option.name for option in data.alumnos track by option.id"
+                            ng-model="data.glosario"></select>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <form name="myForm">
+                        <label for="mySelect">Diseño:</label>
+                        <select name="cssSelection" id="cssSelection"
+                            ng-options="option.name for option in data.alumnos track by option.id"
+                            ng-model="data.css"></select>
+                    </form>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col">
+                <ng-include src="templateURL()"></ng-include>
+
+            </div>
+        </div>
+
+        <script>
+            function loadjscssfile(filename) {
+                var fileref = document.createElement("link")
+                fileref.setAttribute("rel", "stylesheet")
+                fileref.setAttribute("type", "text/css")
+                fileref.setAttribute("href", filename)
+            }
+
+            var myModule = angular.module("myFormApp", []);
+
+            var myController = myModule.controller("myController", [
+                "$scope",
+                function ($scope) {
+                    $scope.data = {
+                        alumnos: [
+                            { id: '0', name: 'Selecciona un alumno/a', template: 'default', css: 'default' },
+                            { id: '1', name: 'Arteaga Yucra, Jhonatan Leonardo', template: "arteaga", css: "arteaga" },
+                            { id: '2', name: 'Borrull Cáceres, Carlos', template: "borrull", css: "borrull" },
+                            { id: '3', name: 'Ferán Moreira, Steven Froilán', template: "feran", css: "feran" },
+                            { id: '4', name: 'Gadea Pérez, Ignacio', template: "gadea", css: "gadea" },
+                            { id: '5', name: 'García Álvarez, Edioalberth', template: "garciaalvarez", css: "garciaalvarez" },
+                            { id: '6', name: 'García Escrivá, Óscar', template: "garciaescriva", css: "garciaescriva" },
+                            { id: '7', name: 'Gómez Mediavilla, Guillermo', template: "gomez", css: "gomez" },
+                            { id: '8', name: 'Hidalgo Martín, Raúl', template: "hidalgo", css: "hidalgo" },
+                            { id: '9', name: 'Lozano Hernández, Ethan', template: "lozano", css: "lozano" },
+                            { id: '10', name: 'Lyazghi , Yahya', template: "lyazghi", css: "lyazghi" },
+                            { id: '11', name: 'Mocholí Ortega, Javier', template: "mocholi", css: "mocholi" },
+                            { id: '12', name: 'Montesinos Pérez, Rafael', template: "montesinos", css: "montesinos" },
+                            { id: '13', name: 'Oliete López, Sara', template: "oliete", css: "oliete" },
+                            { id: '14', name: 'Penalba Medina, Beatriz', template: "penalba", css: "penalba" },
+                            { id: '15', name: 'Prieto Sánchez, Juan Eugenio', template: "prieto", css: "prieto" },
+                            { id: '16', name: 'Rodilla García, Alonso', template: "rodilla", css: "rodilla" },
+                            { id: '17', name: 'Rodrigo Romero, Alejandro', template: "rodrigo", css: "rodrigo" },
+                            { id: '18', name: 'Salazar Hernández, Rafael Guillermo', template: "salazar", css: "salazar" },
+                            { id: '19', name: 'Santaniello Lozano, Carlos Eduardo', template: "santaniello", css: "santaniello" },
+                            { id: '20', name: 'Speroni , Mauricio', template: "speroni", css: "speroni" }
+                        ],
+                        glosario: { id: '0', name: 'Selecciona un alumno/a', template: 'default', css: 'default' },
+                        css: { id: '0', name: 'Selecciona un alumno/a', template: 'default', css: 'default' }
+                    };
+                    $scope.templateURL = function () {
+                        return $scope.data.glosario.template + ".html";
+                    }
+                },
+            ]);
+        </script>
+
+    </div>
+</body>
+
+</html>
