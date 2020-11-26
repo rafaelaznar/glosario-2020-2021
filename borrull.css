@@ -1,0 +1,14 @@
+h1{
+background-color: black;
+color: white;
+}
+h3{
+text-align: center;
+color: rgba(125, 63, 184, 0.705);
+}
+strong{
+color: black;
+}
+body{
+    background-color:rgb(224, 223, 223);
+}
