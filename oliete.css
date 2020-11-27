@@ -1,4 +1,4 @@
-body{
+.container{
 
     width: 900px;
     height: 100%;
@@ -7,7 +7,7 @@ body{
     padding: 0.5em;
 }
 
-div:not(.container){
+div:not(.container):not(.row):not(.col){
 
     border: 2px solid rgb(188, 134, 233);
     padding: 2.5em;
