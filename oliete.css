@@ -1,0 +1,61 @@
+body{
+
+    width: 900px;
+    height: 100%;
+
+    margin: 20px auto;
+    padding: 0.5em;
+}
+
+div:not(.container){
+
+    border: 2px solid rgb(188, 134, 233);
+    padding: 2.5em;
+    margin-bottom: 20px;
+}
+
+body h1{
+
+    text-align: center;
+    background-color: black;
+    color: rgb(188, 134, 233);
+}
+
+div h2{
+
+    text-align: center;
+    background-color:  rgb(188, 134, 233);
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* imagenes tabla */
+
+table img{
+
+    text-align: center;
+}
+
+/* links */
+
+a:link{
+
+    color: black;
+}
+
+a:visited{
+
+    color: black;
+
+}
+
+a:hover{
+
+    color: rgb(188, 134, 233);
+}
+
+a:active{
+
+    color: black;
+
+}
