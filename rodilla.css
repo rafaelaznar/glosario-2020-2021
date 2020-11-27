@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(207, 214, 218);
+    font-family: 'Century Gothic Medium';
+
+}
+td{
+    width: 85;
+}
+tr{
+    width: v;
+}
+p{
+    text-align: justify;
+}
+h2{
+
+  font-weight: bolder;
+  font-family: Arial;
+  text-transform: capitalize;
+}
