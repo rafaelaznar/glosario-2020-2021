@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(237, 228, 207);
+}
+
+dd {
+    text-align: justify;
+}
+
+h1, h2, h3, h4 {
+    color: red;
+}
