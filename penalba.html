@@ -1,0 +1,2951 @@
+<div class="jumbotron mb-0">
+    <h1 class="display-3">Glosario</h1><hr>
+    <h6>Beatriz Penalba Medina</h6>
+</div>
+
+<div class="container-fluid md-0">
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <div id="indice" class="sticky-top">
+                <hr>
+                <h2>
+                    INDICE
+                </h2>
+                <hr>
+                <ol>
+                    <li> <a href="#http_redes"> HTTP y Redes </a> </li>
+                    <li> <a href="#proyectos_web">Proyectos Web</a> </li>
+                    <li> <a href="#infraestructura">Infraestructura</a> </li>
+                    <li> <a href="#diseño_aplicaciones_web">Diseño de Aplicaciones Web</a> </li>
+                    <li> <a href="#desarrollo_aplicaciones_web">Desarrollo de Aplicaciones Web</a> </li>
+                    <li> <a href="#programacion_organizacion_codigo">Programación y organización del código</a>
+                    </li>
+                    <li> <a href="#lenguajes_programación">Lenguajes de programación</a> </li>
+                    <li> <a href="#entorno_cliente">Entorno Cliente</a> </li>
+                    <li> <a href="#entorno_servidor">Entorno Servidor</a> </li>
+                    <li> <a href="#bases_datos">Bases de Datos</a> </li>
+                    <li> <a href="#control_versiones">Control de Versiones</a> </li>
+                    <li> <a href="#integracion_continua">Integración Continua</a> </li>
+                    <li> <a href="#despliegue">Despliegue</a> </li>
+                    <li> <a href="#personajes">Personajes</a> </li>
+                </ol>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div id="http_redes">
+                <h1 class="display-4">HTTP y Redes</h1>
+                <hr>
+
+                <h3>Internet: creación, concepto, funcionamiento</h3>
+                <p>
+                    Internet nació en 1969, durante la Guerra Fría, cuando el Departamento de Defensa
+                    de EEUU decidió crear un sistema de comunicaciones capaz de resistir un ataque nuclear.
+                    El Departamento de Defensa encargó la tarea a la Agencia de Investigación Avanzada de Proyectos
+                    de Defensa, que creó un sistema de intercambio de archivos y mensajes llamado <i>Arpanet</i>.
+                </p>
+                <p>Internet es una red informática descentralizada de alcance global. Es un sistema de redes
+                    interconectadas
+                    mediante distintos protocolos que ofrece una gran diversidad de servicios y recursos.
+                </p>
+                <p>
+                    Todos los ordenadores conectados en internet tienen que utilizar el mismo protocolo o normas
+                    para comunicarse entre ellos,
+                    de lo contrario no podrían establecer comunicación.
+                </p>
+                <hr>
+                <!---->
+                <h3>Protocolo: concepto, tipos, RFC</h3>
+                <p>Un protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas que se
+                    transmiten información a través de diversos medios físicos.
+                </p>
+                <p>Es decir, son lenguajes o códigos que sirven para garantizar la comunicación entre sistemas
+                    informáticos,
+                    y tienen una sintaxis y una semántica específicas.
+                </p>
+
+                <h5>Tipos:</h5>
+                <ul>
+                    <li>Protocolo IP: Protocolo a nivel de red. Su musión es encamminar el datagrama.</li>
+                    <li>Protocolo TPC/IP: Conjunto de protocolos de comunicación mediante los cuales se logra la
+                        transmisión en redes de ordenadores.</li>
+                    <li>Protocolo TPC: Orientado a las comunicaciones, permite la transmisión de datos.</li>
+                    <li>Protocolo ARP: Su objetivo es asociar un dispositivo IP a un dispositivo de red.</li>
+                    <li>Protocolo HTTP: Diseñado para recuperar información y realizar búsquedas.</li>
+                    <li>Protocolo UDP: Destinado a las comunicaciones que se realizan sin conexión.</li>
+                    <li>Protocolo ICMP: Cuando ocurre algo inesperado, este protocolo informa del suceso.</li>
+                    <li>Protocolo SMTP: Conjunto de reglas que rigen el formato y la transferencia de datos en un
+                        envío de Correo Electrónico.</li>
+                    <li>Protocolo SSH: Desarrollado para mejorar la seguridad, lo que hace es eliminar el envío de
+                        contraseñas no cifradas, codificando toda la información transferida.</li>
+                </ul>
+                <h5>RFC:</h5>
+                <p>
+                    <i>Request for Comments</i>, RFC, son una serie de documentos en los que se describen y definen
+                    protocolos,
+                    conceptos, métodos y programas de Internet.
+                </p>
+                <hr>
+                <!---->
+                <h3>Niveles ISO-OSI</h3>
+                <p>El modelo de interconexión de sistemas abiertos, más conocido como “modelo OSI”, es un modelo de
+                    referencia para los protocolos de la red, creado en el año 1980 por la Organización
+                    Internacional de Normalización.
+                </p>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Nombre</th>
+                        <th>Función</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Aplicación</td>
+                        <td>Datos normalizados</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Presentación</td>
+                        <td>Interpretación de los datos</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sesión</td>
+                        <td>Diálogos de control</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Transporte</td>
+                        <td>Integridad de los mensajes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Red</td>
+                        <td>Enrutamiento de los mensajes</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Enlace</td>
+                        <td>Detección de errores</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Físico</td>
+                        <td>Conexión de equipos</td>
+                    </tr>
+                </table>
+                <hr>
+                <!---->
+                <h3>Protocolo HTTP: concepto, utilidad, caractrísticas</h3>
+                <p>HTTP (Hypertext Transfer Protocol) es un protocolo de acceso para las páginas web a través de
+                    Internet.
+                </p>
+
+                <p>
+                <h6>Las principales caractrísticas del protocolo HTTP son:</h6>
+                <ul>
+                    <li>Toda la comunicación entre los clientes y servidores se realiza a partir de caracteres de 8
+                        bits. De esta forma, se puede transmitir cualquier tipo de documento: texto, binario, etc.,
+                        respetando su formato original.</li>
+                    <li>Permite la transferencia de objetos multimedia. El contenido de cada objeto intercambiado
+                        está identificado por su clasificación MIME.</li>
+                    <li>Existen tres verbos básicos (hay más, pero por lo general no se utilizan) que un cliente
+                        puede utilizar para dialogar con el servidor: GET, para recoger un objeto, POST, para enviar
+                        información al servidor y HEAD, para solicitar las características de un objeto (por
+                        ejemplo, la fecha de modificación de un documento HTML).</li>
+                    <li>Cada operación HTTP implica una conexión con el servidor, que es liberada al término de la
+                        misma. Es decir, en una operación se puede recoger un único objeto.</li>
+                    <li>No mantiene estado. Cada petición de un cliente a un servidor no es influida por las
+                        transacciones anteriores. El servidor trata cada petición como una operación totalmente
+                        independiente del resto.</li>
+                    <li>Cada objeto al que se aplican los verbos del protocolo está identificado a través de la
+                        información de situación del final de la URL.</li>
+                </ul>
+                </p>
+
+                <br>
+                <h5>Estructura de un paquete HTTP de petición y de respuesta</h5>
+                <p>
+                    Las peticiones y respuestas HTTP, comparten una estructura similar, compuesta de:
+                </p>
+                <ul>
+                    <li>
+                        Una <b>línea de inicio</b> ('start-line' en inglés) describiendo la petición a ser
+                        implementada,
+                        o
+                        su estado, sea de éxito o fracaso. Esta línea de comienzo, es siempre una única línea.
+                    </li>
+                    <li>
+                        Un <b>grupo opcional</b> de cabeceras HTTP, indicando la petición o describiendo el cuerpo
+                        ('body'
+                        en inglés) que se incluye en el mensaje.
+                    </li>
+                    <li>
+                        Una <b>línea vacía</b> ('empty-line' en inglés) indicando toda la meta-información ha sido
+                        enviada.
+                    </li>
+                    <li>
+                        Un <b>campo de cuerpo de mensaje</b> opcional ('body' en inglés) que lleva los datos
+                        asociados
+                        con
+                        la petición (como contenido de un formulario HTML), o los archivos o documentos asociados a
+                        una
+                        respuesta (como una página HTML, o un archivo de audio, vídeo ... ) . La presencia del
+                        cuerpo y
+                        su tamaño es indicada en la línea de inicio y las cabeceras HTTP
+                    </li>
+                </ul>
+
+                <br>
+                <h5>Métodos HTTP y su utilidad</h5>
+                <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para
+                    un recurso determinado.
+                </p>
+                <ul>
+                    <li>
+                        <b>GET:</b> Solicita una representación de un recurso específico. Las peticiones que usan el
+                        método GET sólo deben recuperar datos.
+                    </li>
+                    <li> <b>HEAD:</b> Pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la
+                        respuesta.</li>
+                    <li> <b>POST:</b> Se utiliza para enviar una entidad a un recurso en específico, causando a
+                        menudo un cambio en el estado o efectos secundarios en el servidor.</li>
+                    <li> <b>PUT:</b> Reemplaza todas las representaciones actuales del recurso de destino con la
+                        carga útil de la petición.</li>
+                    <li> <b>DELETE:</b> Borra un recurso en específico.</li>
+                    <li> <b>CONNECT:</b> Establece un túnel hacia el servidor identificado por el recurso.</li>
+                    <li> <b>OPTIONS:</b> Es utilizado para describir las opciones de comunicación para el recurso de
+                        destino.</li>
+                    <li> <b>TRACE:</b> Realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta
+                        al recurso de destino.</li>
+                    <li> <b>PATH:</b> Utilizado para aplicar modificaciones parciales a un recurso.</li>
+                </ul>
+                <hr>
+                <!---->
+                <h3>Proceso de carga de una página web</h3>
+                <p>
+                    El primer paso es introducir una dirección en la barra de búsqueda de un navegador (la URL).
+                    Para que los datos lleguen desde el servidor al navegador se utiliza el protocolo
+                    de transferencia de hipertexto o Hypertext Transfer Protocol (HTTP) y su variante encriptada
+                    HTTPS, protocolo seguro de transferencia de hipertexto o Hypertext Transfer Protocol Secure.
+                    Para que un navegador pueda acceder a los contenidos de una web, la URL debe convertirse
+                    en una dirección IP. De esto se encargan los llamados servidores DNS, responsables de la
+                    gestión del sistema de nombres de dominio o DNS (Domain Name Server).
+                    Cuando introducimos una dirección en la barra de búsqueda de un navegador, este dirige su URL a
+                    un router, el cual se encarga de buscar la dirección IP correspondiente para esta página web.
+                    La información necesaria se la proporciona un servidor DNS, un servidor web especial responsable
+                    de la resolución de nombres.
+                </p>
+                <p>
+                    Una vez el router ha encontrado la dirección IP de la página solicitada, pide en el servidor web
+                    correspondiente los datos necesarios para mostrar la página en el navegador. Esta consulta tiene
+                    lugar mediante HTTP en la forma de un paquete de datos que contiene toda la información que el
+                    servidor web necesita para entregar los datos de la página web.
+                    Además de la dirección IP de la página web solicitada, el router comunica su propia dirección IP
+                    como emisor y proporciona información sobre el sistema operativo, el navegador y el tipo de
+                    dispositivo que ha de mostrar la página web. El servidor web evalúa esta información y emite un
+                    código de estado HTTP. Si la solicitud tiene éxito, el servidor envía un paquete de datos al
+                    navegador con toda la información necesaria para la visualización de la página web. Si, por el
+                    contrario, el servidor no encuentra la página web en la dirección solicitada, o bien emite un
+                    código de error 404 (página web no encontrada) o redirige a la nueva dirección si la conoce.
+                </p>
+
+                <hr>
+                <!---->
+                <h3>TCP: concepto, utilidad, puertos bien conocidos, estructura de los segmentos TCP, sockets</h3>
+
+                <p>El Protocolo de Control de Transmisión, TCP, se utiliza para garantizar que los datos se entregan
+                    al destino sin errores
+                    y en el mismo orden en que son transmitidos. Además, proporciona un mecanismo para distinguir
+                    aplicaciones dentro de la misma
+                    máquina, a través de los puertos.
+                </p>
+
+                <p><b>Puertos bien conocidos:</b> Son puertos específicos utilizados por el sistema o por procesos
+                    con privilegios. Los asigna la Internet Assigned Numbers Authority (IANA).
+                    Van del 0 al 1023, por ejemplo: SSH (22), HTTP (80), FTP (21).
+                </p>
+
+                <p>Los <b>segmentos TCP</b> son paquetes de bits que constituyen las unidades de datos del protocolo
+                    TCP.
+                </p>
+
+                <p>TCP se ocupa de convertir el flujo de datos saliente de una aplicación de forma que se pueda
+                    entregar como fragmentos. La aplicación traslada los datos a TCP y éste sitúa los datos en un
+                    buffer de envío. TCP toma un trozo de esos datos y le añade una cabecera, creando de esta forma
+                    un segmento. Este segmento es trasladado a IP para que lo entregue como un único datagrama.
+                </p>
+
+                <p>Los <b>sockets</b> constituyen el mecanismo para la entrega de paqeutes de datos provenientes de
+                    la tarjeta de rede
+                    a los procesos apropiados. Está definido por un par de direcciones IP (local y remota), un
+                    protocolo de transporte y un par de direcciones de puerto (local y remoto).
+                </p>
+                <hr>
+                <!---->
+                <h3>IP: concepto, utilidad, direcciones IP, enrutamiento, estructura de los datagramas IP)</h3>
+
+                <p>La dirección IP es un conjunto de números que identifica, de manera lógica y jerárquica, a una
+                    interfaz en la red (elemento de comunicación/conexión) de un dispositivo (computadora, laptop,
+                    teléfono inteligente) que utilice el protocolo (Internet Protocol) o, que corresponde al nivel
+                    de red del modelo TCP/IP.
+                </p>
+
+                <p>Los dispositivos se conectan entre sí mediante sus respectivas direcciones IP, pero para los
+                    usuarios es más
+                    sencillo recordar un nombre que un conjunto de números, por lo que se utiliza un <b>nombre de
+                        dominio</b>.
+                </p>
+
+                <p>Una tabla de enrutamiento es un conjunto de reglas que sirven para determinar qué camino deben
+                    seguir los paquetes de datos. Todo esto a través de toda red que trabaje con el protocolo IP.
+                </p>
+
+                <p>
+                    Los componentes de una tabla de enrutamiento son:
+                <ul>
+                    <li><b>Red de destino: </b>corresponde a la red de destino donde deberá ir el paquete de datos.
+                    </li>
+                    <li><b>Máscara de subred: </b>es la que se utiliza para definir la máscara de subred de la red a
+                        la que debemos ir.</li>
+                    <li><b>Siguiente salto: </b>dirección de IP de la interfaz de red por donde viajará el paquete
+                        de datos, para seguir con su camino hasta el final.</li>
+                    <li><b>Interfaz de salida: </b>es la interfaz de red por donde deben salir los paquetes, para
+                        posteriormente llegar finalmente al destino.</li>
+                    <li><b>Métricas</b></li>
+                </ul>
+                </p>
+
+                <p>Un <b>datagrama</b> es un paquete de datos que constituye el mínimo bloque de información en una
+                    red de
+                    conmutación por datagramas, la cual es uno de los dos tipos de protocolo de comunicación por
+                    conmutación de paquetes usados para encaminar por rutas diversas dichas unidades de información
+                    entre nodos de una red, por lo que se dice que no está orientado a conexión.
+                </p>
+                <p>
+                    Los datagramas se componen de:
+                <ul>
+                    <li>una cabecera con información de control</li>
+                    <li>los propios datos que se desean transmitir</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>URL: concepto, estructura, parámetros</h3>
+
+                <p>Un URL, o localizador de recursos uniforme, es un identificador de recursos uniforme (Uniform
+                    Resource Identifier, URI)
+                    cuyos recursos referidos pueden cambiar, esto es, la dirección puede apuntar a recursos
+                    variables en el tiempo.
+                </p>
+
+                <p>Están formados por una secuencia de caracteres de acuerdo con un formato
+                    modélico y estándar que designa recursos en una red como, por ejemplo, Internet.
+                    El formato general de una URL es:
+                <pre>:esquema://máquina/directorio/archivo</pre>
+                </p>
+
+                <p>Un <b>parámetro</b> de URL es una propiedad que agrega un creador a la configuración de un cuadro
+                    de
+                    mando y que se puede usar para desencadenar acciones.
+                    Un parámetro de URL es un par nombre-valor. En cada parámetro, el nombre y el valor se separan
+                    por el signo igual (=). Durante el tiempo de ejecución, puede agregar un parámetro al final de
+                    la URL del cuadro de mando con un signo de interrogación (?) seguido del parámetro.
+                </p>
+                <hr>
+                <!---->
+                <h3>Aplicaciones cliente-servidor vs P2P</h3>
+
+                <p>
+                    <b>Cliente-Servidor</b>: es un modelo de aplicación distribuida en el que las tareas se reparten
+                    entre
+                    los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados
+                    clientes. Un cliente realiza peticiones a otro programa, el servidor, quien le da respuesta.
+                </p>
+
+                <p>
+                    <b>P2P</b>: es una red de computadoras en la que todos o algunos aspectos funcionan sin clientes
+                    ni
+                    servidores fijos, sino una serie de nodos que se comportan como iguales entre sí. Es decir,
+                    actúan simultáneamente como clientes y servidores respecto a los demás nodos de la red.
+                </p>
+                <hr>
+                <!---->
+                <h3>Cookies: definición y utilidad. ¿Cómo establecer una sesión utilizándolas?</h3>
+                <p>
+                    Una <b>cookie</b> es un archivo de pequeño tamaño enviado por un sitio web y almacenado en el
+                    navegador
+                    del usuario, de manera que el sitio web puede consultar la actividad previa del navegador. Así,
+                    es posible identificar al usuario que visita un sitio web y llevar un registro de su actividad
+                    en el mismo.
+                </p>
+                <p>
+                    Una <b>sesión</b> es un mecanismo de programación de las tecnologías de web scripting que
+                    permite conservar información sobre un usuario al pasar de una página a otra. A diferencia de
+                    una
+                    cookie, los datos asociados a una sesión se almacenan en el servidor y nunca en el cliente.
+                    En la mayoría de las tecnologías de web scripting, las sesiones se implementan mediante una
+                    cookie que almacena un valor que identifica al usuario en el servidor web cada vez que pasa de
+                    una página web a otra. En el servidor web están almacenados todos los datos de la sesión y se
+                    accede a ellos cada vez que se pasa de página gracias al identificador almacenado en la cookie.
+                </p>
+                <hr>
+                <!---->
+                <h3>¿Qué son los tipos MIME y para qué sirven?</h3>
+                <p>
+                    Son la manera estándar de mandar contenido a través de la red. Los tipos MIME especifican tipos
+                    de datos, como por ejemplo texto, imagen, audio, etc. que los archivos contienen.
+                </p>
+
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="proyectos_web">
+                <h1 class="display-4">PROYECTOS WEB</h1>
+                <hr>
+                <!---->
+                <h3>Requerimientos, especificaciones de una aplicación</h3>
+                <p>
+                    A la hora de realizar un una aplicación web es muy importante realizar una serie de documentos
+                    en los que se describan los requerimientos y especificaciones de lo que se desea conseguir,
+                    tanto a nivel funcional, como en lo referido al diseño. De esta forma, una vez se haya
+                    finalizado el proyecto, se podrá comprobar que se cumplen todos los objetivos marcados
+                    inicialmente, lo cual significaría haber conseguido un software de calidad.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Metodologías del desarrollo del software</h3>
+                <ul>
+                    <li><b>Modelo en cascada</b>:
+                        Es el enfoque metodológico que ordena rigurosamente las etapas del proceso para el
+                        desarrollo de software, de tal forma que el inicio de cada etapa debe esperar a la
+                        finalización de la etapa anterior.
+                        <p>Sus fases son:
+                        <ul>
+                            <li>Análisis de requisitos del software</li>
+                            <li>Diseño del sistema</li>
+                            <li>Diseño del programa</li>
+                            <li>Codificación</li>
+                            <li>Pruebas y error</li>
+                            <li>Validación y Verificación del producto de software</li>
+                            <li>Mantenimiento</li>
+                        </ul>
+                        </p>
+                    </li>
+                    <li><b>Modelo en espiral</b>: Es una combinación entre el modelo lineal o de cascada y el modelo
+                        iterativo. consiste en seguir ciclos crecientes de cuatro fases cada uno, que se van
+                        realizando siguiendo una forma de espiral. En cada ciclo se pasa por dichas fases bien
+                        definidas, como en el modelo de cascada, pero con capacidad de evolucionar su complejidad
+                        con cada ciclo.
+                        <p>Sus fases son:
+                        <ul>
+                            <li>Planificación</li>
+                            <li>Análisis de Riesgo</li>
+                            <li>Implementación</li>
+                            <li>Evaluación</li>
+                        </ul>
+                        </p>
+                    </li>
+                    <li><b>Modelos basados en prototipos</b>: Es un estilo de programación orientada a objetos en el
+                        cual los objetos no son creados mediante la instanciación de clases sino mediante la
+                        clonación de otros objetos o mediante la escritura de código por parte del programador. De
+                        esta forma los objetos ya existentes pueden servir de prototipos para los que el programador
+                        necesite crear.
+                        <p>Sus etapas son:
+                        <ul>
+                            <li>Recolección y refinamiento de requisitos</li>
+                            <li>Modelado, diseño rápido</li>
+                            <li>Construcción del Prototipo</li>
+                            <li>Desarrollo, evaluación del prototipo por el cliente</li>
+                            <li>Refinamiento del prototipo</li>
+                            <li>Producto de Ingeniería</li>
+                        </ul>
+                        </p>
+                    </li>
+                    <li><b>Metodologías ágiles</b>:
+                        <ul>
+                            <li><b>Métodos Kanban</b>: Se trata de un sistema de gestión y control de inventario y
+                                flujo de piezas que utiliza pequeñas hojas de papel autoadhesivo, conocidas como
+                                post-its. El sistema Kanban se basa, principalmente, en referencias visuales. Los
+                                papeles coloridos son colocados en productos, en los espacios de la empresa, murales
+                                e incluso en las computadoras que tienen un programa electrónico del Kanban.</li>
+                            <li><b>Extreme programming</b>: Su objetivo es el desarrollo y gestión de proyectos con
+                                eficacia, flexibilidad y control.</li>
+                            <li><b>Scrum</b>: Es un proceso en el que se aplican de manera regular un conjunto de
+                                buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor
+                                resultado posible de un proyecto.
+                                <p>
+                                    <b>Sprint</b> es un intervalo prefijado de tiempo (no inferior a una semana ni
+                                    superior a un mes) durante el cual se crea un incremento de producto "Hecho o
+                                    Terminado" utilizable, potencialmente entregable.
+                                </p>
+                                <p>El <b>diagrama burndown</b> es una representación gráfica del trabajo por hacer
+                                    en
+                                    un proyecto en el tiempo. </p>
+                                <p>Los tres principales artefactos o herramientas Scrum son: el Product Backlog,
+                                    Sprint Backlog y el Incremento.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <!---->
+                <h3>Integración continua: concepto, servidores</h3>
+                <p>
+                    Es una práctica de ingeniería de software que consiste en hacer integraciones automáticas de un
+                    proyecto lo más a menudo posible para así poder detectar fallos cuanto antes.
+                </p>
+                <p>
+                <ul>
+                    <li><b>Pruebas unitarias</b>: Es una forma de comprobar el correcto funcionamiento de una unidad
+                        de código. Para realizar estas pruebas se utilizan <b>mocks</b>, que son objetos falsos que
+                        simulan el comportamiento de objetos reales.</li>
+                    <li><b>Pruebas de integración</b>: Se realizan tras las pruebas unitarias, para comprobar que
+                        todos los elementos unitarios que componen el software funcionan de manera global. Comprueba
+                        la comunicación entre los componentes de la aplicación.</li>
+                    <li><b>TDD</b>: El Desarrollo dirigido por Tests es una metodología de desarrollo cuyo objetivo
+                        es crear primero las pruebas y luego escribir el software.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>Documentación de programas: concepto, tipos, herramientas</h3>
+                <p>La documentación sobre una aplicación tiene como objeto asegurar que tanto el desarrollador como
+                    el cliente tienen la misma idea sobre las funcionalidades del sistema. Es muy importante, ya que
+                    si no se especifican las características y requerimientos, el software puede no ser aceptado por
+                    el cliente.</p>
+                <p>
+                    Los pasos que se siguen para documentar un programa son los siguientes:
+                <ul>
+                    <li>Análisis de factibilidad </li>
+                    <li>Análisis de requerimientos </li>
+                    <li>Diseño del sistema </li>
+                    <li>Implementación </li>
+                    <li>Validación y pruebas </li>
+                    <li>Explotación </li>
+                    <li>Mantenimiento</li>
+                </ul>
+                </p>
+                <p>
+                    Algunas herramientas de documentación técnica son: Huddle, Read the Docs, Javadoc, Markdown o
+                    Swagger.
+                </p>
+                <hr>
+                <!---->
+                <h3>Despliegue</h3>
+                <p>
+                <ul>
+                    <li><b>Despliegue en producción y en test</b>: El despliegue en producción requiere la
+                        instalación y configuración de todos los elementos que vayan a ser necesarios para que los
+                        componentes funcionen, tanto software como hardware. El despliegue en test es útil para
+                        corregir y prevenir problemas.</li>
+                    <li><b>Despliegue automatizado</b>: En este se incluyen mecanismos y herramientas necesarias
+                        para realizar el despliegue de manera automática, sin que intervenga una persona.</li>
+                    <li><b>Despliegue en la nube</b>: Se realiza en una nube, ya sea pública, privada o híbrida, de
+                        forma que los recursos no se encuentran en local, sino en un servidor remoto.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>Contenedores</h3>
+                <p>Un contenedor es un paquete de software estándar que agrupa el código de una aplicación
+                    con las bibliotecas y los archivos de configuración asociados, junto con las dependencias
+                    necesarias para que la aplicación se ejecute. Esto permite a los desarrolladores y profesionales
+                    de TI implementar aplicaciones sin problemas en todos los entornos.
+                </p>
+                <hr>
+                <!---->
+                <h3>Gestores de versiones: concepto, herramientas y características </h3>
+                <p>El control de versiones hace referencia a la gestión de los cambios que se realizan en un
+                    proyecto.</p>
+                <p>
+                    Un sistema de control de versiones debe proporcionar:
+                <ul>
+                    <li>Mecanismo de almacenamiento de los elementos que deba gestionar (ej. archivos de texto)</li>
+                    <li>Posibilidad de realizar cambios sobre los elementos almacenados</li>
+                    <li>Registro histórico de las acciones realizadas con cada elemento o conjunto de elementos
+                        (normalmente pudiendo volver o extraer un estado anterior del producto).</li>
+                </ul>
+                </p>
+                <p>
+                    Algunas herramientas de gestión de versiones son Git, CVS, Apache Subversion (SVN), Mercurial o
+                    Monotone.
+                </p>
+                <hr>
+                <!---->
+                <h3>Repositorio de código: tipos, herramientas</h3>
+                <p>
+                    Un repositorio de código es un lugar donde el código de una aplicación, de un programa
+                    cualquiera está almacenado y desde donde se puede distribuir.
+                    Estos repositorios están almacenados en servidores, no en ordenadores locales o en un disco duro
+                    que tengamos.
+                </p>
+                <p>
+                    Algunas herramientas son GitHub, GitLab, SourceForge, GitKraken o Apache Allura.
+                </p>
+                <hr>
+                <!---->
+                <h3>Evaluación de la calidad del software: concepto, herramientas disponibles</h3>
+                <p>Cuando se cumplen los requerimientos y estándares de desarrollo establecidos en la primera fase
+                    del planteamiento de un proyecto
+                    con el software ya terminado, se habla de un software de calidad.
+                </p>
+                <p>
+                    Cuando se examina un elemento sus características mensurables se pueden encontrar dos tipos de
+                    calidad:
+                <ul>
+                    <li><b>Calidad de diseño</b>: se refiere a las características que los diseñadores especifican
+                        para un elemento.</li>
+                    <li><b>Calidad de concordancia</b>: grado en el que las especificaciones de diseño se aplican
+                        durante la fabricación.</li>
+                </ul>
+                </p>
+                <p>
+                    Algunas herramientas para la evaluación de la calidad son PMD, Check Style, SONAR, Google
+                    CodePro Analytix o Simian.
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="infraestructura">
+                <h1 class="display-4">INFRAESTRUCTURA</h1>
+                <hr>
+
+                <!---->
+                <h3>IDES</h3>
+                <p>Un IDE (Entorno de Desarrollo Integrado) es un programa que nos ayuda en la
+                    tarea de programar de modo que facilita enormemente el proceso de desarrollo y depuración de un
+                    software. Para ello cuenta con una serie de herramientas como el editor, compilador, consola y
+                    depurador e incluso funciones de autocompletado de código y resaltado de sintaxis inteligente.
+                </p>
+                <ul>
+                    <li> Java:
+                        <ul>
+                            <li><b>NetBeans</b>: IDE de código abierto. Permite desarrollar las aplicaciones como
+                                módulos, lo cual permite
+                                reutilizar el código para diferentes proyectos.</li>
+                            <li><b>Eclipse</b>: Es un IDE muy popular de código abierto y ampliamente extendido. Es
+                                multiplataforma (Windows, Linux y Mac).
+                                Su mayor punto fuerte reside en su asistente y capacidad para depurar errores. </li>
+                            <li><b>IntelliJ Idea</b>: Cuenta con dos versiones: <i>Community Edition</i>, de libre
+                                descarga, y <i>Ultimate Edition</i>, de pago. </li>
+                        </ul>
+                    </li>
+                    <li>JavaScript:
+                        <ul>
+                            <li><b>Visual Studio Code</b>: IDE de código abierto, diseñado para crear aplicaciones
+                                web y aplicaciones para la nube. Permite editar, depurar y modificar el código.</li>
+                            <li><b>Sublime</b>: Soporta un gran número de lenguajes (C, C++, Goovy, HTML, Java, SQL,
+                                Ruby, JavasScript...). Dispone de muchas opciones
+                                de personalización, además de herramientas para edición de código y automatización
+                                de tareas.</li>
+                            <li><b>Atom</b>: Editor que permite una gran personalización del entorno de trabajo.
+                            </li>
+                            <li><b>WebStorm</b>: Tiene inspecciones integradas que informan de cualquier problema
+                                mientras se escribe el código y sugiere posibles correcciones.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <!---->
+                <h3>Navegadores</h3>
+                <p>Un navegador es un programa informático que permite al usuario ingresar a las páginas Web que
+                    desee, siempre que conozca la dirección URL en donde se encuentra.</p>
+                <p>
+                <ul>
+                    <li><b>Chrome</b>: Navegador que se puede descargar gratis y destaca por su agilidad.</li>
+                    <li><b>Firefox</b>: De los más populares, fue el primero en contar con el diseño de pestañas.
+                    </li>
+                    <li><b>Edge</b>: Basado en Chromium, aparece como sustituto de Internet Explorer en 2020.</li>
+                    <li><b>Safari</b>: Navegador utilizado en los productos de Apple.</li>
+                    <li><b>Opera </b>: Es ideal para smartphones y tablets, por su poco tamaño y baja demanda de
+                        recursos.</li>
+                </ul>
+                </p>
+                <p>Soporte:
+                <ul>
+                    <li><a href="https://caniuse.com/"><b>Can I use</b></a>: Se centra en las implementaciones de
+                        HTML5, CSS3, las nuevas funcionalidades de Javascript y SVG. En el inicio de la página
+                        accedemos a unos índices que contienen las distintas funcionalidades de cada una de estas
+                        tecnologías, y al hacer clic en la que nos interesa llegamos a una tabla que nos indica el
+                        grado de soporte que tiene en cada navegador y sus diferentes versiones</li>
+                    <li><a href="https://kangax.github.io/compat-table/es6/"><b>Kangax</b></a>: Tests que pueden
+                        servir para validar la compatibilidad con cada característica de cada versión.</li>
+                </ul>
+                </p>
+
+                <br>
+                <hr><br>
+
+            </div>
+            <hr>
+
+            <div id="diseño_aplicaciones_web">
+                <h1 class="display-4">DISEÑO DE APLICACIONES WEB</h1>
+                <hr>
+
+                <!---->
+                <h3>API de Servidor</h3>
+                <p>API es el acrónimo utilizado para Application Programming Interface, o en español, Interfaz de
+                    Programación de Aplicaciones. Se trata de una interfaz que permite la comunicación entre dos
+                    sistemas o plataformas diferentes, lo que permite agregar diversas funciones a sitios web y
+                    aplicaciones.</p>
+                <hr>
+
+                <!---->
+                <h3>Diagrama Entidad-Relación</h3>
+                <p>También conocido como modelo entidad relación o ERD, es un tipo de diagrama de flujo que ilustra
+                    cómo las "entidades" se relacionan entre sí dentro de un sistema. Los diagramas ER se usan a
+                    menudo para diseñar o depurar bases de datos relacionales.</p>
+                <hr>
+
+                <!---->
+                <h3>Normalización: primera, segunda y tercera forma normales</h3>
+                <p>La normalización de bases de datos es un proceso que consiste en designar y aplicar una serie de
+                    reglas a las relaciones obtenidas tras el paso del modelo entidad-relación al modelo relacional.
+                    Con objeto de minimizar la redundancia de datos, facilitando su gestión posterior.</p>
+                <p>
+                <h6>Primera Forma Normal</h6>
+                Las reglas de la Primera Forma Normal son las siguientes:
+                <ul>
+                    <li>Todos los atributos son atómicos.</li>
+                    <li>Cada tabla debe contener una clave primaria única.</li>
+                    <li>La clave primaria no contiene atributos nulos.</li>
+                    <li>No debe existir variación en el número de columnas.</li>
+                    <li>Debe existir independencia del orden de filas y columnas.</li>
+                </ul>
+                </p>
+                <p>
+                <h6>Segunda Forma Normal</h6>
+                Una tabla está en 2FN si además de estar en 1FN cumple que los atributos no clave depende de TODA la
+                clave principal.
+                </p>
+                <p>
+                <h6>Tercera Forma Normal</h6>
+                Una tabla está en 3FN si además de estar en 2FN no existe ninguna dependencia transitiva entre los
+                atributos que no son clave.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Restricciones de integridad </h3>
+                <p>Una restricción de integridad representa una propiedad del mundo real del cual la base de datos
+                    es una representación.</p>
+                <p>Las restricciones de integridad se especifican en el esquema de la base de datos y se deben
+                    cumplir en cualquier extensión del mismo</p>
+                <p>En el modelo relacional se contemplan cuatro tipos de restricciones:
+                <ul>
+                    <li>Restricción de unicidad</li>
+                    <li>Restricción de valor no nulo</li>
+                    <li>Restricción de clave primaria</li>
+                    <li>Restricción de integridad referencial</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>BD vs SGBD - SGBDR</h3>
+                <p>
+                    Un gestor de base de datos o SGBD es una colección de programas cuyo objetivo es servir de
+                    interfaz entre la base de datos, el usuario y las aplicaciones.
+                </p>
+                <p>
+                    Existe un tipo de software exclusivamente dedicado a tratar con bases de datos relacionales,
+                    conocido como Sistema de Gestión de Bases de Datos Relacionales (SGBDR).
+                </p>
+                <hr>
+
+                <!---->
+                <h3>DML - DDL: SQL</h3>
+                <p>
+                    <b>SQL</b> es un lenguaje de dominio específico utilizado en programación, diseñado para
+                    administrar, y recuperar información de sistemas de gestión de bases de datos relacionales
+                </p>
+                <p>
+                    El <b>DDL</b>, Data Manipulation Language, es un lenguaje proporcionado por el sistema de
+                    gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o
+                    manipulación de los datos, organizados por el modelo de datos adecuado.
+                </p>
+                <p>
+                    El <b>DDL</b>, Data Definition Language, es el lenguaje encargado de la modificación de la
+                    estructura de los objetos de la base de datos. Incluye órdenes para modificar, borrar o definir
+                    las tablas en las que se almacenan los datos de la base de datos. Existen cuatro operaciones
+                    básicas: CREATE, ALTER, DROP y TRUNCATE.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>noSQL: concepto y herramientas</h3>
+                <p>El termino <b>NoSQL</b> se refiere a la denominación en inglés Not Only SQL. Es decir, el
+                    lenguaje SQL no es el principal, aunque puede incluirse. Por ello, los datos almacenados no
+                    requieren estructuras fijas como tablas, normalmente no soportan operaciones JOIN, ni garantizan
+                    completamente ACID (atomicidad, consistencia, aislamiento y durabilidad) y habitualmente escalan
+                    bien horizontalmente.</p>
+                <p>
+                    Algunas bases de datos noSQL son MongoDB, OrientDB, Couchbase o PostgreSQL.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>UML: Diagrama de procesos</h3>
+                <p>
+                    El <i>Lenguaje Unificado de Modelado</i> incluye varios subconjuntos de diagramas, incluidos los
+                    diagramas de estructuras, los diagramas de interacción y los diagramas de comportamiento.
+                </p>
+                <p>
+                    Es útil para representar visualmente las reglas de creación, estructura ycomportamiento de un
+                    grupo relacionado de objetos y procesos.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Mockups de cliente, wireframers , prototipado</h3>
+                <p>
+                <ul>
+                    <li>Un <b>mockup</b> o maqueta es un diseño digital de una web o aplicación. Pueden ser
+                        plantillas producidas con programas de edición de imágenes sin funcionalidad o diseños que
+                        se crean con
+                        herramientas especiales de maquetas y donde los elementos de control ya están vinculados con
+                        funciones simples.</li>
+                    <li>Un <b>wireframe</b> es un boceto donde se representa visualmente, de una
+                        forma muy sencilla y esquemática, la estructura de una página web. Su objetivo es
+                        definir el contenido y la posición de los diversos bloques de una web.</li>
+                    <li>Un <b>prototipo web</b> consiste en un boceto, navegable o no, que permiten crear una
+                        referencia visual de la estructura de una página web, definiendo al detalle el contenido y
+                        su
+                        distribución visual, organizando así la información a nivel de página</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Diagrama de navegación de un sitio web</h3>
+                <p>Se trata de un gráfico o esquema en forma de árbol que representa la estructura o arquitectura
+                    general de un sistema. Es el primer paso para distribuir, organizar y jerarquizar el contenido
+                    que se verá en la pantalla de un producto o servicio digital.
+                </p>
+
+                <br>
+                <hr><br>
+
+            </div>
+
+            <div id="desarrollo_aplicaciones_web">
+                <h1 class="display-4">DESARROLLO DE APLICACIONES WEB</h1>
+                <hr>
+                <!---->
+                <h3>Lenguajes de marcas</h3>
+                <p>
+                <ul>
+                    <li>
+                        <b>HTML</b>: El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para
+                        estructurar
+                        y desplegar una página web y sus contenidos.
+                        <p>
+                            Es un lenguaje formado por elementos que permiten estructurar y dar significado a las
+                            partes del documento HTML, estos elementos a su vez están conformados por contenido,
+                            etiquetas y atributos.
+                            Las <i>etiquetas</i> sirven para delimitar el inicio y el fin de un elemento.
+                            El contenido de un elemento pueden ser caracteres, comentarios u otro elemento
+                            delimitado dentro de las etiquetas de inicio y de cierre.
+                        </p>
+                    </li>
+                    <li>
+                        <b>CSS</b>: Se trata de "Hojas de estilo en cascada" (Cascading Style Sheets) significan,
+                        que permiten aplicar estilos (colores, formas, márgenes, etc.) a uno o varios documentos
+                        (generalmente documentos HTML, páginas webs) de forma masiva.
+                        Se denomina <i>en cascada</i> porque se aplican de arriba a abajo.
+                    </li>
+                    <li>
+                        <b>XML</b>: Acrónimo de <i>Extensible Markup Language</i>. Se trata de un lenguaje de
+                        marcado que define un conjunto de reglas para la codificación de documentos. Un archivo XML
+                        se divide en dos partes: prolog y body. La parte prolog consiste en metadatos
+                        administrativos, como declaración XML, instrucción de procesamiento opcional, declaración de
+                        tipo de documento y comentarios. La parte del body se compone de dos partes: estructural y
+                        de contenido (presente en los textos simples).
+                    </li>
+                    <li>
+                        <b>JSON</b>: Acrónimo de <i>JavaScript Object Notation</i>. Es un formato de texto sencillo
+                        para el intercambio de datos. Se trata de un subconjunto de la notación literal de objetos
+                        de JavaScript.
+                    </li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>CSS</h3>
+                <ul>
+                    <li>
+                        <b>Frameworks de CSS</b>: Se trata de bibliotecas de estilos genéricos que
+                        pueden ser usadas para implementar diseños web.
+                        <ul>
+                            <li><b>Bootstrap</b>: biblioteca multiplataforma o conjunto de herramientas de código
+                                abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con
+                                tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de
+                                diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales.</li>
+                            <li><b>Materialize</b>: permite crear sitios y aplicaciones web con los principios de
+                                Material Design. Puede ser usado en dos formas, Materialize y Sass, dependiendo de
+                                las preferencias y la experiencia se puede seleccionar cualquiera de las dos
+                                versiones.
+                            </li>
+                            <li><b>Foundation</b>:proporciona una cuadrícula responsive e incluye componentes de
+                                interfaz de usuario HTML y CSS, plantillas, y fragmentos de código, incluyendo
+                                tipografía, formularios, botones, barras de navegación y otros componentes de
+                                interfaz usuario, así como extensiones de JavaScript opcionales.</li>
+                            <li><b>Bulma</b>: basado en Flexbox. Es altamente personalizable y para nada complejo.
+                                Permite crear grids, barras de navegación, formularios y botones de forma sencilla.
+                            </li>
+                            <li><b>Tailwind</b>: permite crear rápidamente interfaces de usuario personalizadas.
+                                Difiere de otros frameworks en los siguientes puntos:
+                                <ul>
+                                    <li>No tiene un tema predeterminado y no hay componentes de IU incorporados</li>
+                                    <li>No impone decisiones de diseño</li>
+                                    <li>No tiene widgets prediseñados</li>
+                                </ul>
+                            </li>
+                            <li><b>Semantic UI</b>: se trata de un framework muy sencillo a la hora de ser
+                                utilizado, pero que posee menor compatibilidad con exploradores, no es responsivo y
+                                dispone de pocas actualizaciones.
+                            </li>
+                            <li><b>Ulkit</b>: incluye una gran cantidad de componentes para personalizar las paginas
+                                webs e incluye archivos CSS base para normalizar el estilo de los elementos, CSS
+                                para
+                                impresión y plantilla grid basada en el estándar 960 que nos ayudara a crear paginas
+                                web responsivas.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Precompiladores de CSS:
+                        <ul>
+                            <li><b>Sass</b>: Es un lenguaje de script que es traducido a CSS. SassScript es el
+                                lenguaje de script en sí mismo. Su principal ventaja es la posibilidad de convertir
+                                los CSS en algo
+                                dinámico.
+                            </li>
+                            <li><b>Less</b>: Se trata de una ampliación a las hojas de estilo CSS, pero a
+                                diferencia de estás funciona como un lenguaje de programación, permitiendo el uso de
+                                variables, funciones, operaciones aritmeticas, entre otras, para acelerar y
+                                enriquecer los estilos en un sitio web.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <!---->
+
+                <h3>Expresiones regulares</h3>
+                <p>También conocidas como regex o regExp, se trata de secuencias de caracteres que conforman un
+                    patrón de búsqueda. Se utilizan para encontrar una determinada combinación de caracteres dentro
+                    de una cadena de texto.
+                </p>
+
+                <p>
+                <table class="table table-bordered table-striped text-center">
+                    <tr>
+                        <th colspan="2"> Clases de caracteres -Rangers-</th>
+                    </tr>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <[abc] /td>
+                        <td>Encuentra uno de los caracteres entre corchetes</td>
+                    </tr>
+                    <tr>
+                        <td>[^abc]</td>
+                        <td>Encuentra cualquier carácter que NO esté entre corchetes</td>
+                    </tr>
+                    <tr>
+                        <td>[0-9]</td>
+                        <td>Encuentra un dígito de 0 a 9</td>
+                    </tr>
+                    <tr>
+                        <td>[^0-9]</td>
+                        <td>Encuentra cualquier carácter que NO sea un dígito de 0 a 9</td>
+                    </tr>
+                    <tr>
+                        <td>[A-Z]</td>
+                        <td>Encuentra cualquier carácter de
+                            A mayuscula a Z mayuscula</td>
+                    </tr>
+                    <tr>
+                        <td>[a-z]</td>
+                        <td>Encuentra cualquier carácter de
+                            a minuscula a z minuscula</td>
+                    </tr>
+                    <tr>
+                        <td>[A-z]</td>
+                        <td>Encuentra cualquier carácter de
+                            A mayuscula a z minuscula</td>
+                    </tr>
+                    <tr>
+                        <td>[adgk]</td>
+                        <td>Encuentra uno de los caracteres entre corchetes</td>
+                    </tr>
+                    <tr>
+                        <td>[^adgk]</td>
+                        <td>Encuentra cualquier carácter que NO esté entre corchetes</td>
+                    </tr>
+                    <tr>
+                        <td>(a|b)</td>
+                        <td>a o b</td>
+                    </tr>
+                    <tr>
+                        <td>(...)</td>
+                        <td>Se utilizan para agrupar partes de una expresión</td>
+                    </tr>
+                </table>
+
+                <br>
+                <h6>RegExp útiles:</h6>
+                <ul>
+                    <li><b>Contraseñas válidas</b>:
+                        ^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$</li>
+                    <li><b>Validar dirección de email</b>: /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/</li>
+                    <li><b>Quitar espacios</b>: ^[ s]+|[ s]+$</li>
+                    <li><b>Validar fecha en formato dd/mm/YYYY</b>:
+                        ^(?:(?:31(/|-|.)(?:0?[13578]|1[02]))1|(?:(?:29|30)(/|-|.)(?:0?[1,3-9]|1[0-2])2))(?:(?:1[6-9]|[2-9]d)?d{2})$|^(?:29(/|-|.)0?23(?:(?:(?:1[6-9]|[2-9]d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1d|2[0-8])(/|-|.)(?:(?:0?[1-9])|(?:1[0-2]))4(?:(?:1[6-9]|[2-9]d)?d{2})$
+                    </li>
+                    <li><b>Validar nombre de usuario de Twitter</b>: /@([A-Za-z0-9_]{1,15})/</li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Links para aprender expresiones regulares:</h6>
+                <ul>
+                    <li><a href="https://ihateregex.io/"><b>I Hate Regex</b></a></li>
+                    <li><a
+                            href="https://programacion.net/articulo/aprende_como_crear_expresiones_regulares_en_20_minutos_1445"><b>Aprende
+                                a crear expresiones regulares</b></a></li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Links de herramientas online para construir y validar expresiones regulares:</h6>
+                <ul>
+                    <li><a href="https://regexr.com/"><b>Regexr</b></a></li>
+                    <li><a href="http://www.txt2re.com/"><b>Txt2re</b></a></li>
+                    <li><a href="https://www.regexpal.com/"><b>Regexpal</b></a></li>
+                    <li><a href="https://regexper.com/"><b>Regexper</b></a></li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>JSON</h3>
+                <p>El formato JSON (Javascript Object Notation) es un formato popular para la representación de
+                    estructuras de datos en ficheros de texto que son fáciles de leer y escribir tanto por un ser
+                    humano como por un programa, tanto si está escrito en Javascript como si está escrito en Perl,
+                    PHP, o numerosos otros lenguajes de programación.
+                    Un ejemplo de estructura JSON sería:
+                <pre>
+{
+"Nombre" : "Juan",
+"Edad": 28,
+"Aficiones": ["Música", "Cine", "Tenis"],
+"Residencia": "Madrid"
+}
+                    </pre>
+                </p>
+
+                <p>
+                <h6>Chuletas:</h6>
+                <ul>
+                    <li><b>Llaves ({})</b>: Marcan el inicio y final de una estructura JSON</li>
+                    <li><b>Corchetes ([])</b>: Marcan el inicio y final de una lista</li>
+                    <li><b>Coma (,)</b>: Separa elementos en una estructura o en un listado</li>
+                    <li><b>Comillas ("")</b>: Marcan el inicio y el final de una cadena de texto</li>
+                    <li><b>Dos puntos (:)</b>: Separan clave y valor en cada elemento de la estructura</li>
+                    <li><b>Punto (.)</b>: Separa la parte entera de la decimal en un número</li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Parsers online:</h6>
+                <ul>
+                    <li><a href="http://json.parser.online.fr/"><b>Json Parser Online</b></a></li>
+                    <li><a href="https://jsoneditoronline.org/"><b>Json Editor Online</b></a></li>
+                    <li><a href="https://jsonformatter.org/json-parser"><b>Json Formatter</b></a></li>
+                    <li><a href="https://jsonparseronline.com/"><b>Json Parser Online</b></a></li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Librerías conversoras a JSON de Java</h6>
+                <ul>
+                    <li><b>Google Gson</b>: Biblioteca de código abierto para el lenguaje de programación
+                        Java que permite la serialización y deserialización entre objetos Java y su representación
+                        en notación JSON.</li>
+                    <li><b>Jackson</b>: Herramienta que permite, entre otras cosas, transformar objetos Java
+                        a objetos JSON y viceversa.</li>
+                    <li><b>JSON-Simple</b>: Biblioteca que permite serializar y deserializar
+                        contenido en JSON.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>CDN</h3>
+                <p>
+                    Acrónimo de Content Delivery Network (red de distribución de contenidos).
+
+                    Se trata de un servicio que permite servir contenidos estáticos (imágenes, PDF, vídeos, CSS,
+                    JS, etc.) desde servidores que están más cercanos geográficamente al visitante que entra a la
+                    web.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>AJAX</h3>
+                <p>Acrónimo de Asynchronous JavaScript and XML (JavaScript asíncrono y XML). Es un conjunto de
+                    técnicas de
+                    desarrollo web que permiten que las aplicaciones web funcionen de forma asíncrona, procesando
+                    cualquier solicitud al servidor en segundo plano.</p>
+                <hr>
+
+                <!---->
+                <h3>Páginas estáticas vs páginas dinámicas</h3>
+                <p>
+                    Una <b>Web estática</b> es aquella página enfocada principalmente a mostrar una información
+                    permanente,
+                    donde el usuario se limita a obtener dicha información, sin poder interactuar con ella.
+                </p>
+
+                <p>
+                    Una <b>web dinámica</b> es aquella que contiene aplicaciones dentro de la propia web, otorgando
+                    mayor
+                    interactividad al usuario.
+                </p>
+
+                <p>
+                    La diferencia, por tanto, radica en la capacidad de generar contenido en el momento de la
+                    visualización,
+                    a raíz de una interacción del usuario. Las dinámicas permiten dicha generación, mientras que las
+                    estáticas
+                    tienen un contenido predeterminado.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Tecnología websockets</h3>
+                <p>
+                    Tecnología que proporciona un canal de comunicación bidireccional (cliente-servidor), diseñada
+                    para ser
+                    implementada en navegadores y servidores web y que puede utilizarse por cualquier aplicación
+                    cliente/servidor.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Patrones de desarrollo: MVC, singleton, factory</h3>
+                <p>
+                    Se trata de plantillas que identifican problemas en el sistema y proporciona soluciones
+                    apropiadas a problemas generales a los que se han enfrentado los desarrolladores durante un
+                    largo periodo de tiempo, a través de prueba y error.
+                </p>
+
+                <p>
+                    Las principales categorías son:
+                <ul>
+                    <li>Patrones creacionales</li>
+                    <li>Patrones estructurales</li>
+                    <li>Patrones de comportamiento</li>
+                </ul>
+                </p>
+
+                <p>
+                    <b>MCV</b>: arquitectura del software utilizada para separar el código por sus distintas
+                    responsabilidades, manteniendo distintas capas (modelos, vistas y controladores) que se encargan
+                    de
+                    hacer una tarea muy concreta.
+                </p>
+
+                <p>
+                    <b>Singleton</b>: <i>Instancia única</i> - patrón de diseño que permite restringir la creación
+                    de objetos pertenecientes a una clase o el valor de un tipo a un único objeto.
+                    Su intención consiste en garantizar que una clase solo tenga una instancia y proporcionar un
+                    punto
+                    de acceso global a ella.
+                </p>
+
+                <p>
+                    <b>Factory Method</b>: patrón de diseño que consiste en utilizar una clase constructora
+                    abstracta con unos cuantos métodos definidos y otros abstractos.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Concepto de Callback</h3>
+                <p>
+                    Se trata de una función o una URL, que se ejecuta cuando algún evento sucede o después de que un
+                    código llega al estado deseado. También conocido como función de retorno, el callback crea
+                    reglas dentro de otras funciones, para que sean utilizado en el futuro.
+                    Este actúa asincrónicamente, es decir, no se ejecuta inmediatamente. Así que la aplicación se
+                    mantiene rodando mientras espera el momento correcto para la ejecución.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>CORS</h3>
+                <p>
+                    Intercambio de Recursos de Origen Cruzado (CORS): mecanismo que utiliza cabeceras HTTP
+                    adicionales para permitir que un user agent obtenga permiso para acceder a recursos
+                    seleccionados desde un servidor, en un origen distinto (dominio) al que pertenece.
+                </p>
+
+                <p>
+                    Fuente: <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Access_control_CORS">Control de
+                        acceso HTTP</a>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Ecmascript: historial de versiones</h3>
+                <p>ECMAScript define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes
+                    del estilo de C. Soporta algunas características de la programación orientada a objetos mediante
+                    objetos basados en prototipos y pseudoclases.
+                </p>
+                <p>
+                    Dispone de 10 versiones, siendo la más actual la publicada en enero de 2019.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Polyfill</h3>
+                <p>Fragmento de código (generalmente JavaScript) que se utiliza para proporcionar
+                    una funcionalidad moderna en navegadores antiguos que no lo admiten de forma nativa.</p>
+                <hr>
+                <!---->
+
+                <h3>Procesamiento asíncrono, Callbacks, callback hell, promesas y programación reactiva</h3>
+                <p>
+                    Un <b>procesamiento asíncrono</b> es un proceso o una función que ejecuta una tarea "en segundo
+                    plano" sin que el usuario tenga que esperar a que finalice la tarea.
+                </p>
+
+                <p>
+                    El <b>callback</b> se trata de una función que se ejecuta cuando algún evento sucede o después
+                    de que un código llega al estado deseado. También conocido como <i>función de retorno</i>, el
+                    callback
+                    crea reglas dentro de otras funciones, para que sean utilizado en el futuro.
+                    Este actúa asincrónicamente.
+                </p>
+
+                <p>
+                    El <b>Callback Hell</b> consiste en múltiples Callbacks anidados que provocan que el código se
+                    vuelva difícil de leer y ‘debuggear’; por ello deben ser evitados.
+                </p>
+
+                <p>
+                    Una <b>Promise</b> (promesa en castellano) es un objeto que representa la terminación o el
+                    fracaso de una operación asíncrona.
+                    Esencialmente, una promesa es un objeto devuelto al cuál se adjuntan funciones callback, en
+                    lugar de pasar callbacks a una función. Son una forma de evitar el <i>Callback Hell</i>
+
+                </p>
+                <p>
+                    La <b>programación reactiva</b> es un paradigma enfocado en el trabajo con flujos de datos
+                    finitos o infinitos de manera asíncrona. Su concepción y evolución ha ido ligada a la
+                    publicación del Reactive Manifesto, que establecía las bases de los sistemas reactivos, los
+                    cuales deben ser:
+                <ul>
+                    <li>Responsivos</li>
+                    <li>Resilientes</li>
+                    <li>Elásticos</li>
+                    <li>Orientados a mensajes</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Programación funcional reactiva: RxJS</h3>
+                <p>
+                    <b>RxJS</b> es una librería Javascript de programación reactiva que facilita la composición de
+                    código
+                    asíncrono basado en secuencias de observables. Esto lo hace gracias a tres patrones de diseño:
+                    el patrón Observer, el patrón Iterador y la programación funcional.
+                </p>
+
+                <p>
+                    En la <b>programación funcional</b> el factor mas importante son las funciones, todo está
+                    orientado al
+                    uso de funciones y estas permiten el paso de otras funciones como argumento.
+                </p>
+                <hr>
+                <!---->
+                <h3>Microservicios</h3>
+                <p>
+                    Los microservicios son un enfoque arquitectónico y organizativo para el desarrollo de software
+                    donde el software está compuesto por pequeños servicios independientes que se comunican a través
+                    de API bien definidas.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Diferencias entre CMS, ERP y CRM</h3>
+                <p>
+                    Un <b>CMS</b> se usa para administrar información para mostrar al público en general. Permite
+                    crear, organizar, publicar y eliminar contenidos en una página web.
+                </p>
+
+                <p>
+                    Un sistema <b>ERP</b> generalmente puede referirse a un sistema que se utiliza para administrar
+                    todos
+                    los aspectos de la operación de un negocio. El término ERP se refiere a <i>Enterprise
+                        Resource Planning</i>, que significa “sistema de planificación de recursos empresariales”.
+                    Estos
+                    programas se hacen cargo de distintas operaciones internas de una empresa, desde producción a
+                    distribución o incluso recursos humanos.
+                </p>
+
+                <p>
+                    Un <b>CRM</b> -<i>Customer Relationship Management</i>- se trata de una
+                    aplicación que permite centralizar en una única Base de Datos todas las interacciones entre una
+                    empresa y sus clientes.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>CMS importantes</h3>
+                <p>
+                <h6>PHP:</h6>
+                <ul>
+                    <li><b>Wordpress</b>: que permite crear y mantener un blog u otro tipo de web.</li>
+                    <li><b>Joomla</b>: permite construir sitios web y potentes aplicaciones online. </li>
+                    <li><b>Drupal</b>: permite tanto crear nuevas páginas web como editarlas y ampliarlas elaborando
+                        nuevos contenidos de cualquier tipo, sean texto, vídeo o imagen.
+                    </li>
+                    <li><b>Magento</b>: ofrece a todos los comerciantes y dueños de negocios online, un sistema de
+                        carrito de compras flexible.</li>
+                    <li><b>Prestashop</b>: sirve para crear ecommerce o tiendas online</li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Java:</h6>
+                <ul>
+                    <li><b>Liferay</b>: portal de gestión de contenidos.</li>
+                    <li><b>OpenCMS</b>: sistema de administración de contenido orientado a webs con alto tráfico y
+                        requerimientos de seguridad de nivel alto</li>
+                    <li><b>Alfresco</b>: diseñado para usuarios que requieren un alto grado de modularidad y
+                        rendimiento escalable</li>
+                    <li><b>Magnolia</b> </li>
+                    <li><b>bynder</b>: para administrar y distribuir los activos digitales en la nube</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>ERPs importantes: SAP, Microsoft Dynamics, JDEdwards, Sage</h3>
+                <p>
+                <ul>
+                    <li><b>SAP</b>: sistema informático integrado de gestión empresarial diseñado para modelar y
+                        automatizar las diferentes áreas de la empresa y la administración de sus recursos.
+                    </li>
+                    <li><b>Microsoft Dynamics</b>: ofrece la posibilidad de crear y mantener una visión completa de
+                        los datos de clientes desde el primer contacto hasta la compra y postventa.
+                    </li>
+                    <li><b>JDEdwardsERP</b> de primer nivel para grandes empresas. Capaz de gestionar los procesos
+                        de
+                        cualquier negocio de forma global e integrada.</li>
+                    <li><b>Sage</b>: permite agilizar y automatizar los procesos que se llevan a cabo en los
+                        diferentes departamentos de las empresas. </li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>CRM: Salesforce, Zoho, Agile CRM, Close</h3>
+                <p>
+                <ul>
+                    <li><b>Salesforce</b>: plataforma CRM integrada que brinda a todos sus departamentos, incluidos
+                        marketing, ventas, comercio y servicios, una vista única y compartida de cada cliente.
+                    </li>
+                    <li><b>Zoho</b>: permite gestionar las relaciones con los clientes de una manera eficiente,
+                        con las funciones de inteligencia artificial y automatización avanzada.</li>
+                    <li><b>Agile CRM</b>: tiene seguimiento de ventas, administración de contactos, automatización
+                        de marketing, análisis web, correos electrónicos bidireccionales, telefonía y servicio de
+                        asistencia.
+                    </li>
+                    <li><b>Close</b>: permite automatizar tareas como enviar emails desencadenados a nuevos clientes
+                        potenciales.</li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="programacion_organizacion_codigo">
+                <h1 class="display-4">PROGRAMACIÓN Y ORGANIZACIÓN DEL CÓDIGO</h1>
+                <hr>
+                <!---->
+                <h3>Concepto de código spaguetti. Explicar porqué se necesita una estructuración en el código</h3>
+                <p>
+                    El código espagueti es un término para referirse a los softwares que tienen una
+                    estructura de control de flujo compleja e incomprensible. Su nombre deriva del hecho que este
+                    tipo de código parece asemejarse a un plato de espaguetis, es decir, un montón de hilos
+                    intrincados y anudados.
+                </p>
+                <p>
+                    Es importante obtener una buena estructura en el código de un programa para poder realizar un
+                    buen mantenimiento y encontrar rápido la solución a problemas que puedan surgir. Además, es
+                    necesario que cualquier persona que pueda llegar a trabajar en dicho código, sea capaz de
+                    comprender su estructura y poder desarrollar otras partes sin necesidad de hablar con el creador
+                    original.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Concepto de abstracción en programación</h3>
+                <p>
+                    Se refiere a las características esenciales de un objeto, las cuales distinguen al objeto de los
+                    demás.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Paradigmas de la programación</h3>
+                <p>
+                <h6>¿En qué consiste paradigma declarativo frente al paradigma imperativo?</h6>
+                Se trata de un conjunto de métodos sistemáticos aplicables en todos los niveles del diseño de
+                programas para resolver problemas computacionales.
+                </p>
+                <hr>
+                <p>
+                <h6>¿Qué es la programación funcional y en qué se diferencia respecto de la programación imperativa?
+                </h6>
+                Es aquella que considera los cálculos como funciones matemáticas y evita el cambio de
+                estado y datos mutables, al contrario que la programación imperativa.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Técnicas de programación imperativa</h3>
+                <p>
+                <h6>Programación estructurada</h6>
+                Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de
+                un programa de computadora recurriendo únicamente a subrutinas y tres estructuras básicas:
+                secuencia, selección (if y switch) e iteración (bucles for y while).
+                </p>
+
+                <p>
+                <h6>Programación modular</h6>
+                Es un paradigma de programación que consiste en dividir un programa en módulos o subprogramas con el
+                fin de hacerlo más legible y manejable.
+                Un '<b>módulo</b>' es cada una de las partes de un programa que resuelve uno de los subproblemas en
+                que se
+                divide el problema complejo original. Cada uno de estos módulos tiene una tarea bien definida y
+                algunos necesitan de otros para poder operar.
+                </p>
+
+                <p>
+                <h6>Programación orientada a objetos</h6>
+                <ul>
+                    <li><b>Principios SOLID</b>: Se trata de 5 principios cuyo objetivo es crear un software eficaz,
+                        con un
+                        código limpio y flexible, que sea reutilizable y mantenible.
+                    </li>
+                    <li><b>Interfaces</b>: es un medio común para que los objetos no relacionados se comuniquen
+                        entre sí.
+                        Estas son definiciones de métodos y valores sobre los cuales los objetos están de acuerdo
+                        para cooperar</li>
+                    <li>Clases
+                        <ul>
+                            <li><b>Clases abstractas</b>: Las clases abstractas son aquellas que por sí mismas no se
+                                pueden
+                                identificar con algo 'concreto' (no existen como tal en el mundo real), pero sí
+                                poseen determinadas características que son comunes en otras clases que pueden ser
+                                creadas a partir de ellas.</li>
+                            <li><b>Propiedades y Métodos: Visibilidad de los métodos y de las propiedades</b> - Las
+                                propiedades de un objeto son las características que tiene, mientras que los métodos
+                                son algoritmos asociados, que pueden producir cambios en las propiedades de dicho
+                                objeto. Pueden ser public, private o protected.</li>
+                            <li><b>Implementación de interfaces</b>: Para declarar una clase que implemente una
+                                interfaz es
+                                necesario utilizar la palabra reservada implements en la cabecera de declaración de
+                                la clase</li>
+                        </ul>
+                    </li>
+                    <li><b>Concepto de encapsulación</b>: Se refiere ocultamiento de los datos
+                        miembro de un objeto de manera que solo se pueda cambiar mediante las operaciones definidas
+                        para ese objeto.</li>
+                    <li><b>Objetos</b>: Un objeto en POO representa alguna entidad de la vida real, es decir, alguno
+                        de los objetos únicos que pertenecen al problema con el que nos estamos enfrentando, y con
+                        el que podemos interactuar.
+                        Cada objeto, de igual modo que la entidad de la vida real a la que representa, tiene un
+                        estado (es decir, unos <i>atributos</i> con unos valores concretos) y un comportamiento (es
+                        decir,
+                        tiene <i>funcionalidades</i> o sabe hacer unas acciones concretas).
+                    </li>
+                    <li><b>Herencia: Concepto de Sobreescribir un método</b> - La <b>herencia</b> (a la que
+                        habitualmente se
+                        denomina subclase) proviene del hecho de que la subclase (la nueva clase creada) contiene
+                        las atributos y métodos de la clase primaria. La <b>sobreescritura</b> de métodos nos
+                        permite
+                        redifinir un método que heredamos para que este funcione de acuerdo a nuestras necesidades y
+                        no a lo definido en la superclase.
+                    </li>
+                    <li><b>Concepto de Polimorfismo</b>: se refiere a la propiedad por la que es posible enviar
+                        mensajes sintácticamente iguales a objetos de tipos distintos
+                        <ul>
+                            <li>polimorfismo basado en implementación de interfaces</li>
+                            <li>polimorfismo basado en la herencia</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <hr>
+                <p>
+                <h6>Explica en qué consisten las Interfaces fluidas</h6>
+                Es una construcción orientada a objetos que define un comportamiento capaz de retransmitir el
+                contexto de la instrucción de una llamada subsecuente.
+                Definido a través del valor de retorno de un método llamado autoreferencial, donde el nuevo contexto
+                es equivalente al contexto anterior terminado por medio del retorno de un contexto vacío (void
+                context).
+                </p>
+                <hr>
+                <p>
+                <h6>Qué es la Inyección de dependencias o inversión del control y qué ventajas aporta su uso en la
+                    programación web</h6>
+                La inyección de dependencias es un patrón de diseño de software usado en la Programación Orientada a
+                Objetos, que trata de solucionar las necesidades de creación de los objetos de una manera práctica,
+                útil, escalable y con una alta versatilidad del código.
+                En la mayoría de los frameworks actuales se aplica la Inyección de dependencias como parte de las
+                herramientas y modelos que facilitan al programador.
+                </p>
+                <hr>
+
+                <p>
+                <h6>Qué es la programación orientada a aspectos y qué ventajas aporta su uso en la programación web
+                </h6>
+                Es un paradigma de programación que basa su filosofía en tratar las obligaciones transversales de
+                los programas como módulos separados (<b>aspectos</b>) para lograr una correcta separación de
+                responsabilidades. Una obligación transversal es aquella que se repite en varias partes de un
+                programa independientemente de si las secciones en las que aparece tienen relación directa.
+                </p>
+                <p>
+                    Ventajas:
+                <ul>
+                    <li>Óptima para modularizar programas </li>
+                    <li>Código fuente más ordenado</li>
+                    <li>Puede mezclarse con cualquier otro paradigma de programación</li>
+                </ul>
+                </p>
+                <hr>
+
+                <p>
+                <h6>¿Para qué sirven las excepciones y su tratamiento en un programa?</h6>
+                Una excepción en términos de lenguaje de programación es la indicación de un problema que ocurre
+                durante la ejecución de un programa.
+                </p>
+                <p>
+                    El manejo de excepciones ayuda al programador a trasladar el código para manejo de errores de la
+                    línea principal de ejecución, además se puede elegir entre manejar todas las excepciones, las de
+                    cierto tipo o de las de grupos relacionados, esto hace que la probabilidad de pasar por alto los
+                    errores se reduzca y a la vez hace los programas más robustos.
+                </p>
+                <hr>
+                <p>
+                <h6>Genericidad del código: </h6>Explica la siguiente regla: <i>Cuanto más genéricos son los
+                    programas, más reusable es el código pero también es más complejo y difícil de mantener</i>
+                </p>
+                <p>
+                    La genericidad es un mecanismo que consiste en estructurar el código de forma que se programen
+                    funciones o módulos que puedan servir para diferentes partes de una aplicación.
+                </p>
+                <p>
+                    De esta forma, si se quiere cambiar un elemento común en varias secciones, sólo habría que
+                    hacer el cambio en el elemento principal, que estaría insertado en dichas secciones.
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="lenguajes_programación">
+                <h1 class="display-4">LENGUAJES DE PROGRAMACIÓN</h1>
+                <hr>
+                <!---->
+
+                <h3>Lenguajes de programación</h3>
+                <p>
+                <h6>Lenguajes compilados vs interpretados</h6>
+                El <b>lenguaje compilado</b> requiere un paso adicional antes de ser ejecutado, la compilación, que
+                convierte el código que escribes a lenguaje de máquina. Un <b>lenguaje interpretado</b>, por otro
+                lado, es
+                convertido a lenguaje de máquina a medida que es ejecutado.
+                <ul>
+                    <li>Ejemplos de lenguajes compilados: C, C++, Java, Go y Rust. </li>
+                    <li>Ejemplos de lenguajes interpretados: Ruby, Python y JavaScript</li>
+                </ul>
+                </p>
+
+                <p>
+                <h6>Diferencias entre un Compilador, un interprete y un transpilador</h6>
+
+                <ul>
+                    <li>Un <b>compilador</b> es un programa informático que traduce todo el código fuente de un
+                        proyecto de
+                        software a código máquina antes de ejecutarlo.</li>
+                    <li> Un <b>intérprete</b> es un programa informático que procesa el código fuente de un proyecto
+                        de software
+                        durante su tiempo de ejecución, es decir, mientras el software se está ejecutando, y actúa
+                        como una
+                        interfaz entre ese proyecto y el procesador.</li>
+                    <li>Un <b>transpilador</b> es un tipo especial de compilador que traduce de un lenguaje fuente a
+                        otro fuente
+                        también de un nivel de abstracción parecido. Se diferencia de los compiladores tradicionales
+                        en que
+                        estos reciben como entrada ficheros conteniendo código fuente y generan código máquina del
+                        más bajo
+                        nivel.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Lenguajes débilmente tipados vs lenguajes fuertemente tipados</h3>
+                <p>
+                    Un lenguaje <b>fuertemente tipado</b> tiene reglas de tipeo más estrictas en el momento de la
+                    compilación, lo que implica que es más probable que ocurran errores y excepciones durante la
+                    compilación. La mayoría de estas reglas afectan la asignación de variables, los valores de
+                    retorno y la llamada a funciones.
+
+                    Ventajas:
+                <ul>
+                    <li>Menor número de errores</li>
+                    <li>Mayor seguridad a la hora de hacer operaciones y comparaciones</li>
+                </ul>
+
+                Desventajas:
+                <ul>
+                    <li>Mayor complejidad y extensión de código</li>
+                </ul>
+                </p>
+                <p>
+                    Por otro lado, un <b>lenguaje débilmente</b> escrito tiene reglas de
+                    escritura más flexibles y puede producir resultados impredecibles o puede realizar una
+                    conversión de tipo implícita en tiempo de ejecución.
+
+                    Ventajas:
+                <ul>
+                    <li>Permite cambiar el tipo de variable en cualquier momento, sin tener que realizar variaciones
+                        en el código
+                    </li>
+                    <li>Menos código</li>
+                </ul>
+
+                Desventajas:
+                <ul>
+                    <li>A la hora de hacer operaciones puede haber problemas</li>
+                    <li>Al comparar números puede haber errores ya que compara cadenas</li>
+                    <li>Mayor vulnerabilidad</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>¿Qué diferencia existe entre un tipado estático y uno dinámico?</h3>
+                <p>
+                    Un lenguaje es de <b>tipado estático</b> cuando es necesario definir los tipos en tiempo de
+                    compilación para que el programa funcione. De igual forma, si se llama a un método o función que
+                    no existe,
+                    el compilador mostrará error y no ejecutará el programa.
+                </p>
+                <p>
+                    Un lenguaje de <b>tipado dinámico</b> permite definir los tipos de las variables en tiempo de
+                    ejecución. El ejemplo que se suele dar es que una variable puede contener
+                    valores de distintos tipos durante la ejecución del programa.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>¿Qué es el timetomarket de un lenguaje?</h3>
+                <p>Time to market es un término de marketing que se refiere al momento en el que un producto está
+                    listo para salir al mercado. </p>
+                <hr>
+                <!---->
+
+                <h3>¿Qué es la sobrecarga de operadores?</h3>
+                <p>Se trata de reutilizar el mismo operador con un número de usos diferentes.
+                    La sobrecarga de operadores solo se puede utilizar con clases, no se pueden redefinir los
+                    operadores para los tipos simples predefinidos.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>¿Qué es la interpolación de cadenas?</h3>
+                <p>
+                    La interpolación de cadenas es el proceso de evaluar una cadena literal que contiene uno o más
+                    marcadores de
+                    posición, lo que produce un resultado en el que los marcadores de posición se reemplazan con
+                    sus valores correspondientes.
+                </p>
+                <p>
+                <ul>
+                    <li>Ejemplo en Java:
+                        <pre>
+int apples = 4; 
+int bananas = 3; 
+System.out.println(String.format("I have %s apples and %s bananas", apples, bananas)); 
+System.out.println(String.format("I have %s fruit", apples + bananas)); </pre>
+                    </li>
+                    <li>Ejemplo en JavaScript:
+                        <pre>
+var apples = 4; 
+var bananas = 3; 
+console.log(`I have ${apples} apples`); 
+console.log(`I have ${apples + bananas} fruit`);  </pre>
+                    </li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="entorno_cliente">
+                <h1 class="display-4">ENTORNO CLIENTE</h1>
+                <hr>
+                <!---->
+                <h3>Navegadores</h3>
+                <p>
+                <ul>
+                    <li><b>Mosaic</b>: fue el segundo navegador web gráfico disponible para visualizar páginas web
+                        en sistemas operativos como Mac o Windows. En 1997 se abandonó su desarrollo al aparecer
+                        Netscape Navigator.</li>
+                    <li><b>Netscape</b>: Fue el primer navegador comercial.</li>
+                    <li><b>Chrome</b>: navegador web de código cerrado56 desarrollado por Google, aunque derivado de
+                        proyectos de código abierto.</li>
+                    <li><b>Firefox</b>: navegador web libre y de código abierto. Como elemento representativo, se
+                        pueden añadir funciones a través de complementos, uno de cuyos tipos son las extensiones,
+                        desarrollados por la propia Mozilla o por terceros aficionados y comerciales</li>
+                    <li><b>Opera</b>: un navegador web creado por la empresa noruega Opera Software. Usa el motor de
+                        renderizado Blink.</li>
+                    <li><b>Safari</b>: navegador web de código cerrado desarrollado por Apple Inc. Está escrito
+                        sobre el framework WebKit, que incluye a WebCore, el motor de renderizado, y JavaScriptCore,
+                        el intérprete de JavaScript.</li>
+                    <li><b>Internet Explorer</b>: navegadores web gráficos desarrollado por Microsoft para el
+                        sistema operativo Microsoft Windows desde 1995. Actualmente es sustituido por Microsoft
+                        Edge.</li>
+                    <li><b>Edge</b>: navegador web basado en Chromium y desarrollado por Microsoft. </li>
+                    <li><b>Vivaldi</b>: navegador web freeware desarrollado por Vivaldi Technologies.</li>
+                    <li><b>Brave</b>: navegador web de código abierto basado en Chromium, creado por la compañía
+                        Brave Software en el año 2016.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Librerías</h3>
+                <p>
+                <ul>
+                    <li><b>jQuery</b>: biblioteca multiplataforma de JavaScript. permite simplificar la manera de
+                        interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar
+                        animaciones y agregar interacción con la técnica AJAX a páginas web. </li>
+                    <li><b>Prototype</b>: framework escrito en JavaScript que se orienta al desarrollo sencillo y
+                        dinámico de aplicaciones web. Es una herramienta que implementa las técnicas AJAX y su
+                        potencial es aprovechado al máximo cuando se desarrolla con Ruby On Rails.</li>
+                    <li><b>Dojo</b>: framework que contiene API y widgets (controles) para facilitar el desarrollo
+                        de aplicaciones Web que utilicen tecnología AJAX. </li>
+                    <li><b>YUI</b>: <i>Yahoo User Interface</i> es una biblioteca escrita en JavaScript para la
+                        construcción de aplicaciones interactivas (RIA). Se utilizaba para el desarrollo de
+                        aplicaciones web con apariencia de aplicaciones de escritorio, con componentes vistosos y
+                        personalizables y con una fuerte presencia de llamadas AJAX. </li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Librerias de programación funcional</h3>
+                <p>
+                <ul>
+                    <li><b>Underscore</b>: librería de javascript que te permite trabajar con un conjunto de datos,
+                        por ejemplo, arreglos, matrices o cualquier colección de datos que tengas en tu aplicación
+                        de javascript</li>
+                    <li><b>Lodash</b>: Surgió como un "fork" de underscore.js, convirtiéndose finalmente en su
+                        sucesor. Es utilizado para simplificar el manejo y edición de objetos, arrays, etc., ya que
+                        dispone de gran cantidad de métodos para ello.</li>
+                    <li><b>Ramda </b>: Se trata de una librería orientada a la programación funcional.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Frameworks de entorno cliente</h3>
+                <p>
+                <ul>
+                    <li><b>Backbone</b>: librería para el desarrollo de sitios web, principalmente usada para
+                        aplicaciones web con bastante interacción con el cliente. Se trata de una heramienta muy
+                        indicada en aplicaciones de una sola página, aunque también es útil para otros tipos de
+                        sitios, multipágina, donde se encuentran interfaces de usuario avanzadas.</li>
+                    <li><b>Knockout</b>: librería de código libre escrita en javascript que sigue el patrón de
+                        arquitectura de software Model-View-ViewModel (MVVM).</li>
+                    <li><b>Ember</b>: framerwork para JavaScript, que permite utilizar el patrón MVC (Modelo
+                        Vista Controlador) de manera más automatizada y sencilla.</li>
+                    <li><b>AngularJS</b>: librería de Javascript con la que podrás desarrollar páginas web con poco
+                        esfuerzo y con pocas líneas de código. </li>
+                    <li><b>Angular</b>: framework de código abierto desarrollado por Google para facilitar la
+                        creación y
+                        programación de aplicaciones web de una sola página. El lenguaje principal de programación
+                        de Angular es <i>Typescript</i>, y así toda la sintaxis y el modo de hacer las cosas en el
+                        código
+                        es el mismo. </li>
+                    <li><b>React</b>: librería Javascript focalizada en el desarrollo de interfaces de usuario.
+                        Útil para desarrollar aplicaciones web de una manera más ordenada y con menos código.</li>
+                    <li><b>VueJS</b>: framework progresivo para construir interfaces de usuario. A diferencia de
+                        otros frameworks monolíticos, Vue está diseñado desde cero para ser utilizado
+                        incrementalmente.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Diferencias entre una librería y un framework</h3>
+                <p>
+                    Una librería proporciona una serie de funciones/métodos muy concretos para simplificar tareas
+                    complejas, mientras
+                    que un framework aporta una estructura sobre la que se desarrolla el código de una aplicación.
+                </p>
+                <p>
+                    Es decir, el Framework es el que determina las reglas que se van a utilizar, mientras que la
+                    librería
+                    proporciona utilidades para completar la aplicación de una manera más compleja.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Sistemas de gestión de dependencias</h3>
+                <p>
+                <ul>
+                    <li><b>Bower</b>: programa que permite tener al día las dependencias de un proyecto para
+                        la web, en lo que respecta al desarrollo frontend, con Javascript o incluso CSS. Se trata de
+                        un programa basado en NodeJS que se ejecuta desde la consola.</li>
+                    <li><b>NPM</b>: Node Package Manager es un gestor de paquetes que permite
+                        tener cualquier librería disponible con solo una línea de código, además ayuda a
+                        administrar módulos, distribuir paquetes y agregar dependencias de una manera
+                        sencilla.</li>
+                    <li><b>YARN</b>: gestor dependencias de JavaScript, que está enfocado en la velocidad y la
+                        seguridad.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Task runners</h3>
+                <p>Programa encargado de automatizar procesos informáticos que, sin su uso, deberían realizarse
+                    manualmente. Permite optimizar el flujo de trabajo.
+                </p>
+                <p>
+                <ul>
+                    <li><b>Grunt</b>: En el archivo Grunt incluye el código original con el que se integran y
+                        configuran los módulos de cada una de las tareas. Está estrictamente orientado a los
+                        archivos.</li>
+                    <li><b>Gulp</b>: Destaca por su excelente rendimiento, pero requiere conocimientos
+                        de Node.js y JavaScript para usarlo, pues las tareas están programadas desde un principio
+                        pero no configuradas. Además, lleva a cabo los procesos en la memoria principal.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Preparación de proyectos: yeoman</h3>
+                <p><b>Yeoman</b> es un creador de proyectos, de tal forma que evita a los desarrolladores los
+                    problemas de crear un proyecto de inicio</p>
+                <p>
+                    La principal ventaja de la utilización de Yeoman es que permite estandarizar los proyectos.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Transpiler: babel</h3>
+                <p><b>Babel</b> es una herramienta que permite transformar código JS de última generación (o
+                    con funcionalidades extras) a JS que cualquier navegador o versión de Node.js entienda.
+                    Babel funciona mediante plugins en los que se puede indicar los elementos del código que
+                    se quiera transformar.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Package Bundlers</h3>
+                <p>Un bundle (o paquete) es un conjunto de ficheros y directorios que son presentados por el sistema
+                    operativo como un solo fichero a nivel gráfico.</p>
+                <p>
+                <ul>
+                    <li><b>Webpack </b>: herramienta de compilación que coloca en un
+                        grafo de dependencias a todos los elementos que forman parte de tu proyecto de desarrollo:
+                        código JavaScript, HTML, CSS, plantillas, imágenes, fuentes</li>
+                    <li><b>Browserify</b>: librería de Node.js, escrita por substack. Permite escribir código
+                        JavaScript del cliente.</li>
+                    <li><b>Parcel </b>: nuevo module bundler que promete unos tiempos de building ultrarápidos y
+                        zero config.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Ofuscadores: UglifyJS</h3>
+                <p>Un Ofuscador es un programa diseñado para hacer que el código fuente de un proyecto, aplicación,
+                    etc… sea difícil de entender, de forma que no se pueda descubrir el funcionamiento.
+                    El objetivo principal de un compresor o minimizador de archivos es que la página cargue más
+                    rápido.
+                </p>
+                <p>
+                    UglifyJS es ampliamente conocido como el más potente y eficaz compresor de código JavaScript
+                    disponible en la red.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Minificadores: minify</h3>
+                <p>
+                    La minificación consiste en reducir el peso de los archivos de código fuente a través de la
+                    eliminación de bytes innecesarios —espacios adicionales, saltos de línea, sangrías y
+                    comentarios—, además de simplificar todo lo posible la escritura de las sentencias.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Concepto de aplicación isomorfica</h3>
+                <p>Es aquella que comparte todo (o casi todo) su código entre el cliente y el servidor.</p>
+                <hr>
+                <!---->
+                <h3>El DOM: concepto. El BOM.</h3>
+                <p>El <b>DOM</b> es la estructura de objetos que genera el navegador cuando se carga un documento y
+                    se
+                    puede alterar mediante Javascript para cambiar dinámicamente los contenidos y aspecto de la
+                    página.
+                </p>
+                <p>
+                    Internet Explorer y Netscape Navigator introdujeron el concepto de Browser Object Model o
+                    <b>BOM</b>, que permite acceder y modificar las propiedades de las ventanas del propio navegador
+                    (browser).
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Depuración: Inspector de Chrome y de Firefox</h3>
+                <p>
+                    El navegador Google Chrome, así como el Firefox, viene con herramientas de depuración de
+                    javascript integradas.
+
+                    Hay tres herramientas de depuración:
+                <ul>
+                    <li><b>Consola</b>: muestra mensajes registrados por la extensión así como mensajes de error
+                        registrados por el navegador mientras ejecuta la extensión. También proporciona una línea de
+                        comandos, habilitando la ejecución de JavaScript en el contexto de la extensión.</li>
+                    <li><b>Depurador</b>: habilita el uso de breakpoints y watchpoints en el código JavaScript de la
+                        extensión, y examina y modifica su estado interno.</li>
+                    <li><b>Inspector</b>: habilita la revisión y modificación del HTML y CSS usado para construir
+                        las páginas de la extensión.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>Progressive Web Apps de google</h3>
+                <p>
+                    Progressive web apps (PWA) o aplicación web progresiva es una solución basada en la web
+                    tradicional que todos conocemos, aunque incorpora algunas particularidades que la hacen
+                    parecerse a una app nativa para teléfonos móviles y tabletas.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Aplicaciones isomorficas: Meteor</h3>
+                <p>
+                    <b>Meteor JS</b> es una nueva infraestructura de JavaScript que tiene como objetivo automatizar
+                    y
+                    simplificar el desarrollo de aplicaciones web que actúan en tiempo real. Usa la comunicación en
+                    tiempo real mediante un protocolo llamado Distributed Data Protocol (DDP), que es soportado por
+                    navegadores modernos que usan WebSockets o en navegadores antigüos que soporten “long polling”.
+                    En ambos casos, la comunicación navegador-servidor es transparente para el usuario.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Plataformas fullstack: JHipster</h3>
+                <p>
+                    JHipster ofrece un conjunto de herramientas para desarrollar y diseñar los elementos
+                    correspondientes al frontend y también al backend de un proyecto de desarrollo.
+                </p>
+                <p>
+                    Opciones disponibles del lado del <b>servidor</b> en JHipster:
+                <ul>
+                    <li><b>Bases de datos</b>: MariaDB, PostgreSQL, Oracle, MySQL, MongoDB</li>
+                    <li><b>Virtualización</b>: Docker, Kubernetes, AWS</li>
+                    <li><b>Entornos de ejecución de pruebas</b>: Karma, Cucumber</li>
+                    <li><b>Indexación</b>: ElasticSearch</li>
+                    <li><b>Cachés</b>: Ehcache, Infinispan</li>
+                    <li><b>Sistemas de monitorización</b>: Prometheus</li>
+                </ul>
+                </p>
+                <p>
+                    En cuanto al desarrollo de <b>frontend</b>, JHipster se basa principalmente en el framework
+                    JavaScript
+                    Angular.js y en la biblioteca JavaScript React.
+                </p>
+                <hr>
+                <!---->
+                <h3>Javascript</h3>
+                <p>
+                <ul>
+                    <li><b>Concepto de Javascript no obstrusivo</b>: sus principios incluyen separación de la
+                        funcionalidad JavaScript de las capas de estructura/contenido y de presentación de una
+                        página.
+                    </li>
+                    <li><b>Arrays</b>: tipo de dato estructurado que permite almacenar un conjunto de datos
+                        homogeneo, es decir, todos ellos del mismo tipo y relacionados. A los datos almacenados en
+                        un array se les denomina elementos; al número de elementos de un array se les denomina
+                        tamaño o rango del vector.</li>
+                    <li><b>Objetos</b>: un objeto es una entidad independiente con propiedades y tipos. Una
+                        propiedad de un objeto se puede explicar como una variable adjunta al objeto. </li>
+                    <li><b>Funciones</b>: Una función en JavaScript es similar a un procedimiento — un conjunto de
+                        instrucciones que realiza una tarea o calcula un valor, pero para que un procedimiento
+                        califique como función, debe tomar alguna entrada y devolver una salida donde hay alguna
+                        relación obvia entre la entrada y la salida. </li>
+                    <li><b>Prototipos, herencia prototípica</b>: Los prototipos son un mecanismo por el cual un
+                        objeto hereda propiedades y métodos de un padre.</li>
+                    <li><b>Closures o cierres</b>: Una clausura o closure es una función que guarda referencias del
+                        estado adyacente. Es decir, permite acceder al ámbito de una función exterior desde una
+                        función interior.</li>
+                    <li><b>Objeto global </b>:
+                        <ul>
+                            <li><u>Objeto Browser</u>: Browser Object Model o BOM, que permite acceder y modificar
+                                las propiedades de las ventanas del propio navegador.</li>
+                            <li><u>Objeto Window</u>: El objeto window representa la ventana completa del navegador.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Objetos Wrappers</b>: Un wrapper o envoltorio es una función que llama a una o varias
+                        funciones.
+                        <ul>
+                            <li><u>Math</u>: Objeto incorporado que tiene propiedades y métodos para constantes y
+                                funciones matemáticas. Funciona con el tipo Number.</li>
+                            <li><u>Date</u>: Permite trabajar con fechas y horas.</li>
+                            <li><u>RegExpr</u>: Se emplea para hacer coincidir texto con un patrón.</li>
+                            <li><u>Json</u>: Objeto que contiene métodos para analizar JavaScript Object Notation
+                                (JSON) y convertir valores a JSON.</li>
+                        </ul>
+                    </li>
+                    <li><b>Librerías importantes en Javascript</b>:
+                        <ul>
+                            <li><u>MomentsJS</u>: librería que implementa un sistema de manejo de fechas mucho más
+                                cómodo.
+                            </li>
+                            <li><u>ChartJS</u>: plugin JavaScript simple, flexible y muy completo para incrustar
+                                gráficas.</li>
+                            <li><u>AnimeJS</u>: librería de animación basada en JavaScript.</li>
+                            <li><u>PopperJS</u>: herramienta que permite crear etiquetas con información sobre un
+                                determinado elemento de una página</li>
+                            <li><u>SweetAlertJS</u>: permite estilizar las notificaciones y alertas que recibe el
+                                usuario.</li>
+                            <li><u>HammerJS</u>: framework orientado a eventos Touch</li>
+                            <li><u>RevealJS</u>: framework desarrollado en Javascript, que se utiliza para la
+                                creación de presentaciones</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="entorno_servidor">
+                <h1 class="display-4">ENTORNO SERVIDOR</h1>
+                <hr>
+                <!---->
+                <h3>Lenguajes</h3>
+                <p>
+                <ul>
+                    <li><b>NodeJS</b>: Entorno en tiempo de ejecución multiplataforma, de código abierto, para la
+                        capa del servidor, basado en el lenguaje de programación JavaScript, asíncrono, con E/S de
+                        datos en una arquitectura orientada a eventos.</li>
+                    <li><b>Java</b>: lenguaje de programación y una plataforma informática que fue comercializada
+                        por primera vez en 1995 por Sun Microsystems. Es orientado a objetos. Su sintaxis deriva de
+                        C++. La sintaxis de PHP, se fundamenta en los principios de programación de C.
+                        El intérprete de PHP solo ejecuta el código que se encuentra entre sus delimitadores. Los
+                        delimitadores más comunes son <?php para abrir una sección PHP y ?> para cerrarla. </li>
+                    <li><b>PHP</b>: lenguaje de programación de uso general que se adapta especialmente al
+                        desarrollo web</li>
+                    <li><b>Phyton</b>: lenguaje de programación interpretado cuya filosofía hace hincapié en la
+                        legibilidad de su código.2 Se trata de un lenguaje de programación multiparadigma, ya que
+                        soporta orientación a objetos, programación imperativa y, en menor medida, programación
+                        funcional. </li>
+                    <li><b>Ruby</b>: lenguaje de programación interpretado, reflexivo y orientado a objetos.</li>
+                    <li><b>Perl</b>: lenguaje de programación basado en un estilo de bloques como los del C o
+                        AWK, y fue ampliamente adoptado por su destreza en el procesado de texto y no tener ninguna
+                        de las limitaciones de los otros lenguajes de script.</li>
+                    <li><b>Go</b>: lenguaje de programación concurrente y compilado inspirado en la sintaxis de C,
+                        que intenta ser dinámico como Python y con el rendimiento de C o C++. </li>
+                    <li><b>Rust</b>: lenguaje de programación compilado, de propósito general y multiparadigma que
+                        está siendo desarrollado por Mozilla. Soporta programación funcional pura, por
+                        procedimientos, imperativa y orientada a objetos.</li>
+                    <li><b>Elixir</b>: lenguaje de programación funcional, concurrente, de propósito general que se
+                        ejecuta sobre la máquina virtual de Erlang (BEAM). </li>
+                    <li><b>Erlang</b>: lenguaje de programación concurrente (u orientado a la concurrencia) y un
+                        sistema de ejecución que incluye una máquina virtual (BEAM) y bibliotecas (OTP).</li>
+                    <li><b>Haskell</b>: lenguaje de programación estandarizado multi-propósito, funcionalmente puro,
+                        con evaluación no estricta y memorizada, y fuerte tipificación estática. </li>
+                    <li><b>Clojure</b>: lenguaje de programación de propósito general dialecto de Lisp. </li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Lenguajes para apps</h3>
+                <p>
+                <ul>
+                    <li><b>Dart</b>: lenguaje de programación de código abierto, desarrollado por Google.
+                        Su objetivo es ofrecer una alternativa más moderna a JavaScript.</li>
+                    <li><b>Flutter</b>: framework que usa como lenguaje de programación Dart.</li>
+                    <li><b>React Native</b>: framework JavaScript para crear aplicaciones reales nativas para iOS y
+                        Android, basado en la librearía de JavaScript React.</li>
+                    <li><b>Xamarin</b>: Basado en C, permite desarrollar aplicaciones móviles nativas para Android,
+                        iOs y Windows.</li>
+                    <li><b>Swift</b>: lenguaje de programación creado por Apple que permite diseñar apps para iOS,
+                        Mac, el Apple TV y el Apple Watch. </li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+                <h3>Frameworks</h3>
+                <p>
+                <h6>Java:</h6>
+                <ul>
+                    <li><b>Spring</b>: framework del lenguaje de programacion Java. </li>
+                    <li><b>Struts</b>: herramienta de soporte para el desarrollo de aplicaciones Web del patrón MVC
+                        bajo la plataforma Java EE.</li>
+                    <li><b>Play</b>: framework de desarrollo web para Java y Scala. </li>
+                    <li><b>JSF</b>: framework de desarrollo basado en el patrón MVC (Modelo Vista Controlador).</li>
+                    <li><b>PrimeFaces</b>: es una librería de componentes visuales Open Source para JSF, así como
+                        IceFaces o RichFaces.</li>
+                    <li><b>Apache Tapestry</b>: framework para desarrollar aplicaciones web de código abierto
+                        desarrollado sobre el lenguaje Java basado en componentes.</li>
+                    <li><b>Vaadin</b>: framework web para la construcción de sitios y aplicaciones web. Ofrece una
+                        arquitectura del lado del servidor lo que significa que la mayor parte de la lógica es
+                        ejecutada en el servidor. </li>
+                    <li><b>Openxava</b>: permite el desarrollo rápido y fácil de mantenimientos y listados pero, a
+                        su vez, es lo suficientemente flexible para desarrollar complejas aplicaciones de gestión de
+                        la vida real como contabilidad, facturación, gestión de personal, nóminas, gestión de
+                        almacenes.</li>
+                </ul>
+                </p>
+                <p>
+                <h6>Python</h6>
+                <ul>
+                    <li><b>Django</b>: conjunto de herramientas que permite a los desarrolladores la construcción de
+                        Web APIs navegables, compatibles con lectura de datos ORM o no ORM.</li>
+                    <li><b>Flask</b>: concebido para facilitar el desarrollo de Aplicaciones Web bajo el patrón MVC.
+                    </li>
+                </ul>
+                </p>
+                <p>
+                <h6>Node</h6>
+                <ul>
+                    <li><b>Express</b>: framework para Node.js que permite crear aplicaciones web en
+                        menos tiempo gracias a funcionalidades como el enrutamiento, opciones para
+                        gestionar sesiones y cookies, facilidades para motores de plantillas (Jade, EJS, JinJS) y un
+                        buen test coverage</li>
+                </ul>
+                </p>
+                <p>
+                <h6>Ruby</h6>
+                <ul>
+                    <li><b>Rails</b>: Ruby on Rails, también conocido como <b>RoR</b> o Rails, es un framework de
+                        aplicaciones web de código abierto escrito en el lenguaje de programación Ruby, siguiendo el
+                        paradigma del patrón Modelo Vista Controlador (MVC). </li>
+                </ul>
+                </p>
+                <p>
+                <h6>PHP</h6>
+                <ul>
+                    <li><b>Laravel</b>: framework que permite el uso de una sintaxis refinada y expresiva para crear
+                        código de forma sencilla, evitando el "código espagueti" y permitiendo multitud de
+                        funcionalidades</li>
+                    <li><b>CodeIgniter</b>: framework para el desarrollo de aplicaciones en php, que utiliza el MVC.
+                    </li>
+                    <li><b>Symphony</b></li>
+                    <li><b>Cake</b>: framework para el desarrollo aplicaciones web escrito en PHP, creado sobre los
+                        conceptos de Ruby on Rails.</li>
+                    <li><b>Yii</b>: framework PHP basado en componentes de alta performance para desarrollar
+                        aplicaciones Web de gran escala. Permite la máxima reutilización en la programación
+                        web y puede acelerar el proceso de desarrollo.</li>
+                    <li><b>Zend</b>: framework de código abierto para desarrollar aplicaciones web y con
+                        servicios web PHP. ZF es una implementación que usa código 100% orientado a objetos.</li>
+                    <li><b>Phalcon</b>: framework open source full stack para PHP, escrito como una extensión en C.
+                    </li>
+                    <li><b>Slim</b>: Slim framwework es un micro framework para PHP que nos permite escribir
+                        rápidamente aplicaciones web y APIs.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>ORM: concepto y productos</h3>
+                <p>
+                    Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos
+                    relacional (SQL Server, Oracle, MySQL, etc.) sobre una estructura lógica de entidades con el
+                    objeto de simplificar y acelerar el desarrollo de nuestras aplicaciones.
+                </p>
+                <p>
+                    Las estructuras de la base de datos relacional quedan vinculadas con las entidades lógicas o
+                    base de datos virtual definida en el ORM, de tal modo que las acciones CRUD (Create, Read,
+                    Update, Delete) a ejecutar sobre la base de datos física se realizan de forma indirecta por
+                    medio del ORM.
+                </p>
+                <p>
+                    Productos:
+                <ul>
+                    <li><b>Java</b> Hibernate, EclipseLink, MyBatis</li>
+                    <li><b>PHP</b> Doctrine</li>
+                    <li><b>Node</b>: Sequelize</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Sistemas de gestión de dependencias</h3>
+                <p>
+                <h6>Java:</h6>
+                <ul>
+                    <li><b>Gradle</b>: sistema de automatización de construcción de código de software que construye
+                        sobre los conceptos de Apache Ant y Apache Maven e introduce un lenguaje específico del
+                        dominio (DSL) basado en Groovy. Fue diseñado para construcciones multi-proyecto las cuales
+                        pueden crecer para ser bastante grandes, y da apoyo a construcciones incrementales
+                        determinando inteligentemente qué partes del árbol de construcción están actualizadas, de
+                        modo que cualquier tarea dependiente a aquellas partes no necesitarán ser reejecutada.</li>
+                    <li><b>Maven</b>: Maven utiliza un Project Object Model (POM) para describir el proyecto de
+                        software a construir, sus dependencias de otros módulos y componentes externos, y el orden
+                        de construcción de los elementos. Viene con objetivos predefinidos para realizar ciertas
+                        tareas claramente definidas, como la compilación del código y su empaquetado.
+                        Una característica clave de Maven es que está listo para usar en red. </li>
+                </ul>
+                </p>
+                <p>
+                <h6>PHP:</h6>
+                <ul>
+                    <li><b>Composer</b>: sistema de gestión de paquetes para programar en PHP el cual provee los
+                        formatos estándar necesarios para manejar dependencias y librerías de PHP. </li>
+                    <li><b>PEAR (PHP Extension and Application Repository)</b>: bibliotecas de código PHP que
+                        permiten hacer ciertas tareas de manera más rápida y eficiente reutilizando código escrito
+                        previamente por otras personas. </li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Entorno Java</h3>
+                <h5>Java Virtual Machine</h5>
+                <p>
+                    La Máquina Virtual Java (JVM) es un entorno que ejecuta programas Java. Los programas Java se
+                    compilan en un lenguaje intermedio denominado código de bytes, que es el que ejecuta la JVM.
+                </p>
+                <p>
+                    Ventajas:
+                <ul>
+                    <li>Independencia de la plataforma</li>
+                    <li>Seguridad</li>
+                    <li>Exactitud</li>
+                </ul>
+                </p>
+                <hr>
+
+                <h5>Concepto de Bytecode</h5>
+                <p>
+                    El bytecode Java se encuentra dentro del archivo de extensión .class y es el tipo de
+                    instrucciones que la máquina virtual Java espera recibir, para posteriormente ser compiladas a
+                    lenguaje de máquina, mediante un compilador JIT a la hora de su ejecución. Usualmente es el
+                    resultado de utilizar un compilador del lenguaje de programación Java (como javac), pero puede
+                    ser generado desde otros compiladores.
+                </p>
+                <hr>
+
+                <h5>JRE y JDK: concepto y diferencias</h5>
+                <p>
+                    <b>Java Runtime Environment</b> o JRE es un conjunto de utilidades que permite la ejecución de
+                    programas Java.
+                    <b>Java Development Kit</b> (JDK) es un software que provee herramientas de desarrollo para la
+                    creación
+                    de programas en Java. Puede instalarse en una computadora local o en una unidad de red.
+                </p>
+                <p>La diferencia entre ambos radica en que JDK se utiliza para el desarrollo de un programa,
+                    mientras
+                    que JRE permite su ejecución.
+                </p>
+                <hr>
+
+                <h5>Gestores de dependencias: Gradle vs Maven</h5>
+                <p>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>Gradle</th>
+                        <th>Maven</th>
+                    </tr>
+                    <tr>
+                        <td>El tiempo de construcción de Gradle es corto y rápido</td>
+                        <td>El rendimiento de Maven es lento en comparación con </td>
+                    </tr>
+                    <tr>
+                        <td>Los scripts de Gradle son mucho más cortos y limpios</td>
+                        <td>Los scripts de Maven son un poco largos en comparación con Gradle</td>
+                    </tr>
+                    <tr>
+                        <td>Utiliza lenguaje específico de dominio (DSL)</td>
+                        <td>Utiliza XML</td>
+                    </tr>
+                    <tr>
+                        <td>Se basa en la tarea mediante la cual se realiza el trabajo</td>
+                        <td>En Maven se definen objetivos vinculados al </td>
+                    </tr>
+                    <tr>
+                        <td>Admite compilaciones incrementales de la clase java</td>
+                        <td>No admite compilaciones incrementales</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte en la mayoría de herramientas de Integración continua</td>
+                        <td>Soporte en la mayoría de herramientas de Integración continua</td>
+                    </tr>
+                </table>
+                </p>
+                <hr>
+
+                <h5>Spring vs Spring boot.</h5>
+                <p>
+                    Spring Boot es un acelerador para la creación de proyectos de Spring, que se basa
+                    principalmente en el concepto de convención antes de configuración.
+                </p>
+                <p>
+                    Spring Boot no se considera Framework, en cambio, Spring sí. .
+                </p>
+                <hr>
+
+                <h5>Spring security</h5>
+                <p>Proporciona servicios de seguridad para aplicaciones de software empresariales basados en J2EE,
+                    enfocado particularmente sobre proyectos construidos usando SpringFramework</p>
+                <hr>
+
+                <h5>Otros módulos de spring</h5>
+                <p>
+                    Spring Framework esta compuesto de diversos módulos y cada uno de estos módulos aporta una
+                    funcionalidad al framework. Los más importantes son los que pertenecen a lo que se llama el
+                    <b>Spring Core Container</b>:
+
+                <ul>
+                    <li><b>spring-core</b>: encargado de implementar el código del IoC de Spring permitiendo
+                        inyectar beans.</li>
+                    <li><b>spring-beans</b>: encargado de añadir las típicas Factorías como BeanFactory, encargada
+                        de instanciar los distintos beans registrados en el framework.</li>
+                    <li><b>spring-context</b>: encargado de añadir un contexto al framework y se encarga por ejemplo
+                        de simplificar la carga de los distintos recursos.</li>
+                    <li><b>spring-context-support</b>: encargado de añadir las clases que gestionan servicios
+                        complementarios.</li>
+                    <li><b>spring-expression</b>: encargado de añadir a Spring su Expresion Language para poder
+                        usarlo en los ficheros xml o anotaciones.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <h5>Contenedores de servlets Java</h5>
+                <p>
+                <ul>
+                    <li><b>Jetty</b>: servidor HTTP 100% basado en Java y un contenedor de Servlets escrito en Java.
+                    </li>
+                    <li><b>Tomcat</b>: funciona como un contenedor de servlets desarrollado bajo el proyecto Jakarta
+                        en la Apache Software Foundation. Tomcat implementa las especificaciones de los servlets y
+                        de JavaServer Pages (JSP) de Oracle Corporation.</li>
+                    <li><b>Undertow</b>: servidor web escrito en Java que ofrece APIS blocking y non-blocking sobre
+                        NIO.
+                        Tiene una arquitectura de composición que permite construir un servidor web combinando
+                        handlers.</li>
+
+                </ul>
+                </p>
+                <hr>
+
+                <h5>Concepto de servlet</h5>
+                <p>
+                    Un servlet es una clase en el lenguaje de programación Java, utilizada para ampliar las
+                    capacidades de un servidor. Aunque los servlets pueden responder a cualquier tipo de
+                    solicitudes, estos son utilizados comúnmente para extender las aplicaciones alojadas por
+                    servidores web, de tal manera que pueden ser vistos como applets de Java que se ejecutan en
+                    servidores en vez de navegadores web.
+                </p>
+                <p>
+                <ul>
+                    <li><b>Objetos Request</b>: El navegador envía información al servidor cada vez que navegamos a
+                        una pagina, como el lenguaje utilizado por el navegador, el tipo de navegador que estas
+                        usando, etc.</li>
+                    <li><b>Objetos Response</b>: Datos que se envíane en la cabecera de respuesta ante la petición
+                        realizada.</li>
+                </ul>
+                </p>
+                <p>
+                <h6>Métodos service e init</h6>
+
+                El método init() es el que inicializa el servlet por defecto. Una vez hecho, cada petición de
+                usuario lanza un hilo que llama al método service(), el cual obtiene el tipo de petición que se ha
+                realizado (GET, POST, PUT, DELETE).
+                </p>
+
+                <P>
+                <h6>El descriptor de despliegue web.xml</h6>
+                Un descriptor de despliegue (DD) es un componente de aplicaciones J2EE que describe cómo se debe
+                desplegar (o implantar) una aplicación web.
+                En aplicaciones J2EE, XML se usa para la sintaxis del fichero descriptor de despliegue. Debe ser
+                llamado web.xml, y debe ser colocado en un subdirectorio llamado WEB-INF.
+                </P>
+
+                <p>
+                <h6>Sesiones</h6>
+                HTTP es un protocolo sin sesión, por lo que no se puede decir desde un acceso al servidor a otro si
+                se trata de la misma persona que está accediendo repetidamente al sitio, o si se trata de una
+                persona diferente.
+                </p>
+                <p>
+                    Una sesión es una o más solicitudes de páginas por parte de un cliente a un sitio web durante un
+                    periodo definido de tiempo.
+                </p>
+                <p>
+                    Para saber si la sesión es nueva o una ya iniciada, se utilizan cookies, de forma que la clase
+                    Session del API servlet usa la clase Cookie.
+                </p>
+                <hr>
+
+                <h5>Sistemas para gestionar logs en Java</h5>
+                <p>
+                <ul>
+                    <li><b>Log4j</b>: Biblioteca open source desarrollada en Java por la Apache Software Foundation
+                        que permite a los desarrolladores de software escribir mensajes de registro, cuyo propósito
+                        es dejar constancia de una determinada transacción en tiempo de ejecución. Log4j permite
+                        filtrar los mensajes en función de su importancia.</li>
+                    <li><b>Log4j2</b>: A las características anteriores, añade, entre otras novedades,
+                        soporte para JMX, el conjunto de herramientas de Java que permite, entre otras
+                        cosas, administrar las aplicaciones Java</li>
+                    <li><b>LogBack</b>: Sistema de log similar al conocido Log4j, que pretende mejorarlo y
+                        convertirse en su sucesor. Logback ha sido desarrollado por la misma que gente que
+                        desarrolló log4j, tratando de corregir los problemas de este último.</li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+
+            <div id="bases_datos">
+                <h1 class="display-4">BASES DE DATOS</h1>
+                <hr>
+                <!---->
+                <h3>APIs abiertas</h3>
+                <p>
+                <ul>
+                    <li><b>Firebase</b>: plataforma para el desarrollo de aplicaciones web y aplicaciones móviles
+                        desarrollada por Google. Usa un conjunto de herramientas para la creación y sincronización
+                        de proyectos </li>
+                    <li><b>GraphQL </b>: lenguaje de consulta y un tiempo de ejecución del servidor para las
+                        interfaces de programación de aplicaciones (API); su función es brindar a los clientes
+                        únicamente los datos solicitados.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>SGBD NoSQL</h3>
+                <p>
+                <ul>
+                    <li><b>Apache Cassandra</b>: distribuida y basada en un modelo de almacenamiento de
+                        "clave-valor", de código abierto que está escrita en Java. </li>
+                    <li><b>MongoDB</b>: sistema de base de datos NoSQL, orientado a documentos y de código abierto.
+                        MongoDB guarda estructuras de datos BSON. </li>
+                    <li><b>Redis</b>: motor de base de datos en memoria, basado en el almacenamiento en tablas de
+                        hashes (clave/valor) pero que opcionalmente puede ser usada como una base de datos durable o
+                        persistente.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Concepto de campos autonuméricos. Claves. Claves ajenas</h3>
+                <p>
+                    Los campos autonuméricos son los utilizados para identificar las claves de una tabla, de forma
+                    que Cada
+                    fila tendrá un valor numérico que no se repetirá nunca e irá incrementándose en 1 con cada
+                    inserción.
+                </p>
+                <p>
+                    Una clave ajena es una limitación referencial entre dos tablas.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Concepto de vista</h3>
+                <p>
+                    Es el conjunto de resultados de una consulta almacenada en los datos. es una consulta que se
+                    presenta como una tabla (virtual) a partir de un conjunto de tablas en una base de datos
+                    relacional.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Diagramas de entidad-relación para modelar una base de datos relacional</h3>
+                <p>
+                    Los diagramas ER son un lenguaje gráfico para describir conceptos.
+                </p>
+                <p>
+                    Para elaborarlos se utiliza una serie de elementos:
+                <ul>
+                    <li><b>Entidades</b>: son el fundamento del modelo entidad relación. Se trata de cualquier cosa
+                        o parte del mundo que es distinguible del resto. Se representan por medio de un
+                        <b>rectángulo</b>.</li>
+                    <li><b>Atributos</b>: Se representan mediante un <b>círculo o elipse</b> etiquetado mediante un
+                        nombre en su interior, aunque no suelen aparecer representados en los diagramas E/R.</li>
+                    <li><b>Relación</b>: Describe cierta dependencia entre entidades o permite la asociación de las
+                        mismas. Se representa con una flecha entre las entidades.</li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Lenguaje de consulta SQL</h3>
+                <p>
+                    El lenguaje de manipulación de datos (<b>DML</b>) consta de 4 comandos principales:
+                <ul>
+                    <li><b>SELECT</b>: Permite visualizar la información de la base de datos.</li>
+                    <li><b>INSERT</b>: Permite introducir datos a la base de datos.</li>
+                    <li><b>UPDATE</b>: Permite editar información existente.</li>
+                    <li><b>DELETE</b>: Permite eliminar datos.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Resultset</h3>
+                <p>
+                    Un ResultSet contiene todas las filas que satisfacen las condiciones de una sentencia SQL y
+                    proporciona el acceso a los datos de estas filas mediante un conjunto de métodos get que
+                    permiten el acceso a las diferentes columnas de la filas. El método ResultSet.next se usa para
+                    moverse a la siguiente fila del result set, convirtiendo a ésta en la fila actual.
+                    Simplificando, un Result Set es una tabla, pero no hay garantía de que los datos lleguen en
+                    orden, por lo que se puede usar la sentencia ORDER BY para asignar un determinado orden
+                    establecido en las filas del ResultSet.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Transacciones</h3>
+                <p>Una transacción es una interacción con una estructura de datos compleja, compuesta por varios
+                    procesos que se han de aplicar uno después del otro. La transacción debe realizarse de una sola
+                    vez y sin que la estructura a medio manipular pueda ser alcanzada por el resto del sistema hasta
+                    que se hayan finalizado todos sus procesos.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Prepared statements y la inyección de código</h3>
+                <p>
+                    Son plantillas para consultas a sistemas de bases de datos en lenguaje SQL cuyos parámetros
+                    están desprovistos de valores. Para reemplazar dichos valores, estas plantillas trabajan con
+                    variables o marcadores de posición, que no son sustituidos por los valores reales hasta estar
+                    dentro del sistema.
+                </p>
+                <p>
+                    Un defecto de <b>inyección de código</b> ocurre cuando es posible enviar datos inesperados a un
+                    intérprete.
+                    Una inyección de código puede resultar en la pérdida o corrupción de datos, falta de
+                    responsabilidad en acciones o denegación de acceso. Una inyección puede incluso tomar control
+                    total de un nodo.
+                    Una inyección de código SQL se aprovecha de la sintaxis en este lenguaje para introducir
+                    comandos de manera ilícita que permitan leer o modificar la base de datos, comprometiendo el
+                    contenido de la consulta original.
+                    <b> Con las Prepared Statments se evita este riesgo</b>.
+
+                </p>
+                <hr>
+                <!---->
+
+                <h3>GUI para mysql</h3>
+                <p>
+                <ul>
+                    <li><b>phpMyAdmin</b>: herramienta escrita en PHP con la intención de manejar la administración
+                        de MySQL a través de páginas web, utilizando un navegador.</li>
+                    <li><b>MySQL Workbench</b>: herramienta visual de diseño de bases de datos que integra
+                        desarrollo de software, administración de bases de datos, diseño de bases de datos, gestión
+                        y mantenimiento para el sistema de base de datos MySQL.</li>
+                    <li><b>HeidiSQL</b>: aplicación ligera basada en Windows para la gestión de bases de datos MySQL
+                        y Microsoft SQL.</li>
+                    <li><b>TOAD</b>: aplicación informática de desarrollo SQL y administración de base de datos,
+                        considerada una herramienta útil para los DBAs (administradores de base de datos). </li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="control_versiones">
+                <h1 class="display-4">CONTROL DE VERSIONES</h1>
+                <hr>
+                <p>
+                    Se llama control de versiones a la gestión de los diversos cambios que se realizan sobre los
+                    elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un
+                    producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o
+                    modificación.
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Ventajas que aportan los controladores de versiones</h3>
+                <p>
+                <ul>
+                    <li><b>Trazabilidad</b>: seguimiento de un producto desde que se inicia el proceso de su
+                        fabricación hasta que llega a manos del consumidor final.</li>
+                    <li><b>Historial de cambios</b>: Característica que permite controlar la evolución de una
+                        aplicación y los cambios que se han ido realizando, pudiendo ver en todo momento quién lo ha
+                        hecho, comparar versiones o cuándo se ha introducido un error.</li>
+                    <li><b>Reversión</b>: Característica que permite volver al estado anterior de una aplicación
+                        cuando
+                        hay un error.</li>
+                    <li><b>Trabajo en grupo</b></li>
+                    <li><b>Trabajo en ramas</b>: Es una forma de separar nuevo trabajo del trabajo ya existente en
+                        el repositorio. </li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Herramientas</h3>
+                <p>
+                <ul>
+                    <li><b>CVS</b>: Concurrent Versions System es una aplicación informática que implementa un
+                        sistema de control de versiones: mantiene el registro de todo el trabajo y los cambios en
+                        los ficheros. </li>
+                    <li><b>Apache Subversion</b>: herramienta de control de versiones open source basada en un
+                        repositorio cuyo funcionamiento se asemeja enormemente al de un sistema de ficheros.</li>
+                    <li><b>GIT</b>: software de control de versiones, cuyo propósito es llevar un registro de los
+                        cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre
+                        archivos compartidos.</li>
+                    <li><b>Mercurial</b>: sistema de control de versiones multiplataforma, para desarrolladores de
+                        software. Está implementado principalmente haciendo uso del lenguaje de programación Python.
+                    </li>
+                </ul>
+                </p>
+                <hr>
+                <!---->
+
+                <h3>Repositorios GIT</h3>
+                <p>
+                <ul>
+                    <li><b>GitHub</b>: es un sistema de gestión de proyectos y control de versiones de código, así
+                        como una plataforma de red social diseñada para desarrolladores. </li>
+                    <li><b>Bitbucket</b>: servicio de alojamiento basado en web, para los proyectos que utilizan el
+                        sistema de control de versiones Mercurial y GIT.</li>
+                    <li><b>Gitlab</b>: servicio web de control de versiones y desarrollo de software colaborativo
+                        basado en Git. Además de gestor de repositorios, el servicio ofrece también alojamiento de
+                        wikis y un sistema de seguimiento de errores, todo ello publicado bajo una Licencia de
+                        código abierto.</li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="integracion_continua">
+                <h1 class="display-4">INTEGRACIÓN CONTINUA</h1>
+                <hr>
+                <!---->
+                <h3>Pruebas unitarias</h3>
+                <p>
+                <ul>
+                    <li><b>JUnit</b>: framework que permite realizar la ejecución de clases Java de manera
+                        controlada, para poder evaluar si el funcionamiento de cada uno de los métodos de la clase
+                        se comporta como se espera.</li>
+                    <li><b>PHPUnit</b>: entorno para realizar pruebas unitarias en el lenguaje de programación PHP.
+                        Utiliza assertions para verificar que el comportamiento de una unidad de código es el
+                        esperado.</li>
+                    <li><b>Mocha</b>: framework de pruebas para Node JS que puede ejecutarse desde la consola o
+                        desde un navegador.</li>
+                    <li><b>Jasmine</b>: framework de test que permite crear tests fáciles de leer de forma que
+                        sirven también de documentación para el código.</li>
+                    <li><b>Jest</b>: Permite construir tests unitarios trabajando con matchers personalizados, crear
+                        mocks o comprobar snapshots de componentes visuales como algo sencillo y accesible.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Pruebas de integración: selenium</h3>
+                <p>
+                    Las <b>pruebas de integración</b> son aquellas que se realizan en el ámbito del desarrollo de
+                    software
+                    una vez que se han aprobado las pruebas unitarias y lo que prueban es que todos los elementos
+                    unitarios que componen el software, funcionan juntos correctamente probándolos en grupo. Se
+                    centra principalmente en probar la comunicación entre los componentes y sus comunicaciones ya
+                    sea hardware o software.
+                </p>
+                <p>
+                    <b>Selenium</b> es un entorno de pruebas de software para aplicaciones basadas en la web.
+                    Selenium
+                    provee una herramienta de grabar/reproducir para crear pruebas sin usar un lenguaje de scripting
+                    para pruebas (Selenium IDE). Incluye también un lenguaje específico de dominio para pruebas
+                    (Selenese) para escribir pruebas en un amplio número de lenguajes de programación populares
+                    incluyendo Java, C#, Ruby, Groovy, Perl, Php y Python.
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Servidores</h3>
+                <p>
+                <ul>
+                    <li><b>Jenkins</b>: ayuda en la automatización de parte del proceso de desarrollo de software
+                        mediante integración continua y facilita ciertos aspectos de la entrega continua.</li>
+                    <li><b>Travis CI</b>: sistema de Integración Continua, gratuita para proyectos Open Source y de
+                        pago para proyectos privados. </li>
+                    <li><b>TeamCity</b></li>
+                    <li><b>CircleCI</b></li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Issue tracking</h3>
+                <p>
+                    Un sistema de seguimiento de incidentes es un paquete de software que administra y
+                    mantiene listas de incidentes, a medida que son requeridos por una institución.
+                </p>
+                <p>
+                <ul>
+                    <li><b>Jira</b>: diseñado para que todos los miembros del equipo de software
+                        puedan planificar, supervisar y publicar.
+                    </li>
+                    <li><b>Backlog</b>: es la lista de trabajo ordenado por prioridades para el equipo de desarrollo
+                        que se obtiene de la hoja de ruta y sus requisitos. </li>
+                    <li><b>Trac</b>: herramienta para la gestión de proyectos y el seguimiento de errores escrita en
+                        Python.</li>
+                    <li><b>Redmine</b>: herramienta para la gestión de proyectos, que con sus diversas
+                        funcionalidades permite a los usuarios de diferentes proyectos realizar el seguimiento y
+                        organización de los mismos. Incluye un sistema de seguimiento de incidentes con seguimiento
+                        de errores, entre otras herramientas.</li>
+                    <li><b>Mantis Bug Tracker</b>: se utiliza para probar soluciones automatizadas, llevando un
+                        registro histórico de las alteraciones y gestionando equipos de trabajo de forma remota.
+                    </li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Teconologías para la inspección y la mejora del código: codeclimate, sonarqube</h3>
+                <p>
+                    <b>Code Climate</b> consolida los resultados de un conjunto de herramientas de análisis estático
+                    en un
+                    único informe en tiempo real.
+                </p>
+                <p>
+                    <b>SonarQube</b> es una plataforma desarrollada en Java que permite realizar análisis de código
+                    con
+                    diferentes herramientas de forma automatizada.
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="despliegue">
+                <h1 class="display-4">DESPLIEGUE</h1>
+                <hr>
+                <!---->
+                <h3>Microservicios y Message Brokers</h3>
+                <p>
+                    Una “arquitectura de <b>microservicios”</b> es un enfoque para desarrollar una aplicación
+                    software como
+                    una serie de pequeños servicios, cada uno ejecutándose de forma autónoma y comunicándose entre
+                    sí, por ejemplo, a través de peticiones HTTP a sus API.
+                </p>
+                <p>
+                    Un <b>Message Broker</b> es un programa intermediario que traduce los
+                    mensajes de un sistema desde un lenguaje a otro, a través de un medio de telecomunicaciones.
+                </p>
+                <p>
+                <ul>
+                    <li><b>RabbitMQ</b>: software de negociación de mensajes de código abierto que funciona como un
+                        middleware de mensajería. </li>
+                    <li><b>Apache Kafka</b>: aplicación multiplataforma de código abierto especializada en el
+                        procesamiento de flujos de datos.</li>
+                    <li><b>Redis</b>: sistema de almacenamiento en memoria volátil en RAM basado en registros
+                        clave-valor NoSQL. Actualmente Redis es usado por: Twitter, Instagram, GitHub, Flickr, o
+                        Digg.</li>
+                    <li><b>Amazon SQS</b>: servicio de cola de mensajes.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Monitorización</h3>
+                <p>
+                <ul>
+                    <li><b>New Relic</b>: sistema de motorización de máquinas que permite tener un control en tiempo
+                        real de los recursos disponibles.</li>
+                    <li><b>Datadog</b>: servicio de monitorización para aplicaciones en la nube, que proporciona
+                        monitorización de servidores, bases de datos, herramientas y servicios, a través de una
+                        plataforma de análisis de datos basada en "Software como Servicio".</li>
+                    <li><b>Dynatrace</b>: proporciona supervisión automatizada, completa y alimentada por
+                        inteligencia artificial, que brinda una visión profunda (respuestas, no datos) de cada
+                        usuario, cada transacción, en cada aplicación.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Infraestructura</h3>
+                <p>
+                <ul>
+                    <li><b>IaaS (Infraestructura como Servicio)</b>: Es una infraestructura informática inmediata
+                        que se aprovisiona y administra a través de Internet</li>
+                    <li><b>CaaS (Contenedor como Servicio)</b>: Se trata de una forma de virtualización basada en
+                        contenedores en la que los motores de contenedores, la orquestación y los recursos
+                        informáticos subyacentes se entregan a los usuarios como un servicio de un proveedor en la
+                        Nube.</li>
+                    <li><b>PaaS (Plataforma como Servicio)</b>: Proporciona una plataforma y un entorno que permiten
+                        a los desarrolladores crear aplicaciones y servicios.</li>
+                    <li><b>FaaS (Funciones como Servicio)</b>: Se conoce como serverless architecture. Esta
+                        arquitectura permite la ejecución de aplicaciones a través de contenedores efímeros. </li>
+                    <li><b>SaaS (Software como Servicio)</b>: También conocido como software bajo demanda, o
+                        software out-of-the-box. Se trata de un servicio que ofrece a los usuarios una aplicación
+                        determinada que pueden utilizar inmediatamente, sin necesidad de instalar nada, de hacer
+                        ningún despliegue, ni de llevar su mantenimiento.</li>
+                </ul>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Contenedores</h3>
+                <p>
+                <ul>
+                    <li><b>Docker</b>: Plataforma de software que le permite crear, probar e implementar
+                        aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas
+                        contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas
+                        bibliotecas, herramientas de sistema, código y tiempo de ejecución. </li>
+                    <li><b>Docker compose</b>: Permite definir las aplicaciones multicontenedor, conocidas como
+                        stacks, y ejecutarlas en un nodo individual o en un clúster.</li>
+                    <li><b>Docker Swarm</b>: Permite agrupar una serie de hosts de Docker en un clúster y gestionar
+                        los clústeres de forma centralizada así como orquestar los contenedores. Se basa en una
+                        arquitectura maestro-esclavo: mientras que el maestro de Swarm es responsable de la gestión
+                        del clúster y la delegación de tareas, el esclavo se encarga de ejecutar las unidades de
+                        trabajo (tasks o tareas). </li>
+                    <li><b>Kubernetes</b>: plataforma portable y extensible de código abierto para administrar
+                        cargas de trabajo y servicios.</li>
+                </ul>
+                </p>
+                <br>
+                <hr><br>
+            </div>
+
+            <div id="personajes">
+                <h1 class="display-4">PERSONAJES</h1>
+                <hr>
+                <!---->
+                <h3>John Resig</h3>
+                <p>Conocido por ser un experto de programación en lenguaje JavaScript y por crear la librería de
+                    JavaScript más conocida en el mundo (jQuery). Ha creado muchos proyectos JavaScript que son
+                    parte del mundo moderno y es autor de varios libros sobre este tema (Secrets of the JavaScript
+                    Ninja y Pro JavaScript Techniques).
+                </p>
+                <p><a href="https://es.wikipedia.org/wiki/John_Resig">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Douglas Crockford</h3>
+                <p>Programador americano relacionado con el lenguaje JavaScript. Popularizó el formato JSON y otras
+                    herramientas Java como JSLint o JSMint. Actualmente es desarrollador de JavaScript en PayPal</p>
+                <p><a href="https://en.wikipedia.org/wiki/Douglas_Crockford">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Jeremy Ashkenas</h3>
+                <p>
+                    Programador informático conocido por la creación de los lenguajes de programación CoffeeScript y
+                    LiveScript, así como Backbone.js y underscore.js entre otros.
+                </p>
+                <p><a href="https://es.qaz.wiki/wiki/Jeremy_Ashkenas">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Misko Hevery</h3>
+                <p>
+                    Trabaja para Google y es desarrollador de AngularJS.
+                </p>
+                <p><a
+                        href="https://www.forbes.com/sites/louiscolumbus/2016/11/14/misko-hevery-inventor-of-angular-and-how-open-source-languages-are-redefining-enterprise-software/">Fuente</a>
+                </p>
+                <hr>
+
+                <!---->
+                <h3>Rod Johnson</h3>
+                <p>
+                    Programador australiano que desarrolló Spring Framework. Es también cofundador de la empresa
+                    SpringSource, donde trabajó como CEO hasta 2009.
+                </p>
+                <p><a href="https://en.wikipedia.org/wiki/Rod_Johnson_(programmer)">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>James Gosling</h3>
+                <p>
+                    Es conocido como el padre del lenguaje de programación Java. También realizó el diseño original
+                    y la implementación del compilador original y la máquina virtual Java. Además ha hecho más
+                    aportaciones como contribuir en otros proyectos de software (NeWS, Goslin Emacs).
+                </p>
+                <p>
+                    Actualmente es Jefe de Arquitectura de Software en Liquid Robotics.
+                </p>
+                <p><a href="https://es.wikipedia.org/wiki/James_Gosling">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Martin Fowler</h3>
+                <p>
+                    Ingeniero de software británico especializado en desarrollo y otros aspectos como análisis y
+                    diseños orientados a objetos, UML, patrones de diseño, programación externa…
+                </p>
+                <p><a href="https://es.wikipedia.org/wiki/Martin_Fowler">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Eric S. Raymond</h3>
+                <p>
+                    Es el responsable del Jargon File, hecho que le hizo tener fama dentro de la cultura hacker. Sin
+                    embargo, posteriormente pasó a ser un nombre importante en lo relativo al movimiento del Open
+                    Source y Código abierto.
+                    También fue importante su contribución para liberar el código de Netscape en lo relativo al
+                    proyecto Mozilla en 1998.
+                </p>
+                <p><a href="https://es.wikipedia.org/wiki/Eric_S._Raymond">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>Rasmus Lerdorf</h3>
+                <p>
+                    Programador informático de Groenlandia que creó la primera versión del lenguaje de programación
+                    PHP.
+                </p>
+                <p><a href="https://es.wikipedia.org/wiki/Rasmus_Lerdorf">Fuente</a></p>
+                <hr>
+
+                <!---->
+                <h3>John Papa</h3>
+                <p>
+                    Asesor principal de desarrollo en Microsoft y antiguo alumno de los programas Google Developer
+                    Expert, Microsoft RD y MVP. Entre sus aficiones se encuentran el desarrollo y la enseñanza de
+                    las modernas tecnologías web. También es autor de la guía de estilo de Angular y de muchos
+                    cursos de Pluralsight populares.
+                    Entre sus aptitudes y destrezas se encuentran JavaScript y Node.js, entre otros.
+                </p>
+                <p>
+                    <a
+                        href="https://developer.microsoft.com/es-es/advocates/john-papa#:~:text=Biograf%C3%ADa,todo%20Disney%20con%20su%20familia">Fuente</a>
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
