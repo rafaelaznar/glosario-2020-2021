@@ -1,0 +1,25 @@
+body {
+    background-color: #d1e6ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 1vw;
+}
+
+
+
+div {
+    border: 1px solid royalblue;
+    background-color: #a8f7ed;
+    border-radius: 0.5rem;
+    padding: 0;
+    margin-bottom: 1vw;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+}
