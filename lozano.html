@@ -1,0 +1,616 @@
+
+   
+    <h2>HTTP</h2>
+
+    <h3>-Internet (Creación, concepto, funcionamiento):</h3>
+    <p>Es un conjunto de redes para comunicarse entre sí. La primera red fue en California cuando se estableció conexión entre tres universidades en 1969. Funciona a través de protocolos de comunicación que puede leer e interpretar solo las computadoras.</p>
+    <h3>-Protocolo de comunicación (Concepto,tipos,RFC):</h3>
+    <p>Comunica datos digitales clasificado funcionalmente en la capa de red según el modelo OSI.Su función es de uso bidireccional que transfiere paquetes conmutados a través de diferentes redes físicas enlazadas. Existen diferentes tipos como:</p>
+    <pre>	-TCP/IP					-SSH
+        -HTTP					-DNS
+        -FTP</pre>
+    <p>Las RFC son un conjunto de documentos que sirven de referencia para la comunidad de Internet, que describen, especifican y asisten en la implementación, estandarización y discusión de la mayoría de las normas.</p>
+    <h3>-Niveles ISO-OSI:</h3>
+    <p>Existen diferentes niveles en el modelo OSI.</p>
+    <pre>       <b>  1.- Físico:</b>  Su función es la conexión de equipos.
+        <b> 2.- Enlace:</b>  Su función es la detección de errores.
+        <b> 3.- Red:</b>  Su función es el enrutamiento de los mensajes.
+        <b> 4.- Transporte:</b>  Su función es la integración de los mensajes.
+        <b> 5.- Sesión:</b>  Su función son los diálogos de control
+        <b> 6.- Presentación:</b>  Su función es interpretar los datos
+        <b> 7.- Aplicación:</b>  Su función es mostrar los datos de forma normalizada.
+    </pre>
+
+<h3>-Protocolo HTTP:</h3>
+<p>En ingles Hypertext Transfer Protocol, es el protocolo de comunicación que permite las transferencias de información en la World Wide Web, sigue el esquema de petición-respuesta entre un cliente y un servidor.
+    Las principales características de este protocolo son:
+    <pre>
+    -Se establece sobre la capa de conexión TCP/IP.
+    -Toda comunicación se realiza a partir de caracteres de 8 bits.
+    -Respeta el formato original.
+    -Permite transferencia de objetos multimedia
+    -Cada objeto del protocolo esta identificado a traves de un URL.</pre></p>
+<p>Los metodos HTTP indican la accion que se desea realizar para un recurso determinado. Metodos:
+</p>
+<pre>
+        -GET: Solicita una representación de un recurso específico. 
+	-HEAD: Pide una respuesta idéntica a la de una petición GET.
+	-POST: Se utiliza para enviar una entidad a un recurso en específico.
+	-PUT: Reutiliza para enviar una entidad a un recurso en específico.
+	-DELETE: Borra un recurso en especifico.
+	-CONNECT: Establece un tunel hacia el servidor.	
+	-OPTIONS: Utilizado para describir opciones de comunicación.
+	-TRACE: Realiza prueba de bucle de retorno de mensaje.
+	-PATCH: Utilizado para aplicar modificaciones parciales a un recurso.
+</pre>
+<h3>-El proceso de carga de una pagina web:</h3>
+
+<p>El primer paso lo hace el navegador que envia una solicitud al servidor para ver la pagina.Durante este proceso hay un tiempo de espera en el que se redirecciona la URL,se busca el dominio, se conecta al servidor, y el servidor responde enviando paquetes. <p>
+    Una vez ocurrido esto el servidor envia la pagina web, y el navegador la “descarga”.</p><p>
+    Y una vez realizados estos pasos la pagina web es cargada, por cada acción que realicemos en la pagina ser repetirá el proceso.</p>
+<h3>-TCP:</h3>
+<p>Significa Protoclo de Control de Tranmisiony es un sistema de protocolos que permite la conexión entre ordenadores que no pertenecen a la misma red, ademas de aportar diferentes servicios. Este protocolo garantiza la transferencia de datos confiable. Este protocolo se usa cuando se requiera que no se pierda informacion por el camino.
+</p>
+<p>Este protocolo utiliza diferntes puertos para diferentes servicios, por ejemplo los mas importantes:</p>
+<pre>
+        -Puerto 22: SSH,SCP,SFTP. 
+	-Puerto 23: Telnet manejo remoto de equipo.
+	-Puerto 25: SMTP (Correo).
+        -Puerto 37: Time.</pre>
+<p>El TCP tiene una estructura dividida en segmentos el cual es:</p>
+    <p><a href="https://upload.wikimedia.org/wikipedia/commons/a/a9/CabeceraTCP.png">-Estructura-</a></p>
+<p>Un socket es un metodo para la comunicación entre un programa del cliente con un programa de un servidor en red, es decir el punto final de una conexión.</p>
+<p>De forma que podemos crear aplicaciones que usen el protocolo TCP y basicamente eso seria un socket. Por ejemplo la aplicación de trolleyes.</p>
+<h3>-IP:</h3>
+<p>Es la base fundamental para internet, esta compuesto de datagramas de la fuente del destino. El nivel de transporte parte de el fujo de estos. Se puede dividir el datagrama en segmentos. Es decir permite el desarrollo y transporte de datos, aunque su recepcion no esta asegurada.</p>
+<p>Las direcciones IP son los nombres numericos que se les asignan a un dispositivo para que pueda comunicarse con otros dispositivos. Hay diferentes tipos:</p>
+<pre>
+        -Clase A: 10.0.0.0 – 10.255.255.255
+	-Clase B: 172.16.0.0 – 172.31.255.255
+	-Clase C: 192.168.0.0 – 192.168.255.255
+</pre>
+<p>El enrutamiento de IP es el proceso que permite que los paquete IP enviados por el host origen lleguen al host destino de forma adecuada, sin importar por que cantidad de dispositivos intermedios tenga que pasar. </p>
+<p>Para esto se lleva un proceso, ya que primero se debe comprobar la tabla de resoluciones de ARP para comprobar por donde tiene que pasar el mensaje.</p>
+<p>Estructura datagramas IP:</p>
+<p><a href="https://aprendederedes.com/wp-content/uploads/2019/01/datagrama-ip-min-500x280.jpg">-Estructura IP-</a></p>
+<h3>-URL: </h3>
+<p>Significa Localizador de Recursos Uniforme, es un identificar de recursos cuyos recursos referidos pueden cambiar, es la dirección que puede apuntar a recursos variables en el tiempo. Es utlizado para nombrar recursos en linea.</p>
+<p>Los URL tienen parámetros, estos son propiedades que agregan los creadores a la configuración de un cuadro de mando y que se pueden usar para realizar acciones, de forma que puede cambiar la forma de mostrarse.</p>
+
+<h3>-Aplicaciones cliente-servidor vs P2P</h3>
+<p>La principal diferencia entre Cliente-Servidor y P2P es que en el metodo cliente servidor, toda la información tiene que pasar por el servidor y el servidor se encarga de distribuirlo entre los diferentes clientes conectados, en cambio en P2P no tienen que pasar por ningún servidor, ya que se comunican entre si directamente, se utilizan nodos que se comportan igual entre si.</p>
+<p> Ademas en P2P la conexión estará siempre activa. En P2P todos tiene las mismas funciones en cambio en Cliente-Servidor, el servidor tiene funciones que los clientes no tienen.</p>
+<h3>-¿Qué es una cookie y para qué sirve? ¿cómo podemos establecer una sesión usando cookies? ¿donde viaja la cookie dentro del paquete HTTP?</h3>
+<p>Los cookies son archivos creados por los sitios web que visitas y la caché de tu navegador, de forma que cuando accedas en un futuro cargara mas rápido. </p>
+<p>Ademas también sirve para conocer información sobre hábitos de navegaciones intentos de spyware.</p>
+<h3>-¿Qué son los tipos MIME y para qué sirven?</h3>
+<p>MIME significa Multipurpose Internet Mail Extensions y son las froma estandar de enviar contenido a trabes de la red, estos especifican los tipos de datos. Es decir:</p>
+<p>Adjunta a cada archivo un archivo de cabecera donde se indica el tipo y el subtipo del contenido de los datos del archivo. Gracias a esta información tanto el servidor como el navegador pueden manejar y presentar los archivos correctamente.</p>
+<p>En sentido general las extensiones de MIME van encaminadas a soportar:</p>
+<pre>
+        -Texto en conjuntos de caracteres distintos.
+	-Adjuntos que no son de tipo texto.
+	-Cuerpos de mensajes con múltiples partes.
+	-Información de encabezados con conjuntos de caracteres distintos.
+</pre>
+
+
+<h2>PROYECTOS WEB</h2>
+
+<h3>-Requerimientos, especificaciones de una aplicación:</h3>
+<p>Lo esencial para crear una aplicación se basa en los siguientes puntos.</p>
+<pre>
+        -Idea.
+	-Planificacion.
+	-Diseño.
+	-Puesta en funcionamiento.
+</pre>
+<p>Ademas la aplicación debe ser fiable, multiplataforma, funcional y dinamica.</p>
+
+<h3>-Metodologías del desarrollo del software:</h3>
+<p>Principalmente se refiere a un framework o entorno de trabajo que se usa para estructurar y tener un control del proceso de desarrollo,existen varios pero destacamos los siguientes:</p>
+<p>
+        -Modelo cascada: Es dividido en capas y cada etapa representa una unidad de desarrollo con un pequeño descanso en el medio. Por lo tanto, cada siguiente etapa inicia tan pronto como la anterior haya culminado, y esos descansos son usados para confirmaciones del lado del cliente.
+</p>
+<p>-Modelo en espiral: Esta es una metodología para proyectos rápidos con mayor paralelismo a la hora de trabajar y debe ser planificado metódicamente para cada paso del espiral, ya que en este se trabajan múltiples entregas simultáneamente.</p>
+<p>-Modelos basados en prototipos: Esta metodología se enfoca en otorgar resultados rápidos, con procesos de desarrollos con herramientas.</p>
+<p>-Métodos kanban: Es un sistema basado en funcionamiento de los supermercados que reduce la procrastinacion en todas las áreas, se basa en la facilidad de visualización e interpretación hace que la comunicación entre los funcionarios se vuelva mucho más rápida y efectiva.</p>
+<p>-Extreme programming: Su objetivo es el desarrollo y gestión de proyectos con eficacia, flexibilidad y control. Es una metodología basada en la comunicación, la reutilización del código desarrollado y la realimentación.</p>
+<p>-Scrum: Se basa en que cada uno es responsable de unas tareas determinadas y de terminarlas en los tiempos acordados. Esto garantiza la entrega de valor del equipo completo, sin necesidad de ayuda o la supervisión minuciosa de otros miembros de la organización.</p>
+
+<h3>-Integración continua:</h3>
+<p>Se basa en una practica de desarrollo de software que consistente en integrar las modificaciones del proyecto automáticamente lo mas a menudo posible para poder detectar fallos cuando antes.</p>
+<p>Para ello se pueden usar servidores que generen copias, de forma que el código sea fácil de recuperar a una versión anterior del código, aunque tambien existen paginas web que actúan como servidores.</p>
+<p>-Concepto de Pruebas unitarias:Se utiliza para verificar si un método particular en el código de producción está funcionando correctamente, para probar la regresión o para realizar pruebas. Las pruebas ordenadas se utilizan para ejecutar otras pruebas en un orden específico. Existen diferentes herramientas que podemos usar como:</p>
+<pre>
+        -Typemock
+	-JUnit
+	-Qunit 
+</pre>
+<p>-Los “mock”: Utilizan objetos simulados para reemplazar los objetos reales utilizados por la clase o segmento de código que se va a probar.</p>
+
+<h3>-Concepto de Pruebas de integración:</h3>
+<p>Son aquellas operaciones que se realizan en el campo del desarrollo de software después de la aprobación de las pruebas unitarias y que demuestran que todos los elementos unitarios que componen el software pueden trabajar juntos correctamente al agruparlos.
+</p>
+<h3>-TDD:</h3>
+<p>Esta es una práctica de programación que implica primero escribir una prueba (generalmente una unidad), luego escribir el código fuente que pasa satisfactoriamente la prueba y finalmente refactorizar el código escrito.</p>
+
+<h3>-Documentación de programas:</h3>
+<p>Comienza al mismo tiempo que la construcción de la estructura y finaliza antes de que el programa o aplicación sea entregado al cliente. Asimismo, la documentación entregada al cliente debe ser consistente con la versión final del programa que constituye la aplicación.</p>
+<p>Hay diferentes tipos de documentación que tenemos que tener en cuenta:</p>
+<pre>
+        -DOCUMENTACIÓN DE ESPECIFICACIONES
+	-DOCUMENTACIÓN DE DISEÑO
+	-DOCUMENTACIÓN DEL CÓDIGO FUENTE
+	-FORMULARIO DE PRÁCTICAS
+</pre>
+<p>Tenemos diferentes herramientas para la ayuda de la documentación como:</p>
+<pre>
+        -Huddle
+	-Read the Docs
+	-Javadoc
+	-Markdown
+	-Swagger
+</pre>
+<h3>-Contenedores:</h3>
+<p>Para elaborar informes o informes digitales, necesitamos una aplicación que nos permita desarrollar e integrar. Está relacionado con el uso de una aplicación web que ayuda a consolidar informes o todo el contenido multimedia de un informe en un mismo espacio.</p>
+
+<h3>-Gestores de versiones:</h3>
+<p>Es un conjunto de aplicaciones, originalmente diseñadas para gestionar de forma flexible los cambios en el código fuente del programa y poder modificarlos. El alcance de estas aplicaciones se ha ampliado desde el control de versiones hasta la gestión de la configuración del software, abarcando todos los equipos activos que pueden trabajar en grandes proyectos de software o Trabajo realizado en otras actividades.</p>
+<p>Existen dos tipos diferentes:</p>
+<pre>
+        -Modelo cliente-servidor.
+	-Modelo distribuido.
+</pre>
+<p>Las características principales son:</p>
+<pre>
+        -Resolución de conflictos.
+	-Revertir y deshacer los cambios en el codigo fuente.
+	-Copia de seguridad externa del codigo fuente.
+</pre>
+<p>Herramientas mas populares:</p>
+<pre>
+        -Git.
+	-CVS.
+	-Apache Subversion.
+	-Mercurial.
+	-Monotone.
+</pre>
+
+<h3>-Evaluación de la calidad del software:</h3>
+<p>Realizar evaluación de calidad de productos de software específicos de acuerdo con los estándares anteriores, especialmente para evaluar las características de funcionamiento y confiabilidad del producto de acuerdo con los indicadores definidos por estos estándares, a fin de encontrar sus debilidades.</p>
+<p>Herramientas:</p>
+<pre>
+        -PMD.
+	-Check Style.
+	-SONAR.
+	-Google CodePro Analytix.
+</pre>
+<h2>Infraestructura</h2>
+<pre>-IDES:
+        -Netbeans: entorno de desarrollo libre hecho principalmente para programar en Java.
+        -Eclipse: entorno de desarrollo de código abierto multiplataforma donde principalmente se desarrolla en Java.
+        -IntelliJ: entorno de desarrollo integrado para desarrollar programas informáticos.
+        -Visual Studio Code: editor de código fuente de Microsoft que permite trabajar con diversos lenguajes de programación, crear tus propios atajos y refactorizar el código.
+        -Sublime: editor de texto y código fuente para casi cualquier formato. Es de color oscuro y resalta en colores cada línea que escribes para que puedas centrarte en ella.
+        -Atom: editor de texto y código creado por la comunidad de GitHub.
+        -Webstorm: entorno de desarrollo con asistencia inteligente focalizado en JavaScript.</pre>
+<pre>-Navegadores, los mas usados a nivel global son los siguiente:
+        -Chrome
+        -Firefox
+        -Edge
+        -Safari
+        -Opera
+</pre>
+
+
+<h2>Diseño de Aplicaciones web:</h2>
+<h3>API de servidor:</h3>
+<p>API es un conjunto de definiciones y protocolos que se utilizan para desarrollar e integrar software de aplicación. API significa Interfaz de programación de aplicaciones.</p>
+<h3>Diagrama Entidad-relación:</h3>
+<p>El diagrama o modelo de relación entre entidades es una herramienta utilizada para el modelado de datos, que permite representar entidades relacionadas de un sistema de información y sus relaciones y atributos mutuos.</p>
+<h3>Normalización: Primera, segunda y tercera forma normales:</h3>
+<p>El proceso implica especificar un conjunto de reglas y aplicarlas a las relaciones obtenidas después de pasar del modelo de relación de entidad al modelo de relación. Para minimizar la redundancia de datos, es conveniente para la gestión posterior.</p>
+<h3>Restricciones de integridad:</h3>
+<p>Las restricciones de integridad referencial se definen como parte de la asociación entre dos tipos de entidad. ... Es un tipo de entidad con uno o más atributos que hacen referencia a la clave de entidad del terminal principal.</p>
+<h3>BD vs SGBD - SGBDR
+</h3>
+<p>DB (base de datos) es una colección estructurada de organización lógica y datos relacionados para un propósito específico, que representa entidades y sus relaciones. Un DBMS (sistema de gestión de bases de datos) es un programa informático que le permite crear, modificar y mantener bases de datos. RDBMS (Sistema de gestión de bases de datos relacionales) es una especie de modelo relacional.</p>
+<h3>DML - DDL: SQL</h3>
+<p>	Lenguaje de programación para definir estructuras de datos, proporcionado por los sistemas gestores de bases de datos, en este caso PostgreSQL.</p>
+<pre>
+    - CREATE, se usa para crear una base de datos, tabla y vistas
+    - ALTER, se utiliza para modificar la estructura.
+    - DROP, con esta sentencia, podemos eliminar los objetos de la estructura.
+    - SELECT, esta sentencia se utiliza para realizar consultas sobre los datos.
+    - INSERT, con esta instrucción podemos insertar los valores en una base de datos.
+    - UPDATE, sirve para modificar los valores de uno o varios registros.
+    - DELETE, se utiliza para eliminar las filas de una tabla.
+</pre>
+<h3>noSQL (concepto y herramientas)</h3>
+<p>Son una amplia gama de sistemas de gestión de bases de datos. Se diferencian del modelo clásico RDBMS (Relational Database Management System) en aspectos importantes. El más destacado es que no utilizan SQL como lenguaje de consulta principal.</p>
+<p>Herramientas que se suelen utilizar:</p>
+<pre>
+        -MongoDB.
+        -Apache Cassandra.
+        -CouchDB.
+        -Redis.
+        -Neo4j.
+</pre>
+<h3>UML: Diagrama de procesos</h3>
+<p>Usando UML se pueden construir numerosos tipos de diagramas. Vamos a citar algunos:</p>
+<pre>
+    -Diagramas de casos de uso: representan a los actores y casos de uso (procesos principales) que intervienen en un desarrollo de software.
+
+    -Diagramas de clases:para UML una clase es una entidad, no una clase software. Un diagrama de clases UML puede ser un diagrama del dominio o representación de conceptos que intervienen en un problema, o también un diagrama de clases software. El sentido de un diagrama UML se lo da la persona que lo construye.
+
+    -Diagramas de secuencia:suelen usarse para representar objetos software y el intercambio de mensajes entre ellos, representando la aparición de nuevos objetos de izquierda a derecha.
+
+    -Diagramas de colaboración:suelen usarse para representar objetos o clases y la forma en que se transmiten mensajes y colaboran entre ellos para cumplir un objetivo.
+
+    -Diagramas de estados:suelen usarse para representar cómo evoluciona un sistema (cómo va cambiando de estado) a medida que se producen determinados eventos.
+</pre>
+<h3>Mockups de cliente, wireframers , prototipado</h3>
+
+
+<P>-Mock up: Son fotomontajes que permiten a los diseñadores gráficos y web mostrar al cliente cómo quedaran sus diseños.</P>
+<p>-Wireframes: Son el esqueleto del diseño. Se caracterizan por tener una baja fidelidad visual, representando la interfaz en escala de grises y sin dedicar demasiado tiempo al aspecto o estética del diseño.</p>
+<p>-Prototipado: El prototipado modela el producto final y permite efectuar un test sobre determinados atributos del mismo sin necesidad de que está disponible. </p>
+
+<h3>Diagrama de navegación de un sitio web:</h3>
+<p>es la representación gráfica de la organización de la información de una estructura web. Expresa todas las relaciones de jerarquía y secuencia y permite elaborar escenarios de comportamiento de los usuarios.</p>
+
+<h2>Desarrollo de Aplicaciones web:</h2>
+<h3>Lenguajes de marcas: HTML,CSS,XML,JSON</h3>
+<P>-HTML: Es el lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código</P>
+<p>-CSS: Es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML</p>
+<p>-XML: Es un lenguaje marcado para documentos que contienen información estructurada, que posee contenido (como palabras o imágenes) y alguna indicación del papel que desempeña </p>
+<p>-JSON: Es un formato de texto sencillo para el intercambio de datos.</p>
+
+<h3>CSS</h3>
+<p>Los frameworks de CSS son una biblioteca de estilos genéricos que puede ser usada para implementar diseños web. Aportan una serie de utilidades que pueden ser aprovechadas frecuentemente en los distintos diseños web.</p>
+<pre>Existen diferentes frameworks de CSS como:
+        -Bootstrap.
+        -Materialize
+        -Foundation.
+        -Bulma.
+        -Tailwind.
+        -Semantic UI.
+        -Ulkit.
+</pre>
+<p>Ademas existen precompiladores de CSS, es un programa que te permite generar CSS a partir de la syntax única del preprocesador. Existen varios preprocesadores CSS de los cuales escoger, sin embargo la mayoría de preprocesadores CSS añadiran algunas características que no existen en CSS puro</p>
+<pre>
+        -SASS
+        -LESS
+</pre>
+<h3>Expresiones regulares:</h3>
+<p>Son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas.</p>
+<h3>JSON</h3>
+<p>Es un formato de texto sencillo para el intercambio de datos.Existen paginas web que parsean el codigo para comprobar que funcione correctamente.Ademas se pueden usar librerias en software que nos ayudan a trabajar con eficacia como:</p>
+<pre>
+        -Google Gson.
+        -Jackson.
+        -Json-simple.
+</pre>
+
+<h3>CDN:</h3>
+<p>Es una red que proporciona contenido a la página web. Un uso muy típico de un CDN lo encontramos en el área de la imagen</p>
+<h3>AJAX:</h3>
+<p>s una técnica de desarrollo web para crear aplicaciones interactivas o RIA (Rich Internet Applications). ... En cualquier caso, no es necesario que el contenido asíncrono esté formateado en XML.</p>
+<h3>Páginas estáticas vs páginas dinámicas</h3>
+<p>Las páginas estáticas están diseñadas por diferentes creadores y diseñadores web, pero a diferencia de las páginas dinámicas, las páginas estáticas se crean sin interacción con los usuarios. Las redes estáticas están diseñadas para empresas o empresas, y su propósito es mostrar servicios y productos.</p>
+<h3>Tecnología websockets</h3>
+<p>Es una tecnología que proporciona un canal de comunicación bidireccional. Está diseñada para ser implementada en navegadores y servidores web, pero puede utilizarse por cualquier aplicación cliente/servidor</p>
+
+<h3>Patrones de desarrollo: MVC, singleton, factory:</h3>
+<p>Son un patrón para resolver problemas comunes en el desarrollo de software. MVC (Model View Controller) divide los datos de la aplicación, la interfaz de usuario y la lógica de control en tres componentes diferentes</p>
+<h3>CallBack:</h3>
+<p>Es cuando las personas intentan escribir JavaScript de forma tal que la ejecución se realiza visualmente de arriba abajo.</p>
+<h3>CORS:</h3>
+<p>Es un mecanismo que permite solicitudes de recursos restringidos desde páginas web en un dominio diferente al dominio que proporcionó el primer recurso. Las páginas web pueden incorporar imágenes, hojas de estilo, scripts, iframes y videos entre dominios libremente.</p>
+<h3>Ecmascript: historial de versiones:</h3>
+<p>Es el actualmente responsable de gestionar cómo se deben interpretar y trabajar los estándares de JavaScript.</p>
+<h3>Polyfill:</h3>
+<p>Es un fragmento de código (generalmente JavaScript en la web) para proporcionar funciones modernas en navegadores más antiguos que no lo admiten de forma nativa.</p>
+<h3>Procesamiento asíncrono, Callbacks, callback hell, promesas y programación reactiva:</h3>
+<p>-El procesamiento asíncrono: proporciona la capacidad de devolver el control al programa que realiza la llamada antes de completar ciertas operaciones mientras aún se ejecuta en segundo plano.</p>
+<p>-Callback Hell: Consiste en múltiples Callbacks anidados que provocan que el código se vuelva difícil de leer y 'debuggear'</p>
+<p>-Programacion reactiva: Es un paradigma enfocado en el trabajo con flujos de datos finitos o infinitos de manera asíncrona.</p>
+<h3>Programación funcional reactiva: RxJS:</h3>
+<p>RxJS es una librería Javascript de programación reactiva que facilita la composición de código asíncrono basado en secuencias de observables.</p>
+<h3>Microservicios</h3>
+<p>Es un método de desarrollo de software que consiste en construir una aplicación como un conjunto de pequeños servicios que se ejecutan en su propio proceso.</p>
+<h3>CMS importantes:</h3>
+<p>Son aplicaciones que nos permiten gestionar de una manera cómoda los contenidos publicados en los sitios web. Las mas conocidas son:</p>
+<pre>-PHP:
+        -Wordpress.
+        -Joomla.
+        -Drupal.
+        -Magento.
+        -Prestashop.
+    
+-Java:
+        -OpenCMS
+        -Liferayy.
+        -Alfresco.
+        -Microsoft Dynamics.
+</pre>
+
+<h2>Programación y organización del código:</h2>
+<h3>Concepto de código spaguetti:</h3>
+<p>Se refiere a cuando la estructura del programa es compleja y difícil de entender, el código bien estructurado es importante porque ayuda a mantener el programa.</p>
+<h3>Concepto de abstracción en programación</h3>
+<p>Implica separar el elemento de su contexto u otros elementos relacionados con él.</p>
+<h3>Paradigmas de la programación:</h3>
+<p>El paradigma imperativo es que el programa consta de una serie de instrucciones o un conjunto de oraciones, como si el programador diera un comando específico. Utilizar los principios del razonamiento lógico en el paradigma imperativo para responder preguntas o preguntas formuladas</p>
+<p>El paradigma declarado es cuando el programador declara las propiedades del resultado deseado, pero no cómo calcularlo.</p>
+<h3>Técnicas de programación imperativa:</h3>
+<p>-Paradigma de programación diseñado para mejorar la claridad, la calidad y el tiempo de desarrollo de los programas informáticos utilizando solo subrutinas y tres estructuras básicas.</p>
+<p>-Acoplamiento y cohesion de modulos: Sirve para mejorar la capacidad de mantenimiento de los módulos de software y simplifique el proceso de cambios de software sin tener que ver todos los módulos relacionados.</p>
+<h3>Programación orientada a objetos. </h3>
+<p>Principios SOLID: Representa cinco principios básicos de la programación orientada a objetos y el diseño.</p>
+<pre>
+        -Principio de responsabilidad única.
+        -Principio de abierto/cerrado.
+        -Principio de sustitución de Liskov.
+        -Principio de segregación de la interfaz.
+        -Principio de inversión de la dependencia.
+</pre>
+<p>Interfaz: Se considera parte de la interfaz a sus elementos de identificación, de navegación, de contenidos y de acción.</p>
+<p>Encapsulacion: Es un mecanismo que consiste en organizar datos y métodos de una estructura, conciliando el modo en que el objeto se implementa</p>
+<p>Objetos: Es uno de los elementos esenciales en la programación. Es una unidad dentro de un programa informático que tiene un estado, y un comportamiento.</p>
+<p>Herencia: Facilita la creación de objetos a partir de otros ya existentes e implica que una subclase obtiene todo el comportamiento (métodos) y finalmente los atributos</p>
+<p>Polimorfismo: Relajación del sistema de tipos que hace que una referencia a una clase (atributo, parámetro o declaración local o elemento de un vector) acepte direcciones de objetos de dicha clase y de sus clases derivadas</p>
+<h3>Particularidades de la orientación a objetos en Javascript:</h3>
+<p>Se basa en la programación funcional, pero a la larga, conlleva altos riesgos y muchos fallos, y da paso al código espagueti.</p>
+<h3>Interfaces fluidas:</h3>
+<p>Basicamente es una herramienta utilizada para eliminar código innecesario y de esta forma optimizar el codigo lo mas posible.</p>
+<h3>Inyeccion de dependencias:</h3>
+<p>Este metodo es un patrón de desarrollo de software donde los objetos no son responsables de inicializar sus dependencias, sino que estas son provistas a través de otro objeto.</p>
+<h2>Lenguajes de programacion</h2>
+<h3>Lenguaje compilado vs lenguaje interpretado</h3>
+<p>En términos generales, la diferencia entre un lenguaje compilado y un lenguaje interpretado es que el primero usa un compilador para traducirlo y ejecutar el programa, mientras que el segundo requiere un intérprete para traducir el código durante la ejecución.</p>
+<h3>Lenguajes débilmente tipados vs lenguajes fuertemente tipados:</h3>
+<p>La diferencia entre un lenguaje fuertemente tipado y un lenguaje débilmente tipado es básicamente que un lenguaje fuertemente tipado verifica el tipo de la variable antes de realizar operaciones en la variable, mientras que un lenguaje débilmente tipado no lo hace.</p>
+<h3>¿Qué diferencia existe entre un tipado estático y uno dinámico?</h3>
+<p>Es al comprobar la compatibilidad entre tipos. Al verificar los tipos dinámicos en tiempo de ejecución, los tipos estáticos se verificarán después de compilar el programa</p>
+<h3>¿En qué consiste el type typing?</h3>
+<p>El estilo de escritura dinámica de datos, donde el método actual y el conjunto de atributos determinan la validez semántica.</p>
+<h3>¿Qué es la sobrecarga de operadores?</h3>
+<p>Tiene la capacidad de convertir los operadores del idioma (como +, -, etc.) Cuando se dice que se convierte, esto significa que los operandos en juego no tienen que ser los operandos soportados por el idioma por defecto.</p>
+<h3>¿Qué es la interpolación de cadenas?</h3>
+<p>Se basa en la función de formato compuesto y proporciona una gramática más legible y conveniente, que se utiliza para incluir el resultado de la expresión de formato en la cadena de resultados.</p>
+
+<h2>Entorno de cliente</h2>
+<h3>Navegadores:</h3>
+<p>Son programas que permiten el acceso a internet</p>
+<h3>librerias:</h3>
+<p>Son archivos de código que se utilizan para facilitar la programación</p>
+<h3>Frameworks entorno cliente:</h3>
+<p>-Backbone: Es una herramienta de desarrollo/API para el lenguaje de programación Javascript, basada en el paradigma de diseño de aplicaciones Modelo Vista Controlador. Está diseñada para desarrollar aplicaciones de una única página y para mantener las diferentes partes de las aplicaciones web sincronizadas. Fuente</p>
+<p>  -Knockout: es una biblioteca de JavaScript que permite crear, de manera rápida y fácil, Interfaces de Usuario (UI) con su propio sistema de actualización de datos subyacentes.</p>
+<p>-VueJS: es un framework progresivo para construir interfaces de usuario, está diseñado desde cero para ser utilizado incrementalmente.</p>
+<h3>Sistemas de gestión de dependencias:</h3>
+<p>Bower: Es un complemento ideal para el desarrollo web. Este es un programa simple que puede ayudarnos a usar Javascript o incluso CSS para actualizar las dependencias de proyectos web relacionados con el desarrollo front-end.</p>
+<p>NPM: Ha sido ampliamente utilizado por los desarrolladores de JavaScript para compartir herramientas, instalar varios módulos y administrar sus dependencias.</p>
+<p>Yarn: Es un administrador de dependencias relativamente nuevo, es open source y fue creado por miembros de Facebook y Google, su principal característica es la rápidez.</p>
+<h3>Preparación de proyectos: yeoman</h3>
+<p>es un creador de proyectos, de tal forma que evita a los desarrolladores los problemas de crear un proyecto de inicio. Dentro de este creador de proyectos, se introducen las lecciones aprendidas previamente, así como las buenas prácticas de los mismos.</p>
+<h3>Transpiler: babel</h3>
+<p>es una cadena de herramientas que se utiliza principalmente para convertir código ECMAScript 2015+ en una versión de JavaScript compatible con versiones anteriores en navegadores o entornos actuales y antiguos.</p>
+<h3>Ofuscadores: UglifyJS</h3>
+<p>Es una opción fácilmente adaptable a Symfony y con la que se pueden reducir el peso de los archivos CSS y JavaScript con una sencilla instalación.</p>
+<h3>Minify</h3>
+<p>Sirve para minificar que es la técnica por la cuál un fichero CSS o JavaScript se comprimen lo máximo posible sin perder funcionalidades».</p>
+<h3>Concepto de aplicación isomorfica</h3>
+<p>Es una aplicacion universal que comparte todo (o casi todo) su código entre el cliente y el servidor.</p>
+<h3>El DOM:</h3>
+<p>El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido.</p>
+<h3>Javascript</h3>
+<p> es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador</p>
+<p>Conceptos que deberiamos conocer de JavaScript:</p>
+<pre>
+        -Arrays.
+        -Objetos.
+        -Funciones.
+        -Prototipos.
+        -Closures.
+        -Prototipos de herencia.
+</pre>
+
+<h2>Entorno servidor</h2>
+<h3>Lenguajes:</h3>
+<p>Los lenguajes mas comunes en entorno servidor son:</p>
+<pre>
+        -Nodejs.
+        -Java.
+        -PHP.
+        -Phyton.
+        -Ruby.
+        -Perl.
+        -Google-Rust.
+        -Elixir.
+</pre>
+<p>Aunque los mas usados para apps son:</p>
+<pre>
+        -Java.
+        -Dart.
+        -Flutter.
+        -React Native.
+        -Xamarin.
+        -Swift.
+
+</pre>
+
+<h3>ORM:</h3>
+<p>Es un modelo de programación que permite mapear las estructuras de una base de datos relacional. Esta suele usarse en lenguajes como: </p>
+<pre>
+        -Java: Hibernate,EclipseLink,MyBatis.
+        -PHP: Doctrine.
+        -Node: Sequelize.
+</pre>
+<h3>Sistema de gestion de dependencias</h3>
+<p>Es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software. Se usan los siguientes:</p>
+<pre>
+        -Java: Gradle,Maven.
+        -PHP: Composer,PEAR.
+        -Node: NPM.
+</pre>
+
+<h3>Entorno Java:</h3>
+<p>JVM: Es una máquina virtual de proceso nativo, es decir, ejecutable en una plataforma específica, capaz de interpretar y ejecutar instrucciones expresadas en un código binario especial (el bytecode Java), el cual es generado por el compilador del lenguaje Java.</p>
+<h3>Concepto de Bytecode:</h3>
+<p>Es un código intermedio más abstracto que el código máquina. Habitualmente, es tratado como un archivo binario que contiene un programa ejecutable similar a un módulo objeto, que es un archivo binario producido por el compilador cuyo contenido es el código objeto o código máquina .</p>
+<h3>JRE y JDK:</h3>
+<p>JDK es un acrónimo de Java Development Kit. ... Java Virtual Machine (JVM) es un sistema en tiempo de ejecución que ejecuta bytecode de Java. JRE es el entorno (bibliotecas estándar y JVM) necesarios para ejecutar aplicaciones Java.</p>
+<h3>Spring vs Spring boot.</h3>
+<p>Spring es un framework para desarrollo de apliaciones Java. Spring Boot es una extesión, un suite, pre-configurado para ejecutar Spring fuera-de-la-caja utilizando las mejores prácticas y sin perder flexibilidad.</p>
+<h3>Concepto de servlet:</h3>
+<p>Es una clase en el lenguaje de programación Java, que se utiliza para ampliar las funciones del servidor. ... El uso más común de servlet es generar dinámicamente páginas web basadas en los parámetros de solicitud enviados por el navegador web.</p>
+<p>Debemos conocer los siguientes conceptos en cuanto los servlets:</p>
+<pre>
+        -Objetos request y response.
+        -Métodos service e init.
+        -El descriptor de despliegue web.xml
+        -Sesiones
+</pre>
+
+<h2>Bases de datos</h2>
+<h3>Diferencia entre base de datos, SGBD y SGBDR:</h3>
+<p>Si el sistema admite bases de datos relacionales, se llama RDBMS en inglés o RDBMS en español. Cuando se trata de bases de datos, el DBMS debe incluir controles concurrentes, es decir, debe permitir que múltiples usuarios accedan "simultáneamente" a la base de datos.</p>
+<h3>APIs abiertas:</h3>
+<p>Como por ejemplo:</p>
+<pre>   -Firebase: Se trata de una plataforma móvil creada por Google, cuya principal función es desarrollar y facilitar la creación de apps de elevada calidad de una forma rápida, con el fin de que se pueda aumentar la base de usuarios</pre>
+<pre>   -GraphQL: Es un lenguaje de consulta (eso es lo que significa "QL") para API y un tiempo de ejecución para completar esas consultas con sus datos existentes.</pre>
+
+<h3>SGBD NoSQL:</h3>
+<p>Los mas usados a nivel global son los siguientes:</p>
+<pre>
+        -Apache Cassandra
+        -MongoDB
+        -Redis
+</pre>
+<h3>Concepto de campos autonuméricos. Claves. Claves ajenas:</h3>
+<p>Campos autonuméricos: Son los que por cada objeto el numero aumenta de forma automatica sumando uno siempre.</p>
+<p>Claves: son la entidad por la cual relacionaremos la tabla.</p>
+<p>Claves ajenas: Son las claves de otras tablas.</p>
+<h3>Concepto Vista:</h3>
+<p>Una vista es una tabla lógica basada en una tabla u otra vista.</p>
+<h3>Diagramas de entidad-relación para modelar una base de datos relacional.</h3>
+<p>El modelo de relación de entidades es una herramienta de modelo de datos que facilita la representación de entidades en la base de datos.</p>
+<h3>Formas normales</h3>
+<p>Es un proceso que consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el paso del modelo entidad-relación al modelo relacional.</p>
+<p>Una tabla está en primera forma si:
+<pre>
+    -Todos los atributos son atómicos. Un atributo es atómico si los elementos del dominio son simples e indivisibles.
+    -No debe existir variación en el número de columnas.
+    -Los campos no clave deben identificarse por la clave (dependencia funcional).
+    -Debe existir una independencia del orden tanto de las filas como de las columnas; es decir, si los datos cambian de orden no deben cambiar sus significados.</p>
+</pre>
+<p>Una tabla esta en la segunda forma si está en 1FN y si los atributos que no forman parte de ninguna clave dependen de forma completa de la clave principal.
+</p>
+<p>La tabla se encuentra en 3FN si es 2FN y si no existe ninguna dependencia funcional transitiva en los atributos que no son clave.</p>
+<h3>Lenguajes DDL y DML.</h3>
+<p>Son aquellas utilizadas para la creación de una base de datos y todos sus componentes</p>
+<h3>Resultset</h3>
+<p>Contiene los resultados de una consulta SQL, por lo que es un conjunto de filas obtenidas desde una base de datos</p>
+<h3>Prepared statements y la inyección de código.</h3>
+<p>Son plantillas para consultas a sistemas de bases de datos en lenguaje SQL cuyos parámetros están desprovistos de valores.</p>
+
+<H2>Control de versiones</H2>
+<h3>Concepto</h3>
+<p>Si hay errores, puede volver a la versión anterior y luego administrar los cambios realizados en el proyecto.</p>
+<h3>Ventajas que aportan los controladores de versiones</h3>
+<p>Las ventajas que nos ofrecen son las siguientes: </p>
+<pre>
+        -Trazabilidad
+        -Historial de cambios
+        -Reversión
+        -Trabajo en grupo
+        -Trabajo en ramas
+</pre>
+<h3>Herramientas</h3>
+<p>Las herramientas que mas destacan en este campo son:</p>
+
+<pre>
+        -Cvs: Mantiene el registro de todo el trabajo y los cambios en los ficheros
+        -Subversion svn: Basado en un repositorio cuyo funcionamiento se asemeja enormemente al de un sistema de ficheros.
+        -Git: Pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
+        -Mercurial: Implementado principalmente haciendo uso del lenguaje de programación Python, pero incluye una implementación binaria de diff escrita en C.
+</pre>
+<h3>Repositorios git</h3>
+<p>Es un directorio donde se almacenan los archivos de tu proyecto. Los mas conocidos son:</p>
+<pre>   
+        -Github.
+        -Bitbucket.
+        -Gitlab.
+</pre>
+
+
+<h2>Integración continua</h2>
+<h3>Pruebas unitarias:</h3>
+<p>Es la forma de comprobar el correcto funcionamiento de una unidad de código. Las herramientas mas utilizadas son: </p>
+<pre>
+        -Junit
+        -Phpunit
+        -Mocha Jasmine Jest
+</pre>
+<h3>Pruebas de integracion:</h3>
+<p>Son aquellas que se realizan en el ámbito del desarrollo de software una vez que se han aprobado las pruebas unitarias y lo que prueban es que todos los elementos unitarios que componen el software</p>
+<p>Utilizaremos Selenium: Que nos permite grabar, editar y depurar casos de prueba, que podrán ser ejecutados de forma automática e iterativa posteriormente.</p>
+
+<h3>Servidores:</h3>
+<p>Se suele utilizar servidores para la integracion continua,entre ellos:</p>
+<pre>
+        -Jenkins.
+        -Travis CI. 
+        -TeamCity.
+        -CircleCI.
+</pre>
+
+<h2>Despliegue</h2>
+<h3>Microservicios y Message Brokers</h3>
+<p>Message Brokers es un programa intermedio que puede traducir mensajes del sistema de un idioma a otro a través de medios de telecomunicaciones. Destacan los siguientes:</p>
+<pre>
+        -RabbitMQ.
+        -Kafka.
+        -Redis.
+        -SQS.
+</pre>
+
+<h3>Monitorización:</h3>
+<p>Son servicios en nube que permiten ver y controlar el estado de la aplicacion. Los mas utilizados son: </p>
+<pre>
+        -New relic.
+        -Datadog.
+        -Dynatrace.
+</pre>
+
+<h3>Contenedores:</h3>
+<p>Docker: Es un sistema operativo para contenedores. De manera similar a cómo una máquina virtual virtualiza</p>
+<p>Docker composer: Es una herramienta para definir y ejecutar aplicaciones Docker de varios contenedores .</p>
+<p>Docker swarm: Es una herramienta de orquestación de contenedores, lo que significa que permite al usuario administrar múltiples contenedores implementados en múltiples máquinas host.</p>
+
+<h2>Personajes</h2>
+<h3>John Resig</h3>
+<p>Es un programador y empresario, conocido por ser el Evangelista de JavaScript de la Fundación Mozilla, creador y líder de desarrollo de la biblioteca JavaScript jQuery, autor de un libro técnico sobre JavaScript y de uno de los blogs más leídos, con una media de 13.000 suscriptores.</p>
+<h3>Douglas Crockford</h3>
+<p>Es un americano programador informático y empresario que está involucrado en el desarrollo del JavaScript idioma. Popularizó el formato de datos JSON (JavaScript Object Notation) y ha desarrollado varias herramientas relacionadas con JavaScript, como JSLint y JSMin .</p>
+<h3>Jeremy Ashkenas</h3>
+<p>Es un programador informático conocido por la creación y co-creación de los lenguajes de programación CoffeeScript y LiveScript.</p>
+<h3>Misko Hevery</h3>
+<p>Es el creador de AngularJS y de Angular.</p>
+
+<h3>Rod Johnson</h3>
+<p>Es el programador que creó Spring Framework y cofundó SpringSource</p>
+<h3>James Goslin</h3>
+<p>Es un famoso científico de la computación conocido como el padre del lenguaje de programación Java.</p>
+<h3>Martin Fowler</h3>
+<p>Es el autor y orador internacional sobre desarrollo de software, especializado en análisis y diseño orientado a objetos, UML, patrones de diseño, y metodologías de desarrollo ágil, incluyendo programación extrema.</p>
+<h3>Eric S. Raymond</h3>
+<p>Se convirtió después de 1997 en una figura líder en el Movimiento del Open Source y el Código abierto. Hoy día es uno de sus personajes más famosos y controvertidos.</p>
+<h3>Rasmus Lerdorf</h3>
+<p>Es el creador de la primera versión del lenguaje de programación PHP.</p>
+<h3>John Papa</h3>
+<p>Es el promotor principal de desarrolladores de Microsoft, ex tecnólogo de Disney y ex alumno de los programas Google Developer Expert</p>
+

@@ -1,0 +1,13 @@
+body{
+    background-color:#ABFF8B ;
+}
+h2,a{
+    color: white;
+    text-align: center;
+}
+h3{
+    color: #444444;
+}
+p,pre{
+text-align: justify;
+}
