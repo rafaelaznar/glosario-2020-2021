@@ -1,0 +1,1382 @@
+
+     <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Glosario</h1>
+          <p>Alonso Rodilla Garcia 2020-2021</p>
+        </div>
+      </div>
+      <div class="jumbotron">
+            <div class="col">
+                <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h2>Http y redes</h2>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="jumbotron">   
+                
+            <br>
+            <h4>Internet (creación, concepto, funcionamiento)</h4>
+            <br>
+            <p>Conjunto descentralizado de redes de comunicación que están interconectadas entre sí, lo que permite navegar de una a otra sin problemas. 
+            Su base está en la familia de protocolos TCP/IP, que garantiza que las redes físicas heterogéneas que la componen formen una red lógica única de alcance mundial. </p>
+            <br>
+            <h4>Protocolo (concepto, tipos, RFC)</h4>
+            <br>
+            <p>El protocolo de Internet, como componente fundamental de la familia de protocolos (una colección de cerca de 500 protocolos de red) 
+                es un protocolo no orientado a conexión responsable del direccionamiento y la fragmentaciónde paquetes de datos en redes digitales. </p>
+            <br>
+            <ul>
+                <li>
+                    ARP (Address Resolution Protocol) RFC 826</li>
+                    
+                    <li>RARP (Reverse Address Resolution Protocol) RFC 90</li>
+                    
+                    <li>IP (Internet Protocol) RFC 791</li>
+                    
+                    <li>RARP (Reverse ICMP (Internet Control Message Protocol) RFC 792</li>
+                    
+                    <li>IGMP (Internet Group Management Protocol) RFC 988</li>
+                    
+                    <li>UDP (User Datagram Protocol) RFC 792</li>
+                    
+                    <li>TCP (Transmission Control Protocol) RFC 793</li>
+            </ul>
+            <br>
+            <p>Los Request for Comments, más conocidos por sus siglas RFC, son una serie de publicaciones del 
+                grupo de trabajo de ingeniería de internet que describen diversos aspectos del funcionamiento de Internet y otras redes de computadoras, como protocolos.</p>
+            <br>
+            <h4>Niveles ISO-OSI</h4>
+            <br>
+            <p>Los siete niveles que configuran el modelo OSI suelen agruparse en 2 bloques. Los tres niveles inferiores (físico, enlace y red) constituyen el bloque de transmisión. 
+                Son niveles dependientes de la red de conmutación utilizada para la comunicación entre los 2 sistemas. En cambio, los tres niveles superiores (sesión, presentación y aplicación) 
+                son niveles orientados a la aplicación y realizan funciones directamente vinculadas
+                con los procesos de aplicación que desea comunicarse. El nivel intermedio que queda, (transporte) enmascara a los niveles orientados a la aplicación. </p><br>
+            
+            <br>
+            <h4>Protocolo HTTP</h4>
+            <br>
+            <p>El Protocolo de Transferencia de HiperTexto (Hypertext Transfer Protocol) es un sencillo protocolo cliente-servidor que articula los intercambios de información entre 
+            los clientes Web y los servidores HTTP.</p>
+            <br>
+            <p>Peticiones y Respuestas</p>
+            <ol>
+                <li>Una línea de inicio ('start-line' en inglés) describiendo la petición a ser implementada, o su estado, sea de éxito o fracaso. Esta línea de comienzo, es siempre una única línea.</li> 
+                    
+                <li>Un grupo opcional de cabeceras HTTP, indicando la petición o describiendo el cuerpo ('body' en inglés) que se incluye en el mensaje. </li>
+                    
+                <li>Una línea vacía ('empty-line' en inglés) indicando toda la meta-información ha sido enviada.</li>
+                    
+                <li>Un campo de cuerpo de mensaje opcional ('body' en inglés) que lleva los datos asociados con la petición (como contenido de un formulario HTML), 
+                    o los archivos o documentos asociados a una respuesta (como una página HTML, o un archivo de audio, vídeo ... ) . La presencia del cuerpo y su tamaño es 
+                    indicada en la línea de inicio y las cabeceras HTTP.</li>
+            </ol>
+            <br>
+            <p>Los métodos más importates de HTTP (especialmente para hacer aplicaciones REST) son POST, GET, PUT, DELETE y HEAD.<br>
+
+                <strong> GET<br></strong>
+                El método GET se emplea para leer una representación de un resource. En caso de respuesta positiva (200 OK), 
+                GET devuelve la representación en un formato concreto: HTML, XML, JSON o imágenes, JavaScript, CSS, etc. En caso de respuesta negativa devuelve 404 <br>
+                <strong>POST<br></strong>
+                Aunque se puedan enviar datos a través del método GET, en muchos casos se utiliza POST por las limitaciones de GET. En caso de respuesta positiva devuelve 201 (created). 
+                Los POST requests se envían normalmente con formularios<br>
+                <strong>PUT<br></strong>
+                Utilizado normalmente para actualizar contenidos, pero también pueden crearlos. Tampoco muestra ninguna información en la URL. En caso de éxito devuelve 201 (created, en caso de que la acción haya creado un elemento) o 
+                204 (no response, si el servidor no devuelve ningún contenido). <br>
+                <strong>DELETE<br></strong>
+                Simplemente elimina un resource identificado en la URI.<br>
+                <strong>HEAD<br></strong>
+                Es idéntido a GET, pero el servidor no devuelve el contenido en el HTTP response.
+            </p>
+            <h4>El proceso de carga de una página web</h4>
+            <br>
+            <ol>
+                <li>Se envía la solicictud al servidor. Este la recibe y comienza el proceso de construir la página web. Si existe código PHP, se ejecuta en este momento, se hacen todas las consultas a la Base de Datos. El resultado es una página con HTML y tal vez JavaScript.</li>
+
+                <li> Tu navegador recibe la página, interpreta y usa el HTML para construirla. La tienes en pantalla.</li>
+
+                <li> Mientras interactúas con la página, todo es procesado por Javascript. Interactúara contigo respondiendo a tus eventos, hasta que cierres la página.</li>
+
+                <li> Si necesitas una consulta a la BD, para no cargar otra página, se puede utilizar la tecnología AJAX que permite a JavaScript mandar peticiones a scripts de PHP. Javascript recibe como respuesta cadenas de texto, 
+                y en base a la respuesta puede dibujar nuevos elementos de la interfaz gráfica o cambiarlos. Tienes una página interactiva.</li>
+</ol>
+<br>
+            <h4>TCP (concepto, utilidad, puertos bien conocidos, estructura de los segmentos TCP, sockets)</h4>
+            <br>
+            <p>El protocolo TCP es un acuerdo estandarizado de transmisión de datos entre distintos participantes de una red informática. 
+                En la pila de protocolos TCP/IP, TCP es la capa intermedia entre el protocolo de red (IP) y la aplicación. Muchas veces las aplicaciones necesitan que la comunicación a través de la red sea confiable. 
+                Para ello se implementa el protocolo TCP 
+            </p><br>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                <td ><strong>Puerto</strong></td>
+                <td ><strong>Descripción</strong></td>
+                </tr>
+                <tr>
+                <td >1/TCP</td>
+                <td >TCP Servicio de multiplexado de puertos (TCPMUX)</td>
+                </tr>
+                <tr>
+                <td >5/TCP</td>
+                <td >Remote Job Entry (RJE)</td>
+                </tr>
+                <tr>
+                <td >7/TCP</td>
+                <td >Protocolo Echo (Responde con eco a llamadas remotas)</td>
+                </tr>
+                <tr>
+                <td >9/TCP</td>
+                <td >Protocolo Discard (Elimina cualquier dato que recibe)</td>
+                </tr>
+                <tr>
+                <td >13/TCP</td>
+                <td >Daytime (Fecha y hora actuales)</td>
+                </tr>
+                <tr>
+                <td >17/TCP</td>
+                <td >Quote of the Day (Cita del Día)</td>
+                </tr>
+                <tr>
+                <td >18/TCP</td>
+                <td >Message Send Protocol (MSP)</td>
+                </tr>
+                <tr>
+                <td >20/TCP</td>
+                <td ><strong>FTP.</strong> File Transfer Protocol – Datos</td>
+                </tr>
+                <tr>
+                <td >21/TCP</td>
+                <td ><strong>FTP.</strong> File Transfer Protocol – Control</td>
+                </tr>
+                <tr>
+                <td >22/TCP</td>
+                <td ><strong>SSH, SCP, SFTP</strong>. Remote Login Protocol</td>
+                </tr>
+                <tr>
+                <td >23/TCP</td>
+                <td ><strong>Telnet&nbsp;</strong>(manejo remoto de equipo, inseguro)</td>
+                </tr>
+                <tr>
+                <td >25/TCP</td>
+                <td ><strong>SMTP.</strong> Simple Mail Transfer Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >29/TCP</td>
+                <td >MSG ICP</td>
+                </tr>
+                <tr>
+                <td >37/TCP</td>
+                <td >Time Protocol. Sincroniza hora y fecha</td>
+                </tr>
+                <tr>
+                <td >39/TCP</td>
+                <td >Protocolo de ubicación de recursos (RLP)</td>
+                </tr>
+                <tr>
+                <td >42/TCP</td>
+                <td >Servicio de nombres de Internet (nameserver)</td>
+                </tr>
+                <tr>
+                <td >43/TCP</td>
+                <td ><strong>WHOIS</strong>. Servicio de directorio</td>
+                </tr>
+                <tr>
+                <td >49/TCP</td>
+                <td >Login Host Protocol. Acceso y autenticación basado en TCP/IP(Login)</td>
+                </tr>
+                <tr>
+                <td >53/UDP</td>
+                <td ><strong>DNS</strong>. Domain Name System. Sistema de Nombres de Dominio</td>
+                </tr>
+                <tr>
+                <td >67/UDP</td>
+                <td ><strong>BOOTP&nbsp;</strong>(BootStrap Protocol) (Server), también usado por <strong>DHCP</strong></td>
+                </tr>
+                <tr>
+                <td >68/UDP</td>
+                <td ><strong>BOOTP&nbsp;</strong>(BootStrap Protocol) (Server), también usado por <strong>DHCP</strong></td>
+                </tr>
+                <tr>
+                <td >69/UDP</td>
+                <td ><strong>TFTP</strong>. Trivial File Transfer Protocol (Protocolo Trivial de Transferencia de Ficheros)</td>
+                </tr>
+                <tr>
+                <td >70/TCP</td>
+                <td >Gopher</td>
+                </tr>
+                <tr>
+                <td >79/TCP</td>
+                <td >Finger</td>
+                </tr>
+                <tr>
+                <td >80/TCP</td>
+                <td ><strong>HTTP</strong>. HyperText Transfer Protocol (Protocolo de Transferencia de HiperTexto)</td>
+                </tr>
+                <tr>
+                <td >88/TCP</td>
+                <td ><strong>Kerberos</strong>. Agente de autenticación</td>
+                </tr>
+                <tr>
+                <td >95/TCP</td>
+                <td >Extensión de <strong>Telnet</strong></td>
+                </tr>
+                <tr>
+                <td >109/TCP</td>
+                <td ><strong>POP2.</strong> Post Office Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >110/TCP</td>
+                <td ><strong>POP3.</strong> Post Office Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >115/TCP</td>
+                <td ><strong>SFTP</strong>. Simple File Transfer Protocol (Protocolo de Transferencia de Ficheros)</td>
+                </tr>
+                <tr>
+                <td >118/TCP</td>
+                <td ><strong>SQL </strong>Services</td>
+                </tr>
+                <tr>
+                <td >119/TCP</td>
+                <td ><strong>NNTP</strong>. Newsgroup. usado en los grupos de noticias de usenet</td>
+                </tr>
+                <tr>
+                <td >123/UDP</td>
+                <td ><strong>NTP</strong>. Protocolo de sincronización tiempo</td>
+                </tr>
+                <tr>
+                <td >137/UDP</td>
+                <td ><strong>NetBIOS</strong>. Name Service</td>
+                </tr>
+                <tr>
+                <td >138/UDP</td>
+                <td ><strong>NetBIOS</strong>. Datagram Service</td>
+                </tr>
+                <tr>
+                <td >139/TCP</td>
+                <td ><strong>NetBIOS</strong>. Session Service</td>
+                </tr>
+                <tr>
+                <td >143/TCP</td>
+                <td ><strong>IMAP</strong>. Internet Message Access Protocol v2 (email)</td>
+                </tr>
+                <tr>
+                <td >161/UDP</td>
+                <td ><strong>SNMP. </strong>Simple Network Management Protoco</td>
+                </tr>
+                <tr>
+                <td >177/TCP</td>
+                <td ><strong>XDMCP. </strong>Protocolo de gestión de displays en X11</td>
+                </tr>
+                <tr>
+                <td >179/TCP</td>
+                <td ><strong>BGP</strong>. Border Gateway Protocol. (Intercambio de tablas de rutas entre ISP)</td>
+                </tr>
+                <tr>
+                <td >194/TCP</td>
+                <td ><strong>IRC</strong>. Internet Relay Chat</td>
+                </tr>
+                <tr>
+                <td >201/TCP</td>
+                <td >Enrutamiento&nbsp;<strong>AppleTalk</strong></td>
+                </tr>
+                <tr>
+                <td >202/TCP</td>
+                <td >Enlace de nombres&nbsp;<strong>AppleTalk</strong></td>
+                </tr>
+                <tr>
+                <td >204/TCP</td>
+                <td >Echo&nbsp;<strong>AppleTalk</strong></td>
+                </tr>
+                <tr>
+                <td >206/TCP</td>
+                <td >Zona de información <strong>AppleTalk</strong></td>
+                </tr>
+                <tr>
+                <td >220/TCP</td>
+                <td ><strong>IMAP</strong>. Internet Message Access Protocol v3 (email)</td>
+                </tr>
+                <tr>
+                <td >389/TCP</td>
+                <td ><strong>LDAP.</strong>Lightweight Directory Access Protocol</td>
+                </tr>
+                <tr>
+                <td >443/TCP</td>
+                <td ><strong>HTTPS </strong>sobre <strong>SSL. </strong>Usado para la transferencia segura de páginas web</td>
+                </tr>
+                <tr>
+                <td >445/TCP</td>
+                <td ><strong>Microsoft-DS </strong>(Active Directory, compartición de ficheros, gusano Sasser, Agobot)</td>
+                </tr>
+                <tr>
+                <td >465/TCP</td>
+                <td ><strong>SMTP</strong> Sobre <strong>SSL</strong>. Simple Mail Transfer Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >515/TCP</td>
+                <td ><strong>LPD/LPR. </strong>Impresión en Windows</td>
+                </tr>
+                <tr>
+                <td >520/UDP</td>
+                <td ><strong>RIP</strong>. Routing Information Protocol (Protocolo de Información de Enrutamiento)</td>
+                </tr>
+                <tr>
+                <td >546/TCP</td>
+                <td ><strong>DHCPv6 Client</strong></td>
+                </tr>
+                <tr>
+                <td >547/TCP</td>
+                <td ><strong>DHCPv6 Server</strong></td>
+                </tr>
+                <tr>
+                <td >563/TCP</td>
+                <td ><strong>NNTP </strong>sobre <strong>SSL</strong>. Newsgroup. usado en los grupos de noticias de usenet</td>
+                </tr>
+                <tr>
+                <td >587/TCP</td>
+                <td ><strong>SMTP.</strong> Sobre <strong>TLS</strong>. Simple Mail Transfer Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >631/TCP</td>
+                <td ><strong>CUPS. </strong>Common Unix Printing System.Sistema de impresión de Unix</td>
+                </tr>
+                <tr>
+                <td >636/TCP</td>
+                <td ><strong>LDAP</strong> sobre <strong>SSL/TLS.</strong>Lightweight Directory Access Protocol</td>
+                </tr>
+                <tr>
+                <td >993/TCP</td>
+                <td ><strong>IMAP </strong>sobre <strong>SSL/TLS</strong>. Internet Message Access Protocol v4 (email)</td>
+                </tr>
+                <tr>
+                <td >995/TCP</td>
+                <td ><strong>POP3 </strong>sobre<strong>SSL.</strong> Post Office Protocol (email)</td>
+                </tr>
+                <tr>
+                <td >1080/TCP</td>
+                <td ><strong>SOCKS</strong>. Proxy</td>
+                </tr>
+                <tr>
+                <td >1433/TCP</td>
+                <td ><strong>Microsoft-SQL-Server</strong></td>
+                </tr>
+                <tr>
+                <td >1434/TCP</td>
+                <td ><strong>Microsoft-SQL-Monitor</strong></td>
+                </tr>
+                <tr>
+                <td >1512/TCP</td>
+                <td ><strong>WINS. </strong>Windows Internet Naming Service</td>
+                </tr>
+                <tr>
+                <td >3128/TCP</td>
+                <td ><strong>HTTP </strong>usado por web caches y por defecto en&nbsp;<strong>Squid Proxy</strong></td>
+                </tr>
+                <tr>
+                <td >3306/TCP</td>
+                <td ><strong>MySQL </strong></td>
+                </tr>
+                <tr>
+                <td >3389/TCP</td>
+                <td ><strong>RDP. </strong>Remote Desktop Protocol. Terminal Server</td>
+                </tr>
+                <tr>
+                <td >3396/TCP</td>
+                <td ><strong>Novell </strong>agente de impresión NDPS</td>
+                </tr>
+                <tr>
+                <td >5000/TCP</td>
+                <td ><strong>UPNP. </strong>Universal plug-and-play</td>
+                </tr>
+                <tr>
+                <td >5400/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto (usado sobre HTTP)</td>
+                </tr>
+                <tr>
+                <td >5500/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto (usado sobre HTTP)</td>
+                </tr>
+                <tr>
+                <td >5600/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto (usado sobre HTTP)</td>
+                </tr>
+                <tr>
+                <td >5700/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto (usado sobre HTTP)</td>
+                </tr>
+                <tr>
+                <td >5800/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto (usado sobre HTTP)</td>
+                </tr>
+                <tr>
+                <td >5900/TCP</td>
+                <td ><strong>VNC. </strong>Virtual Network Computing. Escritorio remoto</td>
+                </tr>
+                <tr>
+                <td >6000/TCP</td>
+                <td ><strong>X11</strong>. Usado para X-windows</td>
+                </tr>
+                <tr>
+                <td >6129/TCP</td>
+                <td ><strong>Dameware</strong>. Software conexión remota</td>
+                </tr>
+                <tr>
+                <td >8000/TCP</td>
+                <td ><strong>iRDMI. </strong>Intel Remote Desktop Management Interface. Tambien streaming Shoutcast</td>
+                </tr>
+                <tr>
+                <td >8080/TCP</td>
+                <td ><strong>HTTP </strong>alternativo al puerto 80. También default port en servidor Tomcat</td>
+                </tr>
+                <tr>
+                <td >9800/TCP</td>
+                <td ><strong>WebDAV</strong></td>
+                </tr>
+                <tr>
+                <td >1000/TCP</td>
+                <td ><strong>Webmin</strong></td>
+                </tr>
+                </tbody>
+                </table>
+                <p>El flujo de información se divide en uno o más segmentos con el fin de que la información viaje a través de la red, estos segmentos son enumerados para así facilitar su desempaquetamiento, 
+                    en la tabla  se muestra la estructura de TCP. Los sockets son una abstracción de un punto por donde entran o salen datos. Como un socket se puede conectar a otro socket  debe existir un mecanismo de conexión.
+
+                </p>
+            <h4>IP</h4>
+            <br>
+            <p>Internet Protocol, o protocolo de internet. Este protocolo tiene la función de establecer las comunicaciones entre todos los dispositivos que tratan de 
+                relacionarse entre sí en internet.<br> Las direcciones IP se consiguen actualmente con la versión 4 del protocolo de internet (IPv4), capaz de crear unos 43.000 millones de direcciones diferentes. 
+                Sin embargo, como cada vez son más los dispositivos que requieren de una dirección IP diferenciadora, 
+                la capacidad de IPv4 se ha vuelto insuficiente y por este motivo existe ya IPv6.<br>
+                Tanto si trabajas desde tu domicilio como si utilizas únicamente tu red wifi para ratos de ocio, cada uno de los dispositivos está conectado a internet de forma independiente. 
+                Tienen direcciones IP privadas dentro de una red local.
+                La dirección IP pública es diferente. Es la dirección con la que cuentan las páginas web en sus dominios y los servicios
+            <br><strong>Enrutamiento IP</strong><br>
+            Este proceso permite la interconectividad y la comunicación de redes, a través de paquetes IP enviados desde un origen a un destino, gracias a la tecnología incorporada dentro de cada router, que lo hacen posible, a través de diversas configuraciones y protocolos.</p>
+            <h4>URL (concepto, estructura, parámetros)</h4>
+            <br>
+            <p>El Uniform Resource Locator, un estándar RFC del año 1994, ofrece a los usuarios de Internet una sintaxis universal con la que se pueden localizar contenidos públicos 
+                y acceder a ellos en función de las necesidades.
+            </p><br><p>Por definición, todo URL está formado por el denominado esquema y por una parte específica del esquema. </p>
+            <ul>
+                <li><strong>Esquema</strong>: el esquema del Uniform Resource Locator indica tanto el tipo de recurso como el método de acceso y contiene la información sobre cómo se tiene que acceder a los recursos. A menudo, el esquema del URL tiene el mismo nombre que el
+                 protocolo para el método de acceso en las capas de aplicación de Internet. Los esquemas más habituales son http/https, mailto, file o ftp.</li>
+                </ul>
+                <ul>
+                    <li><strong>Parte específica del esquema</strong>: en función del tipo de esquema, la parte específica del esquema contiene una serie de segmentos que incluyen la ubicación de los recursos 
+                    correspondientes y parámetros de procesamiento opcionales. </li>
+                </ul><br>
+                <p><strong>Los parámetros</strong> de URL constan de una clave y un valor separados por un signo igual (=) y unidos por el signo et (&). El primer parámetro siempre aparece después de un signo de interrogación en una URL.
+                     Por ejemplo, http://example.com? producto=1234 &utm_source=google .</p><br>
+            <h4>Aplicaciones cliente-servidor vs P2P</h4>
+            <br>
+        <p>Una de las diferencias, es que en el "CS" se necesita un servidor, y un cliente, a diferencia del "P2P", que permite a cualquier usuario ser cliente o servidor. 
+            Una de las ventajas del "P2P" es que la conexión siempre estará activa, ya que con que haya un cliente, el servidor esta activo, pero en el "CS" se requiere que el 
+            servidor principal esté activo. En el "P2P" todo usuario o cliente tiene las mismas funciones que otro igual que él, 
+            aspecto contrario al "CS" en el cual un servidor tiene las funciones que los clientes no poseen. </p>
+            <br> <h4>¿Qué es una cookie y para qué sirve? ¿cómo podemos establcer una sesión usando cookies? ¿donde viaja la cookie dentro del paquete HTTP?</h4>
+            <br>
+            <p>Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario. 
+                El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. <br>
+                Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo,
+                mantener la sesión de un usuario abierta. <br>
+                La cookie es enviada desde el servidor al visitante de la página web. Posteriormente, cada vez que el usuario visite esa misma página web o alguna otra del mismo dominio, la cookie será leída por el navegador web, sin ser modificada, y devuelta al servidor web.
+            </p>
+            <br> <h4>¿Qué son los tipos MIME y para qué sirven?</h4>
+            <br>
+            <p>Los MIME Types (Multipurpose Internet Mail Extensions) son la manera standard de mandar contenido a través de la red. Los tipos MIME especifican tipos de datos, 
+                como por ejemplo texto, imagen, audio, etc. que los archivos contienen. 
+                Recuerde que debe utilizar el sufijo correcto para este tipo de archivo. </p>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2>Proyectos web</h2>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="jumbotron">
+<h4>Requerimientos, especificaciones de una aplicación</h4>
+            <br>
+            <p>La especificación de requisitos de software (ERS) es una descripción completa del comportamiento del sistema que se va a desarrollar. Incluye un conjunto de casos de uso que describe todas las interacciones que tendrán los usuarios con el software. 
+                Los casos de uso también son conocidos como requisitos funcionales.</p>
+            <br> <h4>Metodologías del desarrollo del software:</h4>
+            <br>
+            <p><strong>Modelo en cascada </strong> el desarrollo en cascada (en inglés, waterfall model) es un procedimiento lineal que se caracteriza por dividir 
+                los procesos de desarrollo en sucesivas fases de proyecto.<br>
+                <strong>Modelo en espiral </strong> consiste en seguir ciclos crecientes de cuatro fases cada uno, que se van realizando siguiendo una forma de espiral.</p><br>
+                <strong>Modelos basados en prototipos </strong> se inicia con la definición de los objetivos globales para el software, luego se identifican los requisitos conocidos y las áreas 
+                del esquema en donde es necesaria más definición.<br>
+                <strong>Metodologias ágiles </strong> Son aquellos métodos de desarrollo en los cuales tanto las necesidades como las soluciones a estas evolucionan con el pasar del tiempo, a través del trabajo en equipo de grupos multidisciplinarios</p><br>
+            </p>
+                <ul>
+                    <li><strong>Metodo Kanban</strong> esta metodología está diseñada para soportar un control productivo y descentralizado por demanda.</li>
+                    <li><strong>Extreme programming</strong> se centra en potenciar las relaciones interpersonales del equipo de desarrollo como clave del éxito mediante el trabajo en equipo, el aprendizaje continuo y el buen clima de trabajo.</li>
+                    <li><strong>Metodo Kanban</strong> es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo y obtener el mejor resultado posible de proyectos,</li>
+                </ul>
+            <br> <h4>Integración contínua (concepto, servidores)</h4>
+            <br>
+            <p>Práctica del desarrollo de software ágil en la que los ingenieros van integrando los fragmentos de código que desarrollan poco a poco en lugar de hacerlo una vez concluido todo el proyecto. </p>
+            <ul>
+                <li>
+                    <strong>Concepto de Pruebas unitarias (concepto, herramientas, mock)</strong> se utiliza para comprobar que un método concreto del código de producción funciona correctamente, probar las regresiones o realizar pruebas relacionadas (buddy) o de humo.  </li>
+                <li>
+                    <strong>Concepto de Pruebas de integración (concepto, herramientas)</strong> son aquellas que se realizan en el ámbito del desarrollo de software una vez que se han aprobado las pruebas unitarias y lo que prueban es que todos los elementos unitarios que componen el software, 
+                    funcionan juntos correctamente probándolos en grupo. </li>
+                <li>
+                    <strong>TDD: Desarrollo dirigido por tests</strong> es una práctica de ingeniería de software que involucra otras dos prácticas: Escribir las pruebas primero (Test First Development) y Refactorización (Refactoring).</li>
+            </ul>
+            <br> <h4>Documentación de programas (concepto, tipos, herramientas)</h4>
+            <br>
+            <p> Sirve para ayudar a los nuevos miembros del equipo a adaptar más rápido a los hábitos de trabajos de la compañía. Comparte información del funcionamiento del producto 
+                y el porqué de cada requerimiento. </p>
+                <ul>
+                    <li><strong>Huddle</strong> Huddle es un centro de colaboración todo-en-uno para tu equipo. Básicamente, tienes todas las herramientas para estar sincronizados, incluidos el almacenamiento de archivos, la gestión de proyectos y las herramientas de colaboración.</li>
+                    <li><strong>Read the Docs</strong> Es una plataforma gratuita para el alojamiento de documentación de software con código fuente disponible gratuitamente. </li>
+                </ul>
+            <br> <h4>Despliegue en producción y en test. Despliegue automatizado. Despliegue en la nube.</h4>
+            <br>
+            <p>
+                <strong>Despliegue en producción</strong> <br> 
+                Un despliegue de producción completo consta de varios registros para admitir las distintas etapas de despliegue del servicio y probar el ciclo de vida.<br>
+                <strong>Despliegue automatizado</strong> <br> 
+                Un despliegue automatizado nos permite reducir el tiempo necesario para realizar una tarea y asi liberar el equipo de realizar tareas repetitivas.<br>
+                <strong>Despliegue en la nube</strong> <br> 
+                Un despliegue de Cloud Público (o Cloud multi-tenant) se caracteriza por ofrecer recursos TIC sobre infraestructuras compartidas entre múltiples clientes.<br>
+            </p>
+            <br> <h4>Contenedores</h4>
+            <br>
+            <p> Un contenedor web es la implementación que hace cumplimiento del contrato de componentes web de la arquitectura J2EE. </p>
+            <br> <h4>Gestores de versiones (concepto, herramientas y características)</h4>
+            <br>
+            <p>Se llama control de versiones a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo.  </p>
+            <br> <h4>Repositorio de código</h4>
+            <br>
+            <p>Un repositorio de código es un lugar donde el código de una aplicación, de un programa cualquiera está almacenado y desde donde se puede distribuir. </p>
+            <br> <h4>Evaluación de la calidad del software </h4>
+            <br>
+            <p> Evaluar las características funcionalidad y confiabilidad del producto, según las métricas definidas por estándares, y así detectar las debilidades del mismo </p>
+        </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2>Infraestructura</h2>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="jumbotron">
+             <h4>IDES:</h4>
+            <br>
+            <p> Entorno de Desarrollo Integrado consiste de un editor de código fuente, herramientas de construcción automáticas y un depurador.
+            </p><ul>
+                <li><strong>Java</strong> para java tenemos las IDEs NetBeans, Eclipse, Intellij. 
+                </li>
+                <li><strong>Javascript</strong> para javascript tenemos las IDEs isual Studio Code, Sublime, Atom, webstorm. 
+                </li>
+            </ul>
+            <br> <h4>Navegadores:</h4>
+            <br>
+            <p>  Software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser vistos.
+            </p>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h2>Diseño de Aplicaciones web</h2>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="jumbotron">
+             <h4>API de servidor</h4>
+            <br>
+            <p>Una API es un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones. 
+                API significa interfaz de programación de aplicaciones.  </p>
+            <br> <h4>Diagrama Entidad-relación</h4>
+            <p>Un modelo entidad-relación es una herramienta para el modelo de datos, la cual facilita la representación de entidades de una base de datos.​  </p>
+            <br> <h4>Normalización: Primera, segunda y tercera forma normales</h4>
+            <br>
+            <p>La normalización de bases de datos es un proceso que consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el paso del modelo entidad-relación al modelo relacional. </p>
+            <ul>
+                <li>
+                    <strong>Primera:</strong>
+                        La primera regla de normalización se expresa generalmente en forma de dos indicaciones separadas.
+                        <ol>
+                            <li>Todos los atributos, valores almacenados en las columnas, deben ser indivisibles.</li>
+                            <li>No deben existir grupos de valores repetidos.</li>
+                            </ol>
+                </li>
+                <li>
+                    <strong>Segunda:</strong>
+                    La segunda forma normal añade la necesidad de que no existan dependencias funcionales parciales. 
+                    Esto significa que todos los valores de las columnas de una fila deben depender de la clave primaria de dicha fila.
+                    
+                </li>
+                <li>
+                    <strong>Tercera:</strong>
+                    En cuanto a la tercera forma normal, ésta indica que no deben existir dependencias transitivas entre las columnas de una tabla.
+                       
+                </li>
+            </ul>
+            <br> <h4>Restricciones de integridad</h4>
+            <br>
+            <p> Se especifican junto con el esquema de la base de datos y el responsable de que se cumplan es el SGBD. </p>
+            <br> <h4>BD vs SGBD - SGBDR</h4>
+            <br>
+            <p></strong>SGBD</strong> es el conjunto de programas que permiten definir, manipular y utilizar la información que contienen las bases de datos. Una BD nunca se accede o manipula directamente sino a través del SGBD. Se puede considerar al SGBD como el interfaz entre el usuario y la BD.  </p>
+            <br> <h4>DML - DDL: SQL</h4>
+            <br>
+            <p><strong>DDL</strong> un lenguaje de programación para definir estructuras de datos, proporcionado por los sistemas gestores de bases de datos. En inglés, Data Definition Language, de ahí sus siglas DDL. <br>
+                <strong>DML</strong> también es un lenguaje proporcionado por los sistemas gestores de bases de datos. En inglés, Data Manipulation Language (DML).
+                Utilizando instrucciones de SQL, permite a los usuarios introducir datos para posteriormente realizar tareas de consultas o modificación de los datos que contienen las Bases de Datos. </p>
+            <br> <h4>noSQL (concepto y herramientas)</h4>
+            <br>
+            <p>Es una amplia clase de sistemas de gestión de bases de datos que difieren del modelo clásico de SGBDR (Sistema de Gestión de Bases de Datos Relacionales) en aspectos importantes, 
+                siendo el más destacado que no usan SQL como lenguaje principal de consultas. </p>
+            <br> <h4>UML: Diagrama de procesos</h4>
+            <br>
+            <p>El diagrama de flujo o flujograma o diagrama de actividades es la representación gráfica de un algoritmo o proceso. </p>
+            <br> <h4>Mockups de cliente, wireframers , prototipado</h4>
+            <br>
+            <p><strong>Wimefare</strong> es el esqueleto del diseño. Se caracterizan por tener una baja fidelidad visual, 
+                representando la interfaz en escala de grises y sin dedicar demasiado tiempo al aspecto o estética del diseño. <br>
+                <strong>Prototipos</strong> Los prototipos son representaciones de media-alta fidelidad que incluyen o simulan la interacción con la interfaz. <br>
+                <strong>Mockup</strong> Los mockups son la piel del diseño. Se caracterizan por tener una media-alta fidelidad y por ser representaciones completamente estáticas del diseño visual. <br>
+            </p>
+            <br> <h4>Diagrama de navegación de un sitio web</h4>
+            <br>
+            <p>Un menú de navegación o mapa de sitio es el diagrama o estructura que organiza el contenido y dirige el flujo del usuario en tu sitio web. </p>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h2>Desarrollo de Aplicaciones web</h2>
+        </button>
+      </h5>
+    </div> 
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="jumbotron">  
+            <br> <h4>Lenguajes de marcas: HTML, CSS, XML, JSON, CSS:</h4>
+            <br>
+            <p>Un lenguaje de marcado o lenguaje de marcas es una forma de codificar un documento que, junto con el texto, incorpora etiquetas o marcas que contienen información adicional acerca de la estructura del texto o su presentación.
+                Algunos de los mas usados serína HTML, CSS, JSON, XML </p>
+            <br> <h4>CSS:</h4>
+            <br>
+            <p>CSS es el segundo lenguaje más básico y esencial para crear páginas web. El primero sería HTML, con el que se define el contenido de la página. 
+                El segundo CSS, con el que se define la parte de la presentación, es decir, cómo deben mostrarse los elementos de la página, su posición,
+                 forma, espaciados, colores y en resumen, toda la parte estética. </p>
+            <br> <h4>Expresiones regulares.</h4>
+            <br>
+            <p>Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas. En JavaScript, las expresiones regulares también son objetos. 
+                Estos patrones se utilizan con los métodos exec() y test() de RegExp, y con match(), matchAll(), replace(), replaceAll(), search() y split() métodos de String. <br>
+            Alguna web para aprender expresiones: <a href="https://www.adictosaltrabajo.com/2015/01/29/regexsam/">Adictos al trabajo</a></p>
+            <br>
+            <br> <h4>JSON</h4>
+            <br>
+            <p>JSON (JavaScript Object Notation - Notación de Objetos de JavaScript) es un formato ligero de intercambio de datos. <br>
+            Algunos parseadores de JSON: </p>
+            <ul>
+                <li>
+                    <a href="http://json.parser.online.fr/">Json Parser Online Fr</a>
+                </li>
+                <li>
+                    <a href="https://jsonformatter.org/json-parser">Json Formatter</a>
+                </li>
+                <li>
+                    <a href="https://jsonparseronline.com/">Json Parser Online</a>
+                </li>
+            </ul>
+            <br>
+            <br> <h4>CDN</h4>
+            <br>
+            <p>Una CDN (red de distribución de contenido) es una plataforma de servidores altamente 
+                distribuida que ayuda a minimizar los retrasos en la carga de contenidos de páginas web al reducir la distancia física entre el servidor y el usuario.  </p>
+            <br>
+            <br> <h4>AJAX</h4>
+            <br>
+            <p>AJAX significa JavaScript asíncrono y XML (Asynchronous JavaScript and XML). Es un conjunto de técnicas de desarrollo web que permiten que las aplicaciones web funcionen de forma asíncrona, 
+                procesando cualquier solicitud al servidor en segundo plano.  </p>
+            <br>
+            <br> <h4>Páginas estáticas vs páginas dinámicas</h4>
+            <br>
+            <p>Las páginas estáticas son diseñadas por los distintos creadores y diseñadores web, pero, a diferencia de las páginas dinámicas, estas se hacen sin ningún tipo de interacción con el usuario.
+                 La web estática está más bien diseñada para negocios o empresas, su finalidad es presentar servicios y productos. </p>
+            <br>
+            <br> <h4>Tecnología websockets</h4>
+            <br>
+            <p>WebSockets es una tecnología avanzada que hace posible abrir una sesión de comunicación interactiva entre el navegador del usuario y un servidor. 
+                Con esta  API, se puede enviar mensajes a un servidor y  recibir  respuestas controladas por eventos sin tener que consultar al servidor para una respuesta. </p>
+            <br>
+            <br> <h4>Patrones de desarrollo: MVC, singleton, factory</h4>
+            <br>
+            <p>Un patrón de diseño es una forma reutilizable de resolver un problema común. <br>
+            <strong>MVC:</strong> es un estilo de arquitectura de software que separa los datos de una aplicación, la interfaz de usuario, y la lógica de control en tres componentes distintos. <br>
+            <strong>Singleton:</strong> patrón de diseño que permite restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto. <br>
+            <strong>Factory:</strong> El patrón de diseño Factory Method nos permite la creación de un subtipo determinado por medio de una clase de Factoría, la cual oculta los detalles de creación del objeto.</p>
+            <br>
+            <br> <h4>Concepto de Callback</h4>
+            <br>
+            <p>Una función de callback es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción. </p>
+            <br>
+            <br> <h4>CORS</h4>
+            <br>
+            <p>Mecanismo que utiliza cabeceras HTTP adicionales para permitir que un user agent obtenga permiso para acceder a recursos seleccionados desde un servidor. </p>
+            <br>
+            <br> <h4>Ecmascript</h4>
+            <br>
+            <p>Estándar que a partir del año 2015 a la actualidad se encarga de regir como debe ser interpretado y funcionar el lenguaje JavaScript. </p>
+            <br>
+            <br> <h4>Polyfill</h4>
+            <br>
+            <p>Fragmento de código (generalmente JavaScript en la Web) que se utiliza para proporcionar una funcionalidad moderna en navegadores antiguos que no lo admiten de forma nativa. </p>
+            <br>
+            <br> <h4>Procesamiento asíncrono</h4>
+            <br>
+            <p>Proceso o una función que ejecuta una tarea "en segundo plano" sin que el usuario tenga que esperar a que finalice la tarea. </p>
+            <br>
+            <br> <h4>Programación funcional reactiva: RxJS</h4>
+            <br>
+            <p>paradigma de programación basado en la gestión de flujos de datos asíncronos (streams) y en la propagación del cambio. <br>
+            <strong>RxJS</strong> es una librería Javascript de programación reactiva que facilita la composición de código asíncrono basado en secuencias de observables.</p>
+            <br>
+            <br> <h4>Microservicios</h4>
+            <br>
+            <p>Son tanto un estilo de arquitectura como un modo de programar software. 
+                Con los microservicios, las aplicaciones se dividen en sus elementos más pequeños e independientes entre sí.  </p>
+            <br>
+            <br> <h4>Diferencias entre CMS, ERP y CRM</h4>
+            <br>
+            <p><strong>ERP</strong> es el grande. Es el software de gestión empresarial que lo reúne todo: la planificación, el proceso de fabricación, la gestión de inventarios, el envío, las ventas, la nómina, los acreedores, el nombre. <br>
+                <strong>CMS</strong> te permite mantener el contenido de tu sitio web por ti mismo. Por lo general, a través de una interfaz web simple, el CMS te permite añadir, actualizar y eliminar los textos e imágenes de tu webo de forma sencilla y segura.<br>
+                <strong>CRM</strong> es utilizada por los equipos de atención al cliente, marketing y ventas para realizar un seguimiento de los clientes, propuestas de venta y clientes potenciales. <br>
+            </p>
+            <br>
+            <br> <h4>CMS importantes
+                </h4>
+            <br>
+            <p>Los CMS mas importantes y conocidos son: Wordpress, Jooma, Drupal, Magneto, Prestashop </p>
+            <br>
+            <br> <h4>ERPs importantes</h4>
+            <br>
+            <ul>
+                <li><strong>SAP. </strong>Es uno de los sistemas con mayor número de funciones. Por este motivo, puede llevar más tiempo ponerlo en práctica. </li>
+                <li><strong>Oracle </strong>Inicialmente era una empresa de software para bases de datos y a partir de ahí, fue evolucionando hacia el ERP. </li>
+                <li><strong>NetSuite. </strong>Está dirigido a pequeñas y medianas empresas fundamentalmente, ya que está diseñado para adaptarse a las necesidades de los negocios en crecimiento.</li>
+                <li><strong><strong>Microsoft Dynamics GP.&nbsp;</strong></strong>Se trata de un sistema de contabilidad financiera dirigida a PYMES. </li>
+                </ul>
+            <br>
+            <br> <h4>CRM</h4>
+            <br>
+            <p><strong>Salesforce</strong> este CRM te permite sacar el máximo partido a la parte más comunicativa del software con Chatter, la “red social” de dicho software. <br>
+                <strong>Base</strong> Este CRM pone a tu disposición gran cantidad de herramientas que te ayudarán a completar todas las tareas que tengas que realizar en tu día a día. <br>
+                <strong>Microsoft Dynamics</strong> las herramientas de las que dispone este CRM son de un carácter extremadamente profesional, por lo que rápidamente notarás que estás empleando un software muy potente que brinda muchísimas posibilidades. <br>
+            
+            </p>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <h2>Programación y organización del código</h2>
+        </button>
+      </h5>
+    </div> 
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+        <div class="jumbotron">  
+        <h4>Concepto de código spaguetti</h4>
+            <br>
+            <p>El código espagueti es un término “despectivo” que se utiliza para los programas de computación que tienen una estructura de control de flujo compleja y cuando vemos este código se parece mucho a un plato de espagueti, como si fuera un montón de hilos <br>
+                Lo más importante es utilizar la refactorización, es decir iterar sobre varios repasos del código.</p>
+            <br>
+            <br> <h4>Concepto de abstracción en programación</h4>
+            <br>
+            <p>La abstracción son las características especificas de un objeto, aquellas que lo distinguen de los demás tipos de objetos y que logran definir límites conceptuales respecto a quien está haciendo dicha abstracción del objeto. </p>
+            <br>
+            <br> <h4>Paradigmas de la programación</h4>
+            <br>
+            <p>Un paradigma de programación es una manera o estilo de programación de software.
+                Se trata de un conjunto de métodos sistemáticos aplicables en todos los niveles del diseño de programas para resolver problemas . <br>
+            <strong>Programación Imperativa</strong> Los programas consisten en una sucesión de instrucciones o conjunto de sentencias, como si el programador diera órdenes concretas. <br>
+            <strong>Programación Declarativa</strong>Este paradigma no necesita definir algoritmos puesto que describe el problema en lugar de encontrar una solución al mismo.
+             Este paradigma utiliza el principio del razonamiento lógico para responder a las preguntas o cuestiones consultadas.  </p>
+            <br>
+            <br> <h4>Técnicas de programación imperativa</h4>
+            <br>
+            <p><strong>Programación estructurada: </strong> esta programación utiliza bucles, condicionales y subrutinas para controlar el flujo y modularidad para así facilitar la lectura y poder reutilizar el código. <br>
+            <strong>Programación modular:</strong> la programación modular es un paradigma de programación que consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más legible y manejable. <br>
+        <strong>Programación Orientada a Objetos:</strong></p>
+        <ul>
+            <li><strong>SOLID</strong> <ul>
+                <li>S – Single Responsibility Principle (SRP)</li>
+                <li>O – Open/Closed Principle (OCP)</li>
+                <li>L – Liskov Substitution Principle (LSP)</li>
+                <li>I – Interface Segregation Principle (ISP)</li>
+                <li>D – Dependency Inversion Principle (DIP)</li>
+                </ul></li>
+                <li>
+                    <strong>Interfaces</strong> Las Interfaces son usadas para indicar qué métodos debe obligatoriamente implementar (contener) una Clase (aunque no tienen por qué comportarse del mismo modo). 
+                    Los métodos definidos en una una Interface deben ser public.
+                </li>
+                <li>
+                    <strong>Clases</strong> descripción de un conjunto de objetos similares; consta de métodos y de datos que resumen las características comunes de dicho conjunto. 
+                    En un lenguaje de programación orientada a objetos se pueden definir muchos objetos de la misma clase.
+                    <ul>
+                        <li><strong> Clases abstractas</strong>: una clase abstracta es una clase que no tiene instancias. Su utilidad consiste en proveer estructura y comportamiento común a todas las subclases que heredan de ella.</li>
+                        <li><strong>Propiedades y Métodos:</strong> los métodos describen el comportamiento de los objetos de una clase. Estos representan las operaciones que se pueden realizar con los objetos de la clase </li>
+                        <li><strong>Implementación de interfaces</strong></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Encapsulación</strong> La encapsulación es un mecanismo que consiste en organizar datos y métodos de una estructura, conciliando el modo en que el objeto se implementa.
+                </li>
+                <li>
+                <strong>Objetos</strong> entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o funcionalidad (métodos). 
+                </li>
+                <li>
+                    <strong>Herencia</strong> mediante la Herencia es posible crear una clase a partir de otra clase padre, la cual herederá tanto sus propiedades o atributos como los métodos de la misma.
+                </li>
+                <li>
+                    <strong>Polimorfismo</strong> relajación del sistema de tipos, de tal manera que una referencia a una clase (atributo, parámetro o declaración local o elemento de un vector) acepta direcciones de objetos de dicha clase y de sus clases derivadas (hijas, nietas, …).
+                </li>
+                <li>
+                    <strong>Particularidades de la orientación a objetos en Javascrip</strong> La idea básica de la POO es que usamos objetos para modelar cosas del mundo real que queremos representar en nuestros programas, y/o proveemos una simple manera para acceder a la funcionalidad que, de otra manera, sería difícil o imposible de usar.
+                </li>
+                <li>
+                    <strong>Interfaces fluidas</strong> construcción orientada a objeto que define un comportamiento capaz de retransmitir el contexto de la instrucción de una llamada subsecuente.
+                </li>
+                <li>
+                    <strong>Inversión del control </strong>  forma de trabajar que rompe con el formato tradicional, en donde el programar es el encargado de definir la secuencia de operaciones que se deben de realizar para llegar a un resultado. 
+                </li>
+                <li>
+                    <strong>Programación orientada a aspectos</strong> paradigma de programación que basa su filosofía en tratar las obligaciones transversales de nuestros programas como módulos separados (aspectos) para lograr una correcta separación de responsabilidades.
+                </li>
+                <li>
+                    <strong>Para qué sirven las excepciones</strong> Las excepciones son una forma de intentar conseguir que, si un código fuente no se ejecuta de la forma “prevista” inicialmente, el programador sea capaz de controlar esa situación y decir cómo ha de responder el programa.
+                </li>
+                <li>
+                    <strong> Patrones de diseño de software</strong> solución general y reutilizable aplicable a diferentes problemas de diseño de software. Se trata de plantillas que identifican problemas en el sistema y proporciona soluciones apropiadas
+                </li>
+                <li>
+                    <strong>Programación dirigida por eventos y Programación asíncrona</strong>
+                    <ul>
+                        <li>
+                            <strong>Asíncrona</strong> la programación asíncrona establece la posibilidad de hacer que algunas operaciones devuelvan el control al programa llamante antes de que hayan terminado mientras siguen operando en segundo plano.
+                        </li>
+                        <li>
+                            <strong>Eventos</strong> la Programación orientada a eventos es un paradigmaTérmino común en el vocabulario científico y en expresiones epistemológicas cuando se hacía necesario hablar de modelos o patrones. de programación en el 
+                            que la estructura y la ejecución de los programas van determinados por los sucesos o acciones que ocurren en el sistema, definidos por el usuario o por el propio sistema.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Genericidad del código</strong> la reutilización de código se refiere al comportamiento y a las técnicas que garantizan que una parte o la totalidad de un programa informático existente se pueda emplear en la construcción de otro programa.
+                     De esta forma se aprovecha el trabajo anterior, se economiza tiempo, y se reduce la redundancia.
+                </li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5  class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <h2>Lenguajes de programación</h2>
+        </button>
+      </h5>
+    </div> 
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+        <div class="jumbotron">  
+         <h4>Lenguajes de programación</h4>
+            <br>
+            <p> Un lenguaje compilado está optimizado para el momento de la ejecución, aunque esto signifique una carga adicional para el programador. 
+                Por otro lado, un lenguaje interpretado está optimizado para hacerle la vida más fácil al programador, aunque eso signifique una carga adicional para la máquina. <br>
+                Un compilador genera un programa “stand-alone” es decir que tiene sentido y se puede ejecutar por sí solo, mientras que un programa interpretado siempre necesita su intérprete correspondiente para poder ejecutarse.
+            </p>
+            <br>
+            <br> <h4>Lenguajes débilmente tipados vs lenguajes fuertemente tipados</h4>
+            <br>
+            <p>La diferencia entre un lenguaje fuertemente tipado y un lenguaje débilmente tipado es 
+                básicamente que un lenguaje fuertemente tipado verifica el tipo de una variable antes de realizar una operación en él, mientras que un lenguaje débilmente tipado no lo hace. </p>
+            <br>
+            <br> <h4>¿Qué diferencia existe entre un tipado estático y uno dinámico?</h4>
+            <br>
+            <p>Un lenguaje de programación es dinámicamente tipado si una variable puede tomar valores de distinto tipo. La mayoría de lenguajes de tipado dinámico son lenguajes interpretados, como Python o Ruby.
+             Un lenguaje que no es dinámicamente tipado se dice que es de tipado estático, o estáticamente tipado. </p>
+            <br>
+            <br> <h4>¿Qué es el timetomarket de un lenguaje?</h4>
+            <br>
+            <p>El time to market o ‘plazo de lanzamiento’ es el tiempo comprendido desde que un producto o servicio es concebido hasta que está disponible para el usuario final. </p>
+            <br>
+            <br> <h4>¿Qué es la sobrecarga de operadores?</h4>
+            <br>
+            <p>La sobrecarga de operadores permite redefinir ciertos operadores, como '+' y '-', para usarlos con las clases que hemos definido. </p>
+            <br>
+            <br> <h4>¿Qué es la interpolación de cadenas?</h4>
+            <br>
+            <p>Una cadena interpolada es un literal de cadena que puede contener expresiones de interpolación. Cuando una cadena interpolada se resuelve en una cadena de resultado, 
+                los elementos con expresiones de interpolación se reemplazan por las representaciones de cadena de los resultados de la expresión. </p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+              <h5  class="mb-0">
+                <button class="btn" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h2>Entorno cliente</h2>
+                </button>
+              </h5>
+            </div> 
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="jumbotron">  
+            
+             <h4>Navegadores</h4>
+            <br>
+            <p>Software que permite el acceso a Internet, interpretando la información de archivos y sitios web para que éstos puedan ser leídos. </p>
+            <br>
+            <br> <h4>Librerías: jQuery, Prototype, Dojo, Yui</h4>
+            <br>
+            <p>Archivo o conjunto de archivos que se utilizan pra facilitar la programación. Las librerías, también llamadas "frameworks", 
+                consisten en archivos de código a los que llamamos al principio de la página </p>
+            <br>
+            <br> <h4>Librerias de programación funcional</h4>
+            <br>
+            <p>Underscore es una biblioteca de utilidad de programación funcional de código abierto para JavaScript. Underscore proporciona muchas funciones útiles para trabajar c
+                on matrices o colecciones de objetos de JavaScript, incluido el filtrado, la clasificación y la consulta.</p>
+            <br>
+            <br> <h4>Diferencias entre una librería y un framework</h4>
+            <br>
+            <p>Un framework te limita la flexibilidad, pero a cambio te da estabilidad y las herramientas que necesitas con un entorno de trabajo ya preparado. 
+                Mientras que una librería te da más libertad porque puedes usar las librerías que quieras pero a cambio tienes que asegurar la compatibilidad y crear tu propio entorno. </p>
+            <br>
+
+            <br> <h4>Sistemas de gestión de dependencias</h4>
+            <br>
+            <p>Permite gestionar las dependencias gracias a un programa externo </p>
+            <br>
+            <br> <h4>Task runners</h4>
+            <br>
+            <p>Un task runner, es una herramienta que automatiza tareas.  </p>
+            <br>
+            <br> <h4>Preparación de proyectos: yeoman</h4>
+            <br>
+            <p>Herramienta para construir el esqueleto de nuestra aplicación, es decir su estructura y dependecias necesarias para empezar a programar.
+
+            </p>
+            <br>
+            <br> <h4>Transpiler: babel
+            </h4>
+            <br>
+            <p>Babel es un transcompilador de JavaScript gratuito y de código abierto que se utiliza principalmente para convertir el código 
+                ECMAScript 2015+ en una versión de JavaScript compatible con versiones anteriores </p>
+            <br>
+            <br> <h4>Package bundlers: Webpack y Browserify, parcel</h4>
+            <br>
+            <p>Webpack es un module bundler, una librería que nos permite gestionar todos los recursos necesarios para correr nuestra aplicación mediante el uso de sintaxis ES6 dentro de nuestro código fuente en Javascript. </p>
+            <br>
+            <br> <h4>Ofuscadores: UglifyJS</h4>
+            <br>
+            <p>conocido como el más potente y eficaz compresor de código JavaScript disponible en la red. 
+                La compresión por defecto de UglifyJS, --compress, está bien pero realiza todo el trabajo sucio. </p>
+            <br>
+            <br> <h4>Minificadores: minify</h4>
+            <br>
+            <p>El Minificador de JS y CSS es un compresor en línea de JavaScript/CSS que te permite comprimir y minificar todos tus ficheros JS/CSS </p>
+            <br>
+            <br> <h4>Concepto de aplicación isomorfica</h4>
+            <br>
+            <p>Una aplicación isomorfica es aquella que comparte todo (o casi todo) su código entre el cliente y el servidor. </p>
+            <br>
+            <br> <h4>El DOM: concepto. El BOM</h4>
+            <br>
+            <p>El DOM es la estructura de objetos que genera el navegador cuando se carga un documento y se puede alterar mediante Javascript para cambiar dinámicamente los contenidos y aspecto de la página. </p>
+            <br>
+            <br> <h4>Depuración: Inspector de Chrome y de Firefox.</h4>
+            <br>
+            <p>El Inspector: habilita la revisión y modificación del HTML y CSS usado para construir las páginas de la extensión. </p>
+            <br>
+            <br> <h4>Progressive Web Apps de google</h4>
+            <br>
+            <p>Novedoso método de desarrollo de aplicaciones que alberga prometedoras posibilidades y que continúa el desarrollo del formato de aplicación web ya existente. </p>
+            <br>
+            <br> <h4>Meteor</h4>
+            <br>
+            <p>Meteor facilita la creación rápida de prototipos y produce código multiplataforma (web, Android, iOS y escritorio).  </p>
+            <br>
+            <br> <h4>Plataformas fullstack: JHipster</h4>
+            <br>
+            <p> Generador de aplicaciones gratuito y de código abierto que se utiliza para desarrollar rápidamente aplicaciones web modernas y microservicios utilizando Angular o React y Spring Framework. </p>
+            <br>
+            <br> <h4>Javascript</h4>
+            <br>
+            <p> Lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico. </p>
+            <ul>
+                <li><strong>Arrays</strong> el objeto Array de JavaScript es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel</li>
+                <li><strong>Objeto</strong>  colección de datos relacionados y/o funcionalidad 
+                    (que generalmente consta de algunas variables y funciones, que se denominan propiedades y métodos cuando están dentro de objetos).</li>
+                <li><strong>Funciones</strong> Una función en JavaScript es similar a un procedimiento — un conjunto de instrucciones que realiza una tarea o calcula un valor</li>
+                <li><strong>Prototipos</strong> mecanismo mediante el cual los objetos en JavaScript heredan características entre sí.</li>
+                <li><strong>Closures</strong> función que guarda referencias del estado adyacente</li>
+                
+            </ul>
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingNine">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <h2>Entorno Servidor</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+            <div class="jumbotron">  
+             <h4>Lenguajes</h4>
+            <br>
+            <p>Los lenguajes del lado del servidor más utilizados en la actualidad son: ASP, PERL y PHP.</p>
+            <br>
+            <br> <h4>Lenguajes para apps</h4>
+            <br>
+            <p>Los lenguajes mas utilizados para apps son: Java, Dart, Flutter, React Native, Xamarin, Swift</p>
+            <br>
+            <br> <h4>Frameworks:</h4>
+            <br>
+            <ul>
+                <li><strong>Java</strong> Spring, Struts, Play, JSF, PrimeFaces, Tapestry, Vaadin, Openxava</li>
+                <li><strong>Phyton</strong> Django, Flask</li>
+                <li><strong>Node</strong> Express</li>
+                <li><strong>Ruby</strong> Rails</li>
+                <li><strong>PHP</strong> Laravel, CodeIgniter, Symphony, Cake, Yii, Zend, Phalcon, Slim</li>
+            </ul>
+            <br>
+            <br> <h4>ORM: concepto </h4>
+            <br>
+            <p>Técnica de programación que permite la relación de los objetos con los datos que ellos mismos representan. </p>
+            <br>
+            <br> <h4>Sistemas de gestión de dependencias</h4>
+            <br>
+            <ul>
+                <li>
+                    Java: Gradle, Maven</li>
+                <li>PHP: composer, PEAR</li>
+                <li>Node: npm</li>
+            </ul>
+            <br>
+            <br> <h4>Entorno Java</h4>
+            <br>
+            
+            <ul>
+                <li><strong>Java Virtual Machine</strong> Una máquina virtual Java es una máquina virtual de proceso nativo, es decir, ejecutable en una plataforma específica, 
+                    capaz de interpretar y ejecutar instrucciones expresadas en un código binario especial, el cual es generado por el compilador del lenguaje Java.</li>
+                <li><strong>Concepto de Bytecode</strong> código intermedio más abstracto que el código máquina. Habitualmente, es tratado como un archivo binario que contiene un programa</li>
+                <li><strong>JRE y JDK</strong>JDK:Sirve para construir programas usando el lenguaje de programación Java <br> JRE:Contiene a la JVM y otras herramientas que permiten la ejecución de las aplicaciones Java.
+                     JRE no posee compiladores ni herramientas para desarrollar las aplicaciones Java, solo posee las herramientas para ejecutarlas mientras que JDK si.</li>
+                <li><strong>Spring vs Spring boot.</strong> Spring Boot es un acelerador para la creación de proyectos de Spring, que se basa principalmente en el concepto de convención antes de configuración.</li>
+                <li><strong>Spring security</strong> marco Java / Java EE que proporciona autenticación, autorización y otras características de seguridad para aplicaciones empresariales.  </li>
+                <li><strong>Contenedores de servlets Java</strong> implementación que hace cumplimiento del contrato de componentes web de la arquitectura J2EE.</li>
+                <li><strong>Concepto de servlet</strong> clase en el lenguaje de programación Java, utilizada para ampliar las capacidades de un servidor.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTeen">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                <h2>Bases de datos</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseTen" class="collapse" aria-labelledby="headingTeen" data-parent="#accordion">
+            <div class="jumbotron">  
+             <h4>Diferencia entre base de datos, SGBD y SGBDR</h4>
+            <br>
+            <ul>
+                <li>
+                    Microsoft Access (relacional)</li>
+                </li>Microsoft SQL Server (relacional)</li>
+                </li>MySQL (relacional)</li>
+                </li>Oracle Database (relacional)</li>
+                </li>OrientDB (orientado a documentos)</li>
+                </li>CouchDB (orientado a documentos)</li>
+                </li>Db2 de IBM (relacional)</li>
+                </li>
+            </ul>
+            <br>
+            <br> <h4>APIs abiertas</h4>
+            <br>
+            <ul>
+                <li><strong>Firebase</strong> es una plataforma para el desarrollo de aplicaciones web y aplicaciones móviles desarrollada por Google</li>
+                <li><strong>GraphQL</strong> lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas consultas con datos existentes.​ </li>
+            </ul>
+            <br>
+            <br> <h4>SGBD NoSQL</h4>
+            <br>
+            <ul>
+                <li><strong>Apache Cassandra</strong> modelo de almacenamiento de «clave-valor», de código abierto que está escrita en Java.</li>
+                <li><strong>MongoDB</strong>istema de base de datos NoSQL, orientado a documentos y de código abierto.
+                    En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales, MongoDB guarda estructuras de datos BSON con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.</li>
+                <li><strong>Redis</strong> motor de base de datos en memoria, basado en el almacenamiento en tablas de hashes pero que opcionalmente puede ser usada como una base de datos durable o persistente.</li>
+            </ul>
+            <br>
+            <br> <h4>Concepto de campos autonuméricos.</h4>
+            <br>
+            <p>Campo cuyo valor va aumentando secuencialmente con un incremento de 1 o a partir de una secuencia aleatoria de números. </p>
+            <br>
+            <br> <h4>Concepto de vista</h4>
+            <br>
+            <p>Tabla lógica basada en una tabla u otra vista. </p>
+            <br>
+            <br> <h4>Diagramas de entidad-relación para modelar una base de datos relacional.</h4>
+            <br>
+            <p>Herramienta para el modelo de datos, la cual facilita la representación de entidades de una base de datos.​  </p>
+            <br>
+            <br> <h4>Formas normales, hasta la tercera forma normal.</h4>
+            <br>
+            <ul>
+                <li><strong>1FN</strong> forma normal usada en normalización de bases de datos. Una tabla de base de datos relacional que se adhiere a la 1FN es una que satisface cierto conjunto mínimo de criterios.</li>
+                <li><strong>2FN</strong> una tabla 1NF está en 2NF si y solo si, dada una clave primaria y cualquier atributo que no sea un constituyente de la clave primaria, el atributo no clave depende de toda la clave primaria en vez de solo de una parte de ella.</li>
+                <li><strong>3FN</strong> la definición de Codd indica que una tabla está en 3NF si y solo si las tres condiciones siguientes se cumplen:
+                    <ul>
+                        <li>
+                            La tabla está en la segunda forma normal (2NF)
+                        </li>
+                        <li>
+                            Ningún atributo no-primario de la tabla es dependiente transitivamente de una clave primaria
+                        </li>
+                        <li>
+                            Es una relación que no incluye ningún atributo clave
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <br> <h4>Lenguajes DDL y DML.</h4>
+            <br>
+            <p>DDL son aquellas utilizadas para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), 
+                procedimientos almacenados, etc. sentencias DML son aquellas utilizadas para insertar, borrar, modificar y consultar los datos de una base de datos. </p>
+            <br>
+            <br> <h4>Resultset</h4>
+            <br>
+            <p>Conjunto de resultados, contiene los resultados de una consulta SQL </p>
+            <br>
+            <br> <h4>Transacciones</h4>
+            <br>
+            <p>Las transacciones en SQL permiten realizar acciones agrupadas en una base de datos para ejecutar sentencias independientes. </p>
+            <br>
+            <br> <h4>Prepared statements y la inyección de código.</h4>
+            <br>
+            <p>Una inyección SQL (del inglés SQL injection) se define como la explotación de una vulnerabilidad en los sistemas de bases relacionales accediendo a sus datos por medio del lenguaje SQL. </p>
+            <br>
+            <br> <h4>GUI para mysql</h4>
+            <br>
+            <ul>
+                <li><strong>MySQL Workbench.</strong></li>
+                <li><strong>PhpMyAdmin.</strong></li>
+                <li><strong>Sequel Pro.</strong></li>
+                <li><strong>HeidiSQL.</strong></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingEleven">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                <h2>Control de Versiones</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+            <div class="jumbotron">         
+             <h4>Concepto.</h4>
+            <br>
+            <p>Gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. </p>
+            <br>
+            <br> <h4>Ventajas que aportan los controladores de versiones</h4>
+            <br>
+            <ul>
+                <li>Permite mantener un histórico de todo el desarrollo del proyecto.</li>
+                <li>Añade trazabilidad al desarrollo de software,</li>
+                <li>Se puede ver qué cambios se han hecho en el código en cada versión.</li>
+            </ul>
+            <br>
+            <br> <h4>Herramientas</h4>
+            <br>
+            <ol><li><strong>Git</strong> es una de las mejores herramientas de control de versiones. Es un modelo de repositorio distribuido compatible con sistemas y protocolos existentes como HTTP, FTP, SSH y es capaz de manejar eficientemente proyectos pequeños a grandes.</li>
+                <li><strong>CVS</strong> es otro sistema de control de versiones muy popular. Es un modelo de repositorio cliente-servidor donde varios desarrolladores pueden trabajar en el mismo proyecto en paralelo. El cliente CVS mantendrá actualizada la copia de trabajo del archivo y requiere intervención manual sólo cuando ocurre un conflicto de edición.</li>
+                <li><strong>Apache Subversion&nbsp;(SVN)</strong>&nbsp;abreviado como SVN. Es un modelo de repositorio cliente-servidor donde los directorios están versionados junto con las operaciones de copia, eliminación, movimiento y cambio de nombre.</li>
+                <li><strong>Mercurial</strong> es una herramienta distribuida de control de versiones que está escrita en Python y destinada a desarrolladores de software. Los sistemas operativos que admite son similares a Unix, Windows y macOS. Tiene un alto rendimiento y escalabilidad con capacidades avanzadas de ramificación y fusión y un desarrollo colaborativo totalmente distribuido.</li>
+                <li><strong>Monotone</strong> está escrito en C ++ y es una herramienta para el control de versiones distribuido. El sistema operativo que admite incluye Unix, Linux, BSD, Mac OS X y Windows. Brinda un buen apoyo para la internacionalización y localización. Además, utiliza un protocolo personalizado muy eficiente y robusto llamado Netsync.</li>
+            </ol>
+            <br>
+            <br> <h4>Repositorios git</h4>
+            <br>
+            <ul>
+                <li>github</li>
+                <li>bitbucket</li>
+                <li>gitlab</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwelve">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                <h2>Integración continua</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+            <div class="jumbotron"> 
+            <h4>Pruebas unitarias</h4>
+            <br>
+            <p>Forma de comprobar el correcto funcionamiento de una unidad de código. </p>
+            <br>
+            <br> <h4>Pruebas de integracion</h4>
+            <br>
+            <p>Pruebas que se realizan en el ámbito del desarrollo de software una vez que se han aprobado las pruebas unitarias y lo que prueban es que todos los elementos unitarios que componen el software, funcionan juntos correctamente probándolos en grupo.  </p>
+            <br>
+            <br> <h4>Servidores</h4>
+            <br>
+            <ul>
+                <li><strong>Jenkins</strong> Este software escrito en Java ha continuado desarrollándose constantemente y cuenta en la actualidad con numerosas funciones que asisten no solo en la integración continua, sino también en el despliegue y la entrega continua.</li>
+                <li><strong>Travis CI</strong> Esta herramienta puede configurarse con un sencillo archivo YAML que se guarda en el directorio raíz del proyecto.</li>
+                <li><strong>Bamboo</strong> Esta herramienta no solo sirve de ayuda en la integración continua, sino también para funciones de despliegue y gestión de lanzamientos. Funciona a través de una interfaz web.</li>
+            </ul>
+            <br>
+            <br> <h4>Issue tracking</h4>
+            <br>
+            <p>Sistema de seguimiento de incidentes es un paquete de software que administra y mantiene listas de incidentes, conforme son requeridos por una institución.  </p>
+            <br>
+            <br> <h4>Teconologías para la inspección y la mejora del código</h4>
+            <br>
+            <ul>
+                <li>
+                    <strong>Codeclimate</strong> herramienta de inspección y mejora del código utilizada por github.
+                </li>
+                <li>
+                    <strong>Sonarqube</strong> plataforma para evaluar código fuente. Es software libre y usa diversas herramientas de análisis estático de código fuente como Checkstyle, PMD o FindBugs para obtener métricas que pueden ayudar a mejorar la calidad del código de un programa.​ 
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTherty">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseTherty" aria-expanded="false" aria-controls="collapseTherty">
+                <h2>Despliegue</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseTherty" class="collapse" aria-labelledby="headingTherty" data-parent="#accordion">
+            <div class="jumbotron"> 
+             <h4>Microservicios</h4>
+            <br>
+            <p>enfoque para desarrollar una aplicación software como una serie de pequeños servicios, cada uno ejecutándose de forma autónoma y comunicándose entre sí, por ejemplo, a través de peticiones HTTP a sus API. </p>
+            <br>
+            <br> <h4>Monitorización</h4>
+            <br>
+            <p> Se encarga de hacer un seguimiento de su estado, tanto de la infraestructura como de los subsistemas presentes.</p>
+            <br>
+            <br> <h4>Infraestructura</h4>
+            <br>
+            <ul>
+                <li><strong>Iaas</strong> servicios en línea que proporcionan un alto-nivel de APIs utilizadas para indireccionar detalles a bajo nivel de infraestructura </li>
+                <li><strong>Caas</strong> modelo de negocio por el cual los proveedores de computación en la nube ofrecen prestaciones en torno a la virtualización basada en contenedores como servicio online escalable</li>
+                <li><strong>Paas</strong> hace referencia a un servicio en la nube a través del cual el proveedor proporciona al cliente un entorno de desarrollo, así como las herramientas necesarias para el desarrollo de nuevas aplicaciones.</li>
+                <li><strong>Faas</strong> infraestructura informática inmediata que se aprovisiona y administra a través de Internet.</li>
+                <li><strong>Saas</strong> aloja el software de la empresa, así como sus datos, en servidores externos a la misma, y paga una cuota por su utilización. </li>
+            </ul>
+            <br>
+            <br> <h4>Contenedores</h4>
+            <br>
+            <p> Docker quiere crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado,
+                 independientemente del sistema operativo que la máquina tenga por debajo, facilitando así también los despliegues. </p>
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFourty">
+          <h5  class="mb-0">
+            <button class="btn" data-toggle="collapse" data-target="#collapseFourty" aria-expanded="false" aria-controls="collapseFourty">
+                <h2>Personajes</h2>
+            </button>
+          </h5>
+        </div> 
+        <div id="collapseFourty" class="collapse" aria-labelledby="headingFourty" data-parent="#accordion">
+            <div class="jumbotron"> 
+             <h4>John Resig</h4>
+            <br>
+            <p>Programador y empresario, conocido por ser el Evangelista de JavaScript de la Fundación Mozilla, creador y líder de desarrollo de la biblioteca JavaScript jQuery, 
+                autor de un libro técnico sobre JavaScript y de uno de los blogs más leídos, con una media de 13.000 suscriptores.​ </p>
+            <br>
+            <br> <h4>Douglas Crockford</h4>
+            <br>
+            <p>Programador informático estadounidense que participa en el desarrollo del lenguaje JavaScript.
+                 Él popularizó el formato de datos JSON, y ha desarrollado varias herramientas relacionadas con JavaScript, como JSLint y JSMin. </p>
+            <br>
+            <br> <h4>Jeremy Ashkenas</h4>
+            <br>
+            <p> Programador informático conocido por la creación y co-creación de los lenguajes de programación CoffeeScript y LiveScript respectivamente, el framework JavaScript Backbone.js y la biblioteca JavaScript Underscore.js.  </p>
+            <br>
+            <br> <h4>Misko Hevery</h4>
+            <br>
+            <p>Desarrollador de Angular JS </p>
+            <br>
+            <br> <h4>Rod Johnson</h4>
+            <br>
+            <p>Especialista en informática australiano que creó Spring Framework y cofundó SpringSource, donde se desempeñó como CEO hasta su adquisición en 2009 por VMware. En 2011, Johnson se convirtió en presidente de la junta directiva de Neo4j.  </p>
+            <br>
+            <br> <h4>James Goslin</h4>
+            <br>
+            <p>Famoso científico de la computación conocido como el padre del lenguaje de programación Java. </p>
+            <br>
+            <br> <h4>Martin Fowler</h4>
+            <br>
+            <p>Ingeniero de software británico, autor y orador internacional sobre desarrollo de software, especializado en análisis y diseño orientado a objetos, UML, patrones de diseño, y metodologías de desarrollo ágil, incluyendo programación extrema. </p>
+            <br>
+            <br> <h4>Eric S. Raymond</h4>
+            <br>
+            <p>Autor de La catedral y el bazar, y el responsable actual del Jargon File. Si bien con el Jargon File obtuvo fama como historiador de la cultura hacker, se convirtió después de 1997 en una figura líder en el Movimiento del Open Source y el Código abierto.  </p>
+            <br>
+            <br> <h4>Rasmus Lerdorf</h4>
+            <br>
+            <p>Programador informático nacido en Groenlandia creador de la primera versión del lenguaje de programación PHP.  </p>
+            <br>
+            <br> <h4>John Papa</h4>
+            <br>
+            <p>Desarrollador web y móvil profesional, y un ávido defensor de OSS y de la comunidad. Actualmente es un promotor de desarrolladores de Microsoft y anteriormente ha trabajado para Disney en varias aplicaciones web . </p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
